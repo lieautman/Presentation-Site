@@ -2,7 +2,8 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
     colors: {
-        primaryColor: 'rgba(134, 55, 179, 1)',
+        primaryColor: 'rgba(92, 44, 95, 1)',
+        textColor: 'white'
     },
 });
 
