@@ -1,7 +1,7 @@
-import Home from "./Home"
-import About from "./About"
-import Contact from "./Contact"
-import CV from "./CV"
+import Home from "./Home/Home"
+import About from "./About/About"
+import Contact from "./Contact/Contact"
+import CV from "./CV/CV"
 import Error from "./Error"
 
 function Pages(props) {
