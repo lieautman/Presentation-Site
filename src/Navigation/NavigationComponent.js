@@ -3,7 +3,7 @@ import GridItemAligned from "../Resources/StyledComponents/GridItemAligned";
 import TypographyWithTheme from "../Resources/StyledComponents/TypographyWithTheme";
 import logo from "../Resources/Images/logo.png"
 import { Button } from "@mui/material";
-import darkTheme from "../Resources/Theme/Theme";
+import { darkTheme } from "../Resources/Theme/Theme";
 
 function NavigationComponent(porps) {
 

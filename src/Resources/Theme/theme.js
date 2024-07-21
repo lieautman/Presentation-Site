@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import securityBackgorundFadedCracked from "../../Resources/Images/securityBackgorundFadedCracked.jpg"
 
-const darkTheme = createTheme({
+export const darkTheme = createTheme({
     colors: {
         primaryColor: 'rgba(92, 44, 95, 1)',
         textColor: 'white',
@@ -12,7 +12,7 @@ const darkTheme = createTheme({
     }
 });
 
-const lightTheme = createTheme({
+export const lightTheme = createTheme({
     colors: {
         primaryColor: 'red',
         textColor: 'balck',
@@ -23,4 +23,3 @@ const lightTheme = createTheme({
     }
 });
 
-export default darkTheme;

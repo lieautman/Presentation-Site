@@ -1,6 +1,7 @@
 import { createContext } from "react";
+import { darkTheme } from "./Theme";
 
-export const PageContext = createContext({
-    pageNo: 1,
-    setPageNo: (pageNo) =>{}
+export const ThemeContext = createContext({
+    currentTheme: darkTheme,
+    setCurrentTheme: (theme) =>{}
 });
