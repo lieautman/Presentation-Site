@@ -12,4 +12,15 @@ const darkTheme = createTheme({
     }
 });
 
+const lightTheme = createTheme({
+    colors: {
+        primaryColor: 'red',
+        textColor: 'balck',
+        titleColor: 'blue',
+    },
+    images: {
+        homeFirstImage: securityBackgorundFadedCracked
+    }
+});
+
 export default darkTheme;

@@ -1,7 +1,7 @@
 import BoxWith91vh from "../../Resources/StyledComponents/BoxWith91vh";
 import BoxWith100vh from "../../Resources/StyledComponents/BoxWith100vh";
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
-import darkTheme from "../../Resources//Theme/theme";
+import darkTheme from "../../Resources/Theme/Theme";
 
 function Home() {
 
