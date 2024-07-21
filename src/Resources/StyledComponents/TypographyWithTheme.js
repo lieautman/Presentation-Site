@@ -1,9 +1,13 @@
 import { Typography } from '@mui/material';
-import theme from "../Theme/theme";
 import { styled } from '@mui/material';
 
-const TypographyWithTheme = styled(Typography)`
-    color: ${theme.colors.textColor}
-`;
+const TypographyWithTheme = (props) => {
+    const TypographyStyled = styled(Typography)`
+        color: ${props.color};
+    `;
+    return <TypographyStyled>{props.children}</TypographyStyled>
+}
+
+
 
 export default TypographyWithTheme;
