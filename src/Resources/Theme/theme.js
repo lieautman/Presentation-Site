@@ -15,7 +15,7 @@ export const darkTheme = createTheme({
 export const lightTheme = createTheme({
     colors: {
         primaryColor: 'red',
-        textColor: 'balck',
+        textColor: 'black',
         titleColor: 'blue',
     },
     images: {
