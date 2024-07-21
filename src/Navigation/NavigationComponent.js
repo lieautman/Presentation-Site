@@ -8,7 +8,7 @@ import theme from "../Resources/Theme/theme";
 function NavigationComponent(porps) {
 
     return (
-        <GridContainerWithThemeMainColor container>
+        <GridContainerWithThemeMainColor container className="scrollSnapSection">
             <GridItemAligned item xs={4} onClick={() => porps.setPageNo(1)}><img src={logo} alt="Logo" style={{ cursor: "pointer", width: "auto", height: "8vh" }} /></GridItemAligned>
             <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(1)}><TypographyWithTheme color={theme.colors.textColor}>Acasa</TypographyWithTheme></Button></GridItemAligned>
             <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(2)}><TypographyWithTheme color={theme.colors.textColor}>Despre</TypographyWithTheme></Button></GridItemAligned>
