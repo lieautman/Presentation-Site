@@ -16,6 +16,12 @@ export const darkTheme = createTheme({
     images: {
         navBarImage: navBarDark,
         homeFirstImage: darkBackgroundHome
+    },
+    fontSizes: {
+        h1: '4vmin',
+        h2: '3vmin',
+        h3: '2vmin',
+        p: '1vmin'
     }
 });
 
@@ -31,6 +37,12 @@ export const lightTheme = createTheme({
     images: {
         navBarImage: navBarLight,
         homeFirstImage: lightBackgroundHome
+    },
+    fontSizes: {
+        h1: '4vmin',
+        h2: '3vmin',
+        h3: '2vmin',
+        p: '1vmin'
     }
 });
 

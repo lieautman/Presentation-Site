@@ -13,7 +13,7 @@ const ThemeChanger = () => {
                 <img src={currentTheme.images.navBarImage} alt="Logo" style={{ width: "auto", height: "8vh" }}/>
             </Grid>
             <Grid item xs={6}>
-                <TypographyWithTheme color={currentTheme.colors.textColor}>Change theme</TypographyWithTheme>
+                <TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{fontSize:currentTheme.fontSizes.h3}}>Change theme</h3></TypographyWithTheme>
             </Grid>
         </GridItemAligned>)
 }

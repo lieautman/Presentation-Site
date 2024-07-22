@@ -12,10 +12,10 @@ function NavigationComponent(porps) {
         <GridContainerWithThemeMainColor container className="scrollSnapSection">
             <GridItemAligned item xs={2}><ThemeChanger /></GridItemAligned>
             <GridItemAligned item xs={2}><ThemeChanger /></GridItemAligned>
-            <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(1)}><TypographyWithTheme color={currentTheme.colors.textColor}>Acasa</TypographyWithTheme></Button></GridItemAligned>
-            <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(2)}><TypographyWithTheme color={currentTheme.colors.textColor}>Despre</TypographyWithTheme></Button></GridItemAligned>
-            <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(3)}><TypographyWithTheme color={currentTheme.colors.textColor}>Contact</TypographyWithTheme></Button></GridItemAligned>
-            <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(4)}><TypographyWithTheme color={currentTheme.colors.textColor}>CV</TypographyWithTheme></Button></GridItemAligned>
+            <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(1)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{fontSize:currentTheme.fontSizes.h3}}>Acasa</h3></TypographyWithTheme></Button></GridItemAligned>
+            <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(2)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{fontSize:currentTheme.fontSizes.h3}}>Despre</h3></TypographyWithTheme></Button></GridItemAligned>
+            <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(3)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{fontSize:currentTheme.fontSizes.h3}}>Contact</h3></TypographyWithTheme></Button></GridItemAligned>
+            <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(4)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{fontSize:currentTheme.fontSizes.h3}}>CV</h3></TypographyWithTheme></Button></GridItemAligned>
         </GridContainerWithThemeMainColor>
     )
 }
