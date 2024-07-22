@@ -14,7 +14,7 @@ function Home() {
                 height={91}
                 sx={{
                     backgroundImage: `url(${currentTheme.images.homeFirstImage})`,
-                    backgroundSize: matches?"100% 100%":"150% 100%",
+                    backgroundSize: matches ? "100% 100%" : "150% 100%",
                     backgroundPosition: 'center',
                     display: 'flex',
                     flexDirection: 'column',
@@ -22,10 +22,10 @@ function Home() {
                     justifyContent: 'center'
                 }}>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h1 style={{fontSize: matches?currentTheme.fontSizes.h1:currentTheme.fontSizes.h1Big}}>Hello World and welcome to my website!</h1>
+                    <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>Hello World and welcome to my website!</h1>
                 </TypographyWithTheme>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h2 style={{fontSize: matches?currentTheme.fontSizes.h2:currentTheme.fontSizes.h1}}>Read the purpose of this website below!</h2>
+                    <h2 style={{ fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizes.h1 }}>Read the purpose of this website below!</h2>
                 </TypographyWithTheme>
             </BoxWithvh >
             <BoxWithvh
@@ -44,7 +44,7 @@ function Home() {
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                        <h1 style={{fontSize: matches?currentTheme.fontSizes.h1:currentTheme.fontSizes.h1Big}}>Read.me to document it all</h1>
+                        <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>Read.me to document it all</h1>
                     </TypographyWithTheme>
                 </BoxWithvh>
                 <BoxWithvh
