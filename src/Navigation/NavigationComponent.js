@@ -10,7 +10,8 @@ function NavigationComponent(porps) {
     const { currentTheme } = useContext(ThemeContext);
     return (
         <GridContainerWithThemeMainColor container className="scrollSnapSection">
-            <GridItemAligned item xs={4}><ThemeChanger /></GridItemAligned>
+            <GridItemAligned item xs={2}><ThemeChanger /></GridItemAligned>
+            <GridItemAligned item xs={2}><ThemeChanger /></GridItemAligned>
             <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(1)}><TypographyWithTheme color={currentTheme.colors.textColor}>Acasa</TypographyWithTheme></Button></GridItemAligned>
             <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(2)}><TypographyWithTheme color={currentTheme.colors.textColor}>Despre</TypographyWithTheme></Button></GridItemAligned>
             <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(3)}><TypographyWithTheme color={currentTheme.colors.textColor}>Contact</TypographyWithTheme></Button></GridItemAligned>
