@@ -18,6 +18,7 @@ export const darkTheme = createTheme({
         homeFirstImage: darkBackgroundHome
     },
     fontSizes: {
+        h1Big: '5vmin',
         h1: '4vmin',
         h2: '3vmin',
         h3: '2vmin',
@@ -39,6 +40,7 @@ export const lightTheme = createTheme({
         homeFirstImage: lightBackgroundHome
     },
     fontSizes: {
+        h1Big: '5vmin',
         h1: '4vmin',
         h2: '3vmin',
         h3: '2vmin',
