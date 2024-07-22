@@ -7,6 +7,9 @@ import navBarLight from "../../Resources/Images/logoLight.png"
 export const darkTheme = createTheme({
     colors: {
         primaryColor: 'rgba(92, 44, 95, 1)',
+        secondaryColor: 'rgba(7, 17, 42, 1)',
+        primaryAccentsColor: 'rgba(129, 110, 27, 1)',
+        secondaryAccentsColor: 'rgba(105, 32, 32, 1)',
         textColor: 'white',
         titleColor: 'rgba(174, 109, 210, 1)',
     },

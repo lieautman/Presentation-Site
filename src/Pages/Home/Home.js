@@ -1,5 +1,4 @@
-import BoxWith91vh from "../../Resources/StyledComponents/BoxWith91vh";
-import BoxWith100vh from "../../Resources/StyledComponents/BoxWith100vh";
+import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh";
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
 import { useContext } from "react";
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
@@ -9,22 +8,40 @@ function Home() {
 
     return (
         <>
-            <BoxWith91vh sx={{
-                backgroundImage: `url(${currentTheme.images.homeFirstImage})`,
-                backgroundSize: "100% 130%"
-            }}>
+            <BoxWithvh
+                height={91}
+                sx={{
+                    backgroundImage: `url(${currentTheme.images.homeFirstImage})`,
+                    backgroundSize: "100% 130%",
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                }}>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
                     <h1>Hello World and welcome to my website!</h1>
                 </TypographyWithTheme>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h2>"No one is you and that is power"</h2>
+                    <h2>Read the purpose of this website below!</h2>
                 </TypographyWithTheme>
-            </BoxWith91vh >
-            <BoxWith100vh className="scrollSnapSection">
+            </BoxWithvh >
+            <BoxWithvh
+                height={100}
+                className="scrollSnapSection"
+                backgroundColor={currentTheme.colors.primaryAccentsColor}
+            >
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h2>"No one is you and that is power"</h2>
+                    <h1>Read.me to document it all</h1>
                 </TypographyWithTheme>
-            </BoxWith100vh>
+                <TypographyWithTheme color={currentTheme.colors.titleColor}>
+                    <h3>
+                        This website aims to be my contact card for as much of my academic and professional interactions as possible.
+                        It presents my academic or professional path and achivements in the "About" section.
+                        The "Contact" and "CV" sections display professional information and ways to contact the author.
+                        These sections as well as a theme changer and a language changer appear in a navigation bar.
+                    </h3>
+                </TypographyWithTheme>
+            </BoxWithvh>
         </>
     )
 }
