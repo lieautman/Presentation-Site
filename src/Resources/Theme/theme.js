@@ -21,9 +21,12 @@ export const darkTheme = createTheme({
 
 export const lightTheme = createTheme({
     colors: {
-        primaryColor: 'rgba(134, 177, 186, 1)',
+        primaryColor: 'rgba(79, 115, 108, 1)',
+        secondaryColor: 'rgba(128, 103, 28, 1)',
+        primaryAccentsColor: 'rgba(37, 90, 99, 1)',
+        secondaryAccentsColor: 'rgba(150, 223, 223, 1)',
         textColor: 'black',
-        titleColor: 'rgba(86, 27, 89, 1)',
+        titleColor: 'rgba(56, 17, 74, 1)',
     },
     images: {
         navBarImage: navBarLight,
