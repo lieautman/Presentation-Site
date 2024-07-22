@@ -1,8 +1,8 @@
 import { createTheme } from '@mui/material/styles';
 import darkBackgroundHome from "../../Resources/Images/darkBackgroundHome.jpg"
 import lightBackgroundHome from "../../Resources/Images/lightBackgroundHome.jpg"
-import navBarDark from "../../Resources/Images/logo.png"
-import navBarLight from "../../Resources/Images/sun.png"
+import navBarDark from "../../Resources/Images/logoDark.png"
+import navBarLight from "../../Resources/Images/logoLight.png"
 
 export const darkTheme = createTheme({
     colors: {
