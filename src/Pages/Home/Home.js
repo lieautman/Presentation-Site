@@ -30,17 +30,49 @@ function Home() {
                 className="scrollSnapSection"
                 backgroundColor={currentTheme.colors.primaryAccentsColor}
             >
-                <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h1>Read.me to document it all</h1>
-                </TypographyWithTheme>
-                <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h3>
-                        This website aims to be my contact card for as much of my academic and professional interactions as possible.
-                        It presents my academic or professional path and achivements in the "About" section.
-                        The "Contact" and "CV" sections display professional information and ways to contact the author.
-                        These sections as well as a theme changer and a language changer appear in a navigation bar.
-                    </h3>
-                </TypographyWithTheme>
+                <BoxWithvh
+                    height={10}
+                    backgroundColor={currentTheme.colors.secondaryColor}
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                    }}
+                >
+                    <TypographyWithTheme color={currentTheme.colors.titleColor}>
+                        <h1>Read.me to document it all</h1>
+                    </TypographyWithTheme>
+                </BoxWithvh>
+                <BoxWithvh
+                    height={40}
+                    backgroundColor={currentTheme.colors.secondaryColor}
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        marginTop: '25vh'
+                    }}
+                >
+                    <BoxWithvh
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: "60vw"
+                        }}>
+                        <TypographyWithTheme color={currentTheme.colors.titleColor}>
+                            <h3 style={{ whiteSpace: 'pre-line' }}>
+                                {`This website aims to be my contact card for as much of my academic and professional interactions as possible.
+                                It presents my academic or professional path and achivements in the "About" section.
+                                The "Contact" and "CV" sections display professional information and ways to contact the author.
+                                These sections as well as a theme changer and a language changer appear in a navigation bar.`}
+                            </h3>
+                        </TypographyWithTheme>
+                    </BoxWithvh>
+                </BoxWithvh>
             </BoxWithvh>
         </>
     )
