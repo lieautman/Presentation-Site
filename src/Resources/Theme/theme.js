@@ -1,5 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import securityBackgorundFadedCracked from "../../Resources/Images/securityBackgorundFadedCracked.jpg"
+import navBarDark from "../../Resources/Images/logo.png"
+import navBarLight from "../../Resources/Images/sun.png"
 
 export const darkTheme = createTheme({
     colors: {
@@ -8,17 +10,19 @@ export const darkTheme = createTheme({
         titleColor: 'rgba(174, 109, 210, 1)',
     },
     images: {
+        navBarImage: navBarDark,
         homeFirstImage: securityBackgorundFadedCracked
     }
 });
 
 export const lightTheme = createTheme({
     colors: {
-        primaryColor: 'red',
+        primaryColor: 'rgba(48, 90, 206, 0.8)',
         textColor: 'black',
-        titleColor: 'blue',
+        titleColor: 'rgba(15, 70, 16, 0.8)',
     },
     images: {
+        navBarImage: navBarLight,
         homeFirstImage: securityBackgorundFadedCracked
     }
 });
