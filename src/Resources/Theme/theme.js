@@ -1,5 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 import securityBackgorundFadedCracked from "../../Resources/Images/securityBackgorundFadedCracked.jpg"
+import programmerBackgroundFaded from "../../Resources/Images/programmerBackgroundFaded.jpg"
 import navBarDark from "../../Resources/Images/logo.png"
 import navBarLight from "../../Resources/Images/sun.png"
 
@@ -23,7 +24,7 @@ export const lightTheme = createTheme({
     },
     images: {
         navBarImage: navBarLight,
-        homeFirstImage: securityBackgorundFadedCracked
+        homeFirstImage: programmerBackgroundFaded
     }
 });
 
