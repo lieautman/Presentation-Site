@@ -19,10 +19,10 @@ function Home() {
                     justifyContent: 'center'
                 }}>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h1>Hello World and welcome to my website!</h1>
+                    <h1 style={{fontSize: currentTheme.fontSizes.h1}}>Hello World and welcome to my website!</h1>
                 </TypographyWithTheme>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h2>Read the purpose of this website below!</h2>
+                    <h2 style={{fontSize: currentTheme.fontSizes.h2}}>Read the purpose of this website below!</h2>
                 </TypographyWithTheme>
             </BoxWithvh >
             <BoxWithvh
@@ -41,7 +41,7 @@ function Home() {
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                        <h1>Read.me to document it all</h1>
+                        <h1 style={{fontSize: currentTheme.fontSizes.h1}}>Read.me to document it all</h1>
                     </TypographyWithTheme>
                 </BoxWithvh>
                 <BoxWithvh
@@ -64,7 +64,7 @@ function Home() {
                             width: "60vw"
                         }}>
                         <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                            <h3 style={{ whiteSpace: 'pre-line' }}>
+                            <h3 style={{ whiteSpace: 'pre-line', fontSize: currentTheme.fontSizes.h3 }}>
                                 {`This website aims to be my contact card for as much of my academic and professional interactions as possible.
                                 It presents my academic or professional path and achivements in the "About" section.
                                 The "Contact" and "CV" sections display professional information and ways to contact the author.
