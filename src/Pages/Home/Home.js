@@ -2,9 +2,11 @@ import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh";
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
 import { useContext } from "react";
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Home() {
     const { currentTheme } = useContext(ThemeContext);
+    const matches = useMediaQuery('(min-width:600px)');
 
     return (
         <>
@@ -12,7 +14,8 @@ function Home() {
                 height={91}
                 sx={{
                     backgroundImage: `url(${currentTheme.images.homeFirstImage})`,
-                    backgroundSize: "100% 130%",
+                    backgroundSize: matches?"100% 100%":"150% 100%",
+                    backgroundPosition: 'center',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
