@@ -4,6 +4,15 @@
             "label": "Alege limba",
             "English": "Engleza",
             "Romanian": "Romana"
+        },
+        "ChangeTheme":{
+            "label": "Schimba tema"
+        },
+        "Pages": {
+            "Home": "Acasa",
+            "About": "Despre",
+            "Contact": "Contact",
+            "Resume": "Curriculum vitae"
         }
     }
 }

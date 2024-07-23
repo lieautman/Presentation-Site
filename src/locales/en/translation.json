@@ -1,9 +1,18 @@
 {
-    "Nav":{
+    "Nav": {
         "ChangeLanguage": {
             "label": "Select Language",
             "English": "English",
             "Romanian": "Romanian"
+        },
+        "ChangeTheme": {
+            "label": "Change theme"
+        },
+        "Pages": {
+            "Home": "Home",
+            "About": "About",
+            "Contact": "Contact",
+            "Resume": "Resume"
         }
     }
 }
