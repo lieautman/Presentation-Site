@@ -1,11 +1,11 @@
 {
-    "Nav":{
+    "Nav": {
         "ChangeLanguage": {
             "label": "Alege limba",
             "English": "Engleza",
             "Romanian": "Romana"
         },
-        "ChangeTheme":{
+        "ChangeTheme": {
             "label": "Schimba tema"
         },
         "Pages": {
@@ -13,6 +13,15 @@
             "About": "Despre",
             "Contact": "Contact",
             "Resume": "Curriculum vitae"
+        }
+    },
+    "Home": {
+        "Page1": {
+            "Title1": "Salutare lume si bine ati venit in website-ul meu!",
+            "Title2": "Citeste scopul site-ului mai jos!"
+        },
+        "Page2": {
+            "Title1": "Read.me pentru a documenta tot"
         }
     }
 }

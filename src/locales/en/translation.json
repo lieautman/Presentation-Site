@@ -14,5 +14,14 @@
             "Contact": "Contact",
             "Resume": "Resume"
         }
+    },
+    "Home": {
+        "Page1":{
+            "Title1": "Hello World and welcome to my website!",
+            "Title2": "Read the purpose of this website below!"
+        },
+        "Page2":{
+            "Title1": "Read.me to document it all"
+        }
     }
 }

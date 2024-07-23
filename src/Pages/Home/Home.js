@@ -3,8 +3,10 @@ import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWith
 import { useContext } from "react";
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+    const { t } = useTranslation();
     const { currentTheme } = useContext(ThemeContext);
     const matches = useMediaQuery('(min-width:600px)');
 
@@ -22,10 +24,10 @@ function Home() {
                     justifyContent: 'center'
                 }}>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>Hello World and welcome to my website!</h1>
+                    <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>{t("Home.Page1.Title1")}</h1>
                 </TypographyWithTheme>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h2 style={{ fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizes.h1 }}>Read the purpose of this website below!</h2>
+                    <h2 style={{ fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizes.h1 }}>{t("Home.Page1.Title2")}</h2>
                 </TypographyWithTheme>
             </BoxWithvh >
             <BoxWithvh
@@ -44,7 +46,7 @@ function Home() {
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                        <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>Read.me to document it all</h1>
+                        <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>{t("Home.Page2.Title1")}</h1>
                     </TypographyWithTheme>
                 </BoxWithvh>
                 <BoxWithvh
