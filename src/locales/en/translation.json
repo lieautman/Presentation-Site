@@ -16,12 +16,16 @@
         }
     },
     "Home": {
-        "Page1":{
+        "Page1": {
             "Title1": "Hello World and welcome to my website!",
             "Title2": "Read the purpose of this website below!"
         },
-        "Page2":{
-            "Title1": "Read.me to document it all"
+        "Page2": {
+            "Title1": "Read.me to document it all",
+            "Paragraph1": "This website aims to be my contact card for as much of my academic and professional interactions as possible.",
+            "Paragraph2": "It presents my academic or professional path and achivements in the 'About' section.",
+            "Paragraph3": "The 'Contact' and 'Resume' sections display professional information and ways to contact the author.",
+            "Paragraph4": "These sections, as well as a theme changer and a language changer appear in a navigation bar."
         }
     }
 }

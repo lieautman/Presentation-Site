@@ -69,12 +69,10 @@ function Home() {
                             width: "60vw"
                         }}>
                         <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                            <h3 style={{ whiteSpace: 'pre-line', fontSize: currentTheme.fontSizes.h3 }}>
-                                {`This website aims to be my contact card for as much of my academic and professional interactions as possible.
-                                It presents my academic or professional path and achivements in the "About" section.
-                                The "Contact" and "CV" sections display professional information and ways to contact the author.
-                                These sections as well as a theme changer and a language changer appear in a navigation bar.`}
-                            </h3>
+                            <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph1")}</h3>
+                            <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph2")}</h3>
+                            <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph3")}</h3>
+                            <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph4")}</h3>
                         </TypographyWithTheme>
                     </BoxWithvh>
                 </BoxWithvh>

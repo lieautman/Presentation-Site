@@ -21,7 +21,11 @@
             "Title2": "Citeste scopul site-ului mai jos!"
         },
         "Page2": {
-            "Title1": "Read.me pentru a documenta tot"
+            "Title1": "Read.me pentru a documenta tot",
+            "Paragraph1": "Acest site doreste sa fie cartea mea de vizita pentru cat mai multe din interactiunile parcursului meu academic si profesional.",
+            "Paragraph2": "Prezinta reusitele si calea mea academica si profesionala in sectiunea 'Despre'.",
+            "Paragraph3": "Sectiunile 'Contact' si 'Curriculum vitae' prezinta informatii si cai de contact.",
+            "Paragraph4": "Aceste sectiuni, alaturi de un schimbator de tema si unul pentru limba se afla in bara de navigatie."
         }
     }
 }
