@@ -10,7 +10,7 @@ const ThemeChanger = () => {
     return (
         <GridItemAligned container onClick={() => currentTheme === darkTheme ? setCurrentTheme(lightTheme) : setCurrentTheme(darkTheme)} style={{ cursor: "pointer"}}>
             <Grid item xs={6} style={{ float: 'right', marginLeft: 'auto', textAlign: 'right' }}>
-                <img src={currentTheme.images.navBarImage} alt="Logo" style={{ width: "auto", height: "8vh" }}/>
+                <img src={currentTheme.images.navBarThemeImage} alt="Logo" style={{ width: "auto", height: "8vh" }}/>
             </Grid>
             <Grid item xs={6}>
                 <TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{fontSize:currentTheme.fontSizes.h3}}>Change theme</h3></TypographyWithTheme>

@@ -14,7 +14,7 @@ export const darkTheme = createTheme({
         titleColor: 'rgba(174, 109, 210, 1)',
     },
     images: {
-        navBarImage: navBarDark,
+        navBarThemeImage: navBarDark,
         homeFirstImage: darkBackgroundHome
     },
     fontSizes: {
@@ -36,7 +36,7 @@ export const lightTheme = createTheme({
         titleColor: 'rgba(56, 17, 74, 1)',
     },
     images: {
-        navBarImage: navBarLight,
+        navBarThemeImage: navBarLight,
         homeFirstImage: lightBackgroundHome
     },
     fontSizes: {

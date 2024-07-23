@@ -1,0 +1,9 @@
+{
+    "Nav":{
+        "ChangeLanguage": {
+            "label": "Select Language",
+            "English": "English",
+            "Romanian": "Romanian"
+        }
+    }
+}
