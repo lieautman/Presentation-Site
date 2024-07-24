@@ -8,7 +8,6 @@ const GridContainerWithThemeMainColor = (props) => {
 
     const GridStyled = styled(Grid)`
         background-color: ${currentTheme.colors.primaryColor};
-        height: 9vh;
     `;
     return <GridStyled {...props} >{props.children}</GridStyled>
 }

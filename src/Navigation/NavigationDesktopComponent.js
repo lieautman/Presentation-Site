@@ -8,11 +8,11 @@ import ThemeChanger from "./ThemeChanger/ThemeChanger";
 import LanguageChanger from "./LanguageChanger/LanguageChanger";
 import { useTranslation } from 'react-i18next';
 
-function NavigationComponent(porps) {
+function NavigationDesktopComponent(porps) {
     const { t } = useTranslation();
     const { currentTheme } = useContext(ThemeContext);
     return (
-        <GridContainerWithThemeMainColor container className="scrollSnapSection">
+        <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{height:"9vh"}}>
             <GridItemAligned item xs={2}><ThemeChanger /></GridItemAligned>
             <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(1)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{fontSize:currentTheme.fontSizes.h3}}>{t("Nav.Pages.Home")}</h3></TypographyWithTheme></Button></GridItemAligned>
             <GridItemAligned item xs={2}><Button onClick={() => porps.setPageNo(2)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{fontSize:currentTheme.fontSizes.h3}}>{t("Nav.Pages.About")}</h3></TypographyWithTheme></Button></GridItemAligned>
@@ -23,4 +23,4 @@ function NavigationComponent(porps) {
     )
 }
 
-export default NavigationComponent;
+export default NavigationDesktopComponent;
