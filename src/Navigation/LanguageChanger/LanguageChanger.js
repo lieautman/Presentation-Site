@@ -13,17 +13,12 @@ const LanguageChanger = () => {
     }
 
     return (
-        <Grid container spacing={1}>
-            <GridItemAligned item sx={6}>
-                <InputLabel id="navBarSelectLabel" sx={{ color: currentTheme.colors.textColor }}>{t("Nav.ChangeLanguage.label")}</InputLabel>
-            </GridItemAligned>
-            <GridItemAligned item sx={6}>
-                <Select labelId="navBarSelectLabel" value={i18n.language} sx={{ color: currentTheme.colors.textColor }}>
-                    <MenuItem value={'en'} onClick={() => changeLang('en')}>{t("Nav.ChangeLanguage.English")}</MenuItem>
-                    <MenuItem value={'ro'} onClick={() => changeLang('ro')}>{t("Nav.ChangeLanguage.Romanian")}</MenuItem>
-                </Select>
-            </GridItemAligned>
-        </Grid>
+        <>
+            <Select labelId="navBarSelectLabel" value={i18n.language} sx={{ color: currentTheme.colors.textColor, fontSize:currentTheme.fontSizes.h3 }}>
+                <MenuItem value={'en'} onClick={() => changeLang('en')}>{t("Nav.ChangeLanguage.English")}</MenuItem>
+                <MenuItem value={'ro'} onClick={() => changeLang('ro')}>{t("Nav.ChangeLanguage.Romanian")}</MenuItem>
+            </Select>
+        </>
     )
 }
 

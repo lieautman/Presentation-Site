@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import darkBackgroundHome from "../../Resources/Images/darkBackgroundHome.jpg"
+import darkBackgroundHome from "../../Resources/Images/darkBackgroundHome1.jpg"
 import lightBackgroundHome from "../../Resources/Images/lightBackgroundHome.jpg"
 import navBarDark from "../../Resources/Images/logoDark.png"
 import navBarLight from "../../Resources/Images/logoLight.png"
