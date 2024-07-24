@@ -1,7 +1,7 @@
 import Home from "./Home/Home"
 import About from "./About/About"
 import Contact from "./Contact/Contact"
-import CV from "./CV/CV"
+import Resume from "./Resume/Resume"
 import Error from "./Error"
 
 function Pages(props) {
@@ -13,7 +13,7 @@ function Pages(props) {
         case 3:
             return <Contact />
         case 4:
-            return <CV />
+            return <Resume />
         default:
             return <Error />
     }
