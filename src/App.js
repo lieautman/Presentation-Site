@@ -13,8 +13,8 @@ function App() {
     const [menuOpen, setMenuOpen] = useState(false);
     const matches = useMediaQuery('(min-width:600px)');
 
-    return matches ? (
-        <ScrollbarWrapper>
+    return (
+        <ScrollbarWrapper display={matches}>
             <PageContext.Provider value={{ pageNo, setPageNo }}>
                 <ThemeContext.Provider value={{ currentTheme, setCurrentTheme }}>
                     <NavigationContainer menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -22,13 +22,7 @@ function App() {
                 </ThemeContext.Provider>
             </PageContext.Provider>
         </ScrollbarWrapper>
-    ) : (
-        <PageContext.Provider value={{ pageNo, setPageNo }}>
-            <ThemeContext.Provider value={{ currentTheme, setCurrentTheme }}>
-                <NavigationContainer menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-                {!matches && menuOpen ? <></> : <Pages pageNo={pageNo} />}
-            </ThemeContext.Provider>
-        </PageContext.Provider>)
+    );
 }
 
 export default App;

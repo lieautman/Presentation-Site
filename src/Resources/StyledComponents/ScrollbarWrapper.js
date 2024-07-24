@@ -10,7 +10,7 @@ const ScrollbarWrapper = (props) => {
     overflow-Y: scroll;
     scroll-snap-type: y mandatory;
     &::-webkit-scrollbar {
-        width: 8px;
+        width: ${props.display?"8px":"0px"};
     };
     &::-webkit-scrollbar-thumb {
         background: linear-gradient(90deg,${i18n.language === "en" ? "red, white, blue" : "red, yellow, blue"});

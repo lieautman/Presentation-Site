@@ -60,21 +60,12 @@ function Home() {
                         marginTop: '25vh'
                     }}
                 >
-                    <BoxWithvh
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            width: "60vw"
-                        }}>
-                        <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                            <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph1")}</h3>
-                            <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph2")}</h3>
-                            <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph3")}</h3>
-                            <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph4")}</h3>
-                        </TypographyWithTheme>
-                    </BoxWithvh>
+                    <TypographyWithTheme color={currentTheme.colors.titleColor}>
+                        <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph1")}</h3>
+                        <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph2")}</h3>
+                        <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph3")}</h3>
+                        <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph4")}</h3>
+                    </TypographyWithTheme>
                 </BoxWithvh>
             </BoxWithvh>
         </>
