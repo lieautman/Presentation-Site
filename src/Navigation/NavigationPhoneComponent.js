@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../Resources/Theme/ThemeContext"
 import GridContainerWithThemeMainColor from "../Resources/StyledComponents/GridContainerWithThemeMainColor";
 import GridItemAligned from "../Resources/StyledComponents/GridItemAligned";
@@ -9,10 +9,9 @@ import { useTranslation } from 'react-i18next';
 import { IconButton, Button } from "@mui/material";
 import { Menu } from '@mui/icons-material';
 
-function NavigationPhoneComponent(porps) {
+function NavigationPhoneComponent({setPageNo, menuOpen, setMenuOpen}) {
     const { t } = useTranslation();
     const { currentTheme } = useContext(ThemeContext);
-    const [menuOpen, setMenuOpen] = useState(false);
     return (
         <>
             {menuOpen ?
@@ -22,10 +21,10 @@ function NavigationPhoneComponent(porps) {
                             <Menu />
                         </IconButton>
                     </GridItemAligned>
-                    <GridItemAligned item xs={12}><Button onClick={() => porps.setPageNo(1)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Home")}</h3></TypographyWithTheme></Button></GridItemAligned>
-                    <GridItemAligned item xs={12}><Button onClick={() => porps.setPageNo(2)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.About")}</h3></TypographyWithTheme></Button></GridItemAligned>
-                    <GridItemAligned item xs={12}><Button onClick={() => porps.setPageNo(3)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Contact")}</h3></TypographyWithTheme></Button></GridItemAligned>
-                    <GridItemAligned item xs={12}><Button onClick={() => porps.setPageNo(4)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Resume")}</h3></TypographyWithTheme></Button></GridItemAligned>
+                    <GridItemAligned item xs={12}><Button onClick={() => setPageNo(1)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Home")}</h3></TypographyWithTheme></Button></GridItemAligned>
+                    <GridItemAligned item xs={12}><Button onClick={() => setPageNo(2)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.About")}</h3></TypographyWithTheme></Button></GridItemAligned>
+                    <GridItemAligned item xs={12}><Button onClick={() => setPageNo(3)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Contact")}</h3></TypographyWithTheme></Button></GridItemAligned>
+                    <GridItemAligned item xs={12}><Button onClick={() => setPageNo(4)}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Resume")}</h3></TypographyWithTheme></Button></GridItemAligned>
                 </GridContainerWithThemeMainColor> :
                 <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{ height: "9vh" }}>
                     <GridItemAligned item xs={5}><ThemeChanger /></GridItemAligned>
