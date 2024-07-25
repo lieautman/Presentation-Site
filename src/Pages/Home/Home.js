@@ -21,7 +21,8 @@ function Home() {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    textAlign: "center"
                 }}>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
                     <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1 }}>{t("Home.Page1.Title1")}</h1>
@@ -42,7 +43,8 @@ function Home() {
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        textAlign: "center"
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>
@@ -57,7 +59,8 @@ function Home() {
                         flexDirection: 'column',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        marginTop: '25vh'
+                        marginTop: '25vh',
+                        textAlign: "center"
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>

@@ -4,11 +4,24 @@ import { useContext } from "react";
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTranslation } from 'react-i18next';
+import { IconButton } from '@mui/material';
+import { AssignmentInd } from '@mui/icons-material';
+
 
 function Resume() {
     const { t, i18n } = useTranslation();
     const { currentTheme } = useContext(ThemeContext);
     const matches = useMediaQuery('(min-width:600px)');
+
+    const onButtonClick = () => {
+        const pdfUrl = i18n === "en" ? "CV_EN.pdf" : "CV_RO.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     return (
         <>
@@ -21,7 +34,8 @@ function Resume() {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    textAlign: "center"
                 }}>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
                     <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1 }}>{t("Resume.Page1.Title1")}</h1>
@@ -42,7 +56,8 @@ function Resume() {
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        textAlign: "center"
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>
@@ -57,10 +72,13 @@ function Resume() {
                         flexDirection: 'column',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        marginTop: '25vh'
+                        marginTop: '25vh',
+                        textAlign: "center"
                     }}
                 >
-
+                    <IconButton onClick={onButtonClick}>
+                        <AssignmentInd />
+                    </IconButton>
                 </BoxWithvh>
             </BoxWithvh>
         </>
