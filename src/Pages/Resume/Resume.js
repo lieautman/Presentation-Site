@@ -17,7 +17,7 @@ function Resume() {
         const pdfUrl = i18n.language === "en" ? "CV_EN.pdf" : "CV_RO.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = i18n.language === "en" ? "resume.pdf" : "curriculum_vitae.pdf";
+        link.download = i18n.language === "en" ? "resume.pdf" : "curriculum-vitae.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
