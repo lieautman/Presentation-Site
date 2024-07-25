@@ -24,10 +24,10 @@ function Home() {
                     justifyContent: 'center'
                 }}>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>{t("Home.Page1.Title1")}</h1>
+                    <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1 }}>{t("Home.Page1.Title1")}</h1>
                 </TypographyWithTheme>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h2 style={{ fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizes.h1 }}>{t("Home.Page1.Title2")}</h2>
+                    <h2 style={{ fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2 }}>{t("Home.Page1.Title2")}</h2>
                 </TypographyWithTheme>
             </BoxWithvh >
             <BoxWithvh
@@ -46,7 +46,7 @@ function Home() {
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                        <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>{t("Home.Page2.Title1")}</h1>
+                        <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1 }}>{t("Home.Page2.Title1")}</h1>
                     </TypographyWithTheme>
                 </BoxWithvh>
                 <BoxWithvh
@@ -61,10 +61,10 @@ function Home() {
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                        <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph1")}</h3>
-                        <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph2")}</h3>
-                        <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph3")}</h3>
-                        <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Home.Page2.Paragraph4")}</h3>
+                        <h3 style={{ fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3 }}>{t("Home.Page2.Paragraph1")}</h3>
+                        <h3 style={{ fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3 }}>{t("Home.Page2.Paragraph2")}</h3>
+                        <h3 style={{ fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3 }}>{t("Home.Page2.Paragraph3")}</h3>
+                        <h3 style={{ fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3 }}>{t("Home.Page2.Paragraph4")}</h3>
                     </TypographyWithTheme>
                 </BoxWithvh>
             </BoxWithvh>

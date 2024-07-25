@@ -24,10 +24,10 @@ function Resume() {
                     justifyContent: 'center'
                 }}>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>{t("Resume.Page1.Title1")}</h1>
+                    <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1 }}>{t("Resume.Page1.Title1")}</h1>
                 </TypographyWithTheme>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                    <h2 style={{ fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizes.h1 }}>{t("Resume.Page1.Title2")}</h2>
+                    <h2 style={{ fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2 }}>{t("Resume.Page1.Title2")}</h2>
                 </TypographyWithTheme>
             </BoxWithvh >
             <BoxWithvh
@@ -46,7 +46,7 @@ function Resume() {
                     }}
                 >
                     <TypographyWithTheme color={currentTheme.colors.titleColor}>
-                        <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizes.h1Big }}>{t("Resume.Page2.Title1")}</h1>
+                        <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1 }}>{t("Resume.Page2.Title1")}</h1>
                     </TypographyWithTheme>
                 </BoxWithvh>
                 <BoxWithvh

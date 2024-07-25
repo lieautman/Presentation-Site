@@ -23,6 +23,13 @@ export const darkTheme = createTheme({
         h2: '3vmin',
         h3: '2vmin',
         p: '1vmin'
+    },
+    fontSizesPhone: {
+        h1Big: '8vmin',
+        h1: '5vmin',
+        h2: '4vmin',
+        h3: '3vmin',
+        p: '2vmin'
     }
 });
 
@@ -45,6 +52,13 @@ export const lightTheme = createTheme({
         h2: '3vmin',
         h3: '2vmin',
         p: '1vmin'
+    },
+    fontSizesPhone: {
+        h1Big: '8vmin',
+        h1: '5vmin',
+        h2: '4vmin',
+        h3: '3vmin',
+        p: '2vmin'
     }
 });
 
