@@ -2,6 +2,7 @@ import { createTheme } from '@mui/material/styles';
 import darkBackgroundHome from "../../Resources/Images/darkBackgroundHome.jpg"
 import lightBackgroundHome from "../../Resources/Images/lightBackgroundHome.jpg"
 import darkBackgroundResume from "../../Resources/Images/darkBackgroundResume.jpg"
+import lightBackgroundResume from "../../Resources/Images/lightBackgroundResume.jpg"
 import navBarDark from "../../Resources/Images/logoDark.png"
 import navBarLight from "../../Resources/Images/logoLight.png"
 
@@ -47,7 +48,7 @@ export const lightTheme = createTheme({
     images: {
         navBarThemeImage: navBarLight,
         homeFirstImage: lightBackgroundHome,
-        resumeFirstImage: darkBackgroundResume
+        resumeFirstImage: lightBackgroundResume
     },
     fontSizes: {
         h1Big: '5vmin',
