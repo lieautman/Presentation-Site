@@ -63,7 +63,7 @@ function Home() {
                         textAlign: "center"
                     }}
                 >
-                    <TypographyWithTheme color={currentTheme.colors.titleColor}>
+                    <TypographyWithTheme color={currentTheme.colors.textColor}>
                         <h3 style={{ fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3 }}>{t("Home.Page2.Paragraph1")}</h3>
                         <h3 style={{ fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3 }}>{t("Home.Page2.Paragraph2")}</h3>
                         <h3 style={{ fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3 }}>{t("Home.Page2.Paragraph3")}</h3>
