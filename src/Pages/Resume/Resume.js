@@ -28,7 +28,7 @@ function Resume() {
             <BoxWithvh
                 height={91}
                 sx={{
-                    backgroundImage: `url(${currentTheme.images.homeFirstImage})`,
+                    backgroundImage: `url(${currentTheme.images.resumeFirstImage})`,
                     backgroundSize: matches ? "100% 100%" : "150% 100%",
                     backgroundPosition: 'center',
                     display: 'flex',
