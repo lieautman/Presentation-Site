@@ -27,5 +27,14 @@
             "Paragraph3": "Sectiunile 'Contact' si 'Curriculum vitae' prezinta informatii si cai de contact.",
             "Paragraph4": "Aceste sectiuni, alaturi de un schimbator de tema si unul pentru limba se afla in bara de navigatie."
         }
+    },
+    "Resume": {
+        "Page1": {
+            "Title1": "Mai jos puteti descarca curriculum vitae-el meu!",
+            "Title2": "Limba acestula va fi cea a site-ului"
+        },
+        "Page2": {
+            "Title1": "Majoritatea detaliilor din acest site pot fi regasite aici"
+        }
     }
 }

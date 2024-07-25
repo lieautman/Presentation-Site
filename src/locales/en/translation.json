@@ -27,5 +27,14 @@
             "Paragraph3": "The 'Contact' and 'Resume' sections display professional information and ways to contact the author.",
             "Paragraph4": "These sections, as well as a theme changer and a language changer appear in a navigation bar."
         }
+    },
+    "Resume": {
+        "Page1": {
+            "Title1": "Down below you can download my resume!",
+            "Title2": "The language of the resume will be dependent on the site language"
+        },
+        "Page2": {
+            "Title1": "Most of the information on this site can also be found here"
+        }
     }
 }
