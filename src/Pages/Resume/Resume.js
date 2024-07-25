@@ -80,7 +80,7 @@ function Resume() {
                         <IconButton style={{ color: currentTheme.colors.textColor }}>
                             <AssignmentInd style={{ fontSize: currentTheme.fontSizesPhone.h1Big }} />
                         </IconButton>
-                        <TypographyWithTheme color={currentTheme.colors.titleColor}>
+                        <TypographyWithTheme color={currentTheme.colors.textColor}>
                             <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1 }}>{t("Resume.Page2.Paragraph1")}</h1>
                         </TypographyWithTheme>
                     </Box>
