@@ -16,8 +16,7 @@ function Resume() {
     const pdfUrl = i18n.language === "en" ? "CV_EN.pdf" : "CV_RO.pdf"
     const link = document.createElement("a")
     link.href = pdfUrl
-    link.download =
-      i18n.language === "en" ? "resume.pdf" : "curriculum-vitae.pdf"
+    link.download = i18n.language === "en" ? "resume.pdf" : "curriculum-vitae.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -36,36 +35,25 @@ function Resume() {
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
-        }}
-      >
+        }}>
         <TypographyWithTheme color={currentTheme.colors.titleColor}>
           <h1
             style={{
-              fontSize: matches
-                ? currentTheme.fontSizes.h1
-                : currentTheme.fontSizesPhone.h1,
-            }}
-          >
+              fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+            }}>
             {t("Resume.Page1.Title1")}
           </h1>
         </TypographyWithTheme>
         <TypographyWithTheme color={currentTheme.colors.titleColor}>
           <h2
             style={{
-              fontSize: matches
-                ? currentTheme.fontSizes.h2
-                : currentTheme.fontSizesPhone.h2,
-            }}
-          >
+              fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
+            }}>
             {t("Resume.Page1.Title2")}
           </h2>
         </TypographyWithTheme>
       </BoxWithvh>
-      <BoxWithvh
-        height={100}
-        className="scrollSnapSection"
-        backgroundColor={currentTheme.colors.primaryAccentsColor}
-      >
+      <BoxWithvh height={100} className="scrollSnapSection" backgroundColor={currentTheme.colors.primaryAccentsColor}>
         <BoxWithvh
           height={10}
           backgroundColor={currentTheme.colors.secondaryColor}
@@ -75,16 +63,12 @@ function Resume() {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-          }}
-        >
+          }}>
           <TypographyWithTheme color={currentTheme.colors.titleColor}>
             <h1
               style={{
-                fontSize: matches
-                  ? currentTheme.fontSizes.h1
-                  : currentTheme.fontSizesPhone.h1,
-              }}
-            >
+                fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+              }}>
               {t("Resume.Page2.Title1")}
             </h1>
           </TypographyWithTheme>
@@ -99,8 +83,7 @@ function Resume() {
             justifyContent: "center",
             marginTop: "25vh",
             textAlign: "center",
-          }}
-        >
+          }}>
           <Box onClick={onButtonClick}>
             <IconButton style={{ color: currentTheme.colors.textColor }}>
               <AssignmentInd
@@ -112,11 +95,8 @@ function Resume() {
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h1
                 style={{
-                  fontSize: matches
-                    ? currentTheme.fontSizes.h1
-                    : currentTheme.fontSizesPhone.h1,
-                }}
-              >
+                  fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+                }}>
                 {t("Resume.Page2.Paragraph1")}
               </h1>
             </TypographyWithTheme>

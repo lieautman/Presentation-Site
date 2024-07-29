@@ -56,27 +56,20 @@ function Contact() {
           justifyContent: "center",
           textAlign: "center",
           height: "91vh",
-        }}
-      >
+        }}>
         <TypographyWithTheme color={currentTheme.colors.titleColor}>
           <h1
             style={{
-              fontSize: matches
-                ? currentTheme.fontSizes.h1
-                : currentTheme.fontSizesPhone.h1,
-            }}
-          >
+              fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+            }}>
             {t("Contact.Page1.Title1")}
           </h1>
         </TypographyWithTheme>
         <TypographyWithTheme color={currentTheme.colors.titleColor}>
           <h2
             style={{
-              fontSize: matches
-                ? currentTheme.fontSizes.h2
-                : currentTheme.fontSizesPhone.h2,
-            }}
-          >
+              fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
+            }}>
             {t("Contact.Page1.Title2")}
           </h2>
         </TypographyWithTheme>
@@ -86,8 +79,7 @@ function Contact() {
         sx={{
           backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
           height: "100vh",
-        }}
-      >
+        }}>
         <Box
           sx={{
             display: "flex",
@@ -97,16 +89,12 @@ function Contact() {
             textAlign: "center",
             backgroundColor: `${currentTheme.colors.secondaryColor}`,
             height: "10vh",
-          }}
-        >
+          }}>
           <TypographyWithTheme color={currentTheme.colors.titleColor}>
             <h1
               style={{
-                fontSize: matches
-                  ? currentTheme.fontSizes.h1
-                  : currentTheme.fontSizesPhone.h1,
-              }}
-            >
+                fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+              }}>
               {t("Contact.Page2.Title1")}
             </h1>
           </TypographyWithTheme>
@@ -121,8 +109,7 @@ function Contact() {
             textAlign: "center",
             backgroundColor: `${currentTheme.colors.secondaryColor}`,
             height: "40vh",
-          }}
-        >
+          }}>
           <Input
             type="text"
             placeholder="Your name"

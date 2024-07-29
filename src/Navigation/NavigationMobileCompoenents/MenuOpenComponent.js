@@ -22,14 +22,9 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
           zIndex: "100",
           animation: "1s ease-in 0s 1 slideInFromTop",
           position: "absolute",
-        }}
-      >
+        }}>
         <GridItemAligned item xs={12}>
-          <IconButton
-            aria-label="delete"
-            style={{ color: currentTheme.colors.textColor }}
-            onClick={() => setMenuOpen(false)}
-          >
+          <IconButton aria-label="delete" style={{ color: currentTheme.colors.textColor }} onClick={() => setMenuOpen(false)}>
             <MenuOpen />
           </IconButton>
         </GridItemAligned>
@@ -38,14 +33,12 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => {
               setPageNo(1)
               setMenuOpen(false)
-            }}
-          >
+            }}>
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h3
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h3,
-                }}
-              >
+                }}>
                 {t("Nav.Pages.Home")}
               </h3>
             </TypographyWithTheme>
@@ -56,14 +49,12 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => {
               setPageNo(2)
               setMenuOpen(false)
-            }}
-          >
+            }}>
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h3
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h3,
-                }}
-              >
+                }}>
                 {t("Nav.Pages.About")}
               </h3>
             </TypographyWithTheme>
@@ -74,14 +65,12 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => {
               setPageNo(3)
               setMenuOpen(false)
-            }}
-          >
+            }}>
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h3
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h3,
-                }}
-              >
+                }}>
                 {t("Nav.Pages.Contact")}
               </h3>
             </TypographyWithTheme>
@@ -92,14 +81,12 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => {
               setPageNo(4)
               setMenuOpen(false)
-            }}
-          >
+            }}>
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h3
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h3,
-                }}
-              >
+                }}>
                 {t("Nav.Pages.Resume")}
               </h3>
             </TypographyWithTheme>

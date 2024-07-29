@@ -12,24 +12,14 @@ const ThemeChanger = () => {
   const { currentTheme, setCurrentTheme } = useContext(ThemeContext)
   const matches = useMediaQuery("(min-width:600px)")
   return (
-    <GridItemAligned
-      container
-      onClick={() =>
-        currentTheme === darkTheme
-          ? setCurrentTheme(lightTheme)
-          : setCurrentTheme(darkTheme)
-      }
-      style={{ cursor: "pointer" }}
-    >
+    <GridItemAligned container onClick={() => (currentTheme === darkTheme ? setCurrentTheme(lightTheme) : setCurrentTheme(darkTheme))} style={{ cursor: "pointer" }}>
       <Grid item xs={6} style={{ float: "right", textAlign: "right" }}>
         <img
           src={currentTheme.images.navBarThemeImage}
           alt="Logo"
           style={{
             width: "auto",
-            height: matches
-              ? currentTheme.fontSizes.h1Big
-              : currentTheme.fontSizesPhone.h1Big,
+            height: matches ? currentTheme.fontSizes.h1Big : currentTheme.fontSizesPhone.h1Big,
           }}
         />
       </Grid>
@@ -37,11 +27,8 @@ const ThemeChanger = () => {
         <TypographyWithTheme color={currentTheme.colors.textColor}>
           <h3
             style={{
-              fontSize: matches
-                ? currentTheme.fontSizes.h3
-                : currentTheme.fontSizesPhone.h3,
-            }}
-          >
+              fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+            }}>
             {t("Nav.ChangeTheme.label")}
           </h3>
         </TypographyWithTheme>

@@ -13,15 +13,10 @@ const ScrollbarWrapper = (props) => {
       width: ${props.display ? "8px" : "0px"};
     }
     &::-webkit-scrollbar-thumb {
-      background: linear-gradient(
-        90deg,
-        ${i18n.language === "en" ? "red, white, blue" : "red, yellow, blue"}
-      );
+      background: linear-gradient(90deg, ${i18n.language === "en" ? "red, white, blue" : "red, yellow, blue"});
     }
   `
-  return (
-    <ScrollbarWrapperStyled {...props}>{props.children}</ScrollbarWrapperStyled>
-  )
+  return <ScrollbarWrapperStyled {...props}>{props.children}</ScrollbarWrapperStyled>
 }
 
 export default ScrollbarWrapper

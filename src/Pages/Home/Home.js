@@ -23,36 +23,25 @@ function Home() {
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
-        }}
-      >
+        }}>
         <TypographyWithTheme color={currentTheme.colors.titleColor}>
           <h1
             style={{
-              fontSize: matches
-                ? currentTheme.fontSizes.h1
-                : currentTheme.fontSizesPhone.h1,
-            }}
-          >
+              fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+            }}>
             {t("Home.Page1.Title1")}
           </h1>
         </TypographyWithTheme>
         <TypographyWithTheme color={currentTheme.colors.titleColor}>
           <h2
             style={{
-              fontSize: matches
-                ? currentTheme.fontSizes.h2
-                : currentTheme.fontSizesPhone.h2,
-            }}
-          >
+              fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
+            }}>
             {t("Home.Page1.Title2")}
           </h2>
         </TypographyWithTheme>
       </BoxWithvh>
-      <BoxWithvh
-        height={100}
-        className="scrollSnapSection"
-        backgroundColor={currentTheme.colors.primaryAccentsColor}
-      >
+      <BoxWithvh height={100} className="scrollSnapSection" backgroundColor={currentTheme.colors.primaryAccentsColor}>
         <BoxWithvh
           height={10}
           backgroundColor={currentTheme.colors.secondaryColor}
@@ -62,16 +51,12 @@ function Home() {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-          }}
-        >
+          }}>
           <TypographyWithTheme color={currentTheme.colors.titleColor}>
             <h1
               style={{
-                fontSize: matches
-                  ? currentTheme.fontSizes.h1
-                  : currentTheme.fontSizesPhone.h1,
-              }}
-            >
+                fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+              }}>
               {t("Home.Page2.Title1")}
             </h1>
           </TypographyWithTheme>
@@ -86,43 +71,30 @@ function Home() {
             justifyContent: "center",
             marginTop: "25vh",
             textAlign: "center",
-          }}
-        >
+          }}>
           <TypographyWithTheme color={currentTheme.colors.textColor}>
             <h3
               style={{
-                fontSize: matches
-                  ? currentTheme.fontSizes.h3
-                  : currentTheme.fontSizesPhone.h3,
-              }}
-            >
+                fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+              }}>
               {t("Home.Page2.Paragraph1")}
             </h3>
             <h3
               style={{
-                fontSize: matches
-                  ? currentTheme.fontSizes.h3
-                  : currentTheme.fontSizesPhone.h3,
-              }}
-            >
+                fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+              }}>
               {t("Home.Page2.Paragraph2")}
             </h3>
             <h3
               style={{
-                fontSize: matches
-                  ? currentTheme.fontSizes.h3
-                  : currentTheme.fontSizesPhone.h3,
-              }}
-            >
+                fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+              }}>
               {t("Home.Page2.Paragraph3")}
             </h3>
             <h3
               style={{
-                fontSize: matches
-                  ? currentTheme.fontSizes.h3
-                  : currentTheme.fontSizesPhone.h3,
-              }}
-            >
+                fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+              }}>
               {t("Home.Page2.Paragraph4")}
             </h3>
           </TypographyWithTheme>

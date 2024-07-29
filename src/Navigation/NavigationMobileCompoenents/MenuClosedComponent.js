@@ -12,20 +12,12 @@ function MenuClosedComponent({ setMenuOpen }) {
 
   return (
     <>
-      <GridContainerWithThemeMainColor
-        container
-        className="scrollSnapSection"
-        style={{ height: "9vh" }}
-      >
+      <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{ height: "9vh" }}>
         <GridItemAligned item xs={5}>
           <ThemeChanger />
         </GridItemAligned>
         <GridItemAligned item xs={2}>
-          <IconButton
-            aria-label="delete"
-            style={{ color: currentTheme.colors.textColor }}
-            onClick={() => setMenuOpen(true)}
-          >
+          <IconButton aria-label="delete" style={{ color: currentTheme.colors.textColor }} onClick={() => setMenuOpen(true)}>
             <Menu />
           </IconButton>
         </GridItemAligned>

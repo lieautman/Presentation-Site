@@ -18,11 +18,8 @@ const LanguageChanger = () => {
         value={i18n.language}
         sx={{
           color: currentTheme.colors.textColor,
-          fontSize: matches
-            ? currentTheme.fontSizes.h3
-            : currentTheme.fontSizesPhone.h3,
-        }}
-      >
+          fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+        }}>
         <MenuItem value={"en"} onClick={() => changeLang("en")}>
           {t("Nav.ChangeLanguage.English")}
         </MenuItem>

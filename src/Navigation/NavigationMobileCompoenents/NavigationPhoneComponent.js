@@ -6,11 +6,7 @@ function NavigationPhoneComponent({ setPageNo }) {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <>
-      {menuOpen ? (
-        <MenuOpenComponent setPageNo={setPageNo} setMenuOpen={setMenuOpen} />
-      ) : (
-        <></>
-      )}
+      {menuOpen ? <MenuOpenComponent setPageNo={setPageNo} setMenuOpen={setMenuOpen} /> : <></>}
       <MenuClosedComponent setMenuOpen={setMenuOpen} />
     </>
   )
