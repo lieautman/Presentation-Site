@@ -1,16 +1,16 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../Resources/Theme/ThemeContext";
-import { darkTheme, lightTheme } from "../../Resources/Theme/Theme";
-import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
-import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned";
-import { Grid } from "@mui/material";
-import { useTranslation } from "react-i18next";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { useContext } from "react"
+import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import { darkTheme, lightTheme } from "../../Resources/Theme/Theme"
+import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
+import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
+import { Grid } from "@mui/material"
+import { useTranslation } from "react-i18next"
+import useMediaQuery from "@mui/material/useMediaQuery"
 
 const ThemeChanger = () => {
-  const { t } = useTranslation();
-  const { currentTheme, setCurrentTheme } = useContext(ThemeContext);
-  const matches = useMediaQuery("(min-width:600px)");
+  const { t } = useTranslation()
+  const { currentTheme, setCurrentTheme } = useContext(ThemeContext)
+  const matches = useMediaQuery("(min-width:600px)")
   return (
     <GridItemAligned
       container
@@ -47,7 +47,7 @@ const ThemeChanger = () => {
         </TypographyWithTheme>
       </Grid>
     </GridItemAligned>
-  );
-};
+  )
+}
 
-export default ThemeChanger;
+export default ThemeChanger

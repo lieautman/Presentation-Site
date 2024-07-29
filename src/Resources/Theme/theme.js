@@ -1,10 +1,10 @@
-import { createTheme } from "@mui/material/styles";
-import darkBackgroundHome from "../../Resources/Images/darkBackgroundHome.jpg";
-import lightBackgroundHome from "../../Resources/Images/lightBackgroundHome.jpg";
-import darkBackgroundResume from "../../Resources/Images/darkBackgroundResume.jpg";
-import lightBackgroundResume from "../../Resources/Images/lightBackgroundResume.jpg";
-import navBarDark from "../../Resources/Images/logoDark.png";
-import navBarLight from "../../Resources/Images/logoLight.png";
+import { createTheme } from "@mui/material/styles"
+import darkBackgroundHome from "../../Resources/Images/darkBackgroundHome.jpg"
+import lightBackgroundHome from "../../Resources/Images/lightBackgroundHome.jpg"
+import darkBackgroundResume from "../../Resources/Images/darkBackgroundResume.jpg"
+import lightBackgroundResume from "../../Resources/Images/lightBackgroundResume.jpg"
+import navBarDark from "../../Resources/Images/logoDark.png"
+import navBarLight from "../../Resources/Images/logoLight.png"
 
 export const darkTheme = createTheme({
   colors: {
@@ -34,7 +34,7 @@ export const darkTheme = createTheme({
     h3: "3vmin",
     p: "2vmin",
   },
-});
+})
 
 export const lightTheme = createTheme({
   colors: {
@@ -64,4 +64,4 @@ export const lightTheme = createTheme({
     h3: "3vmin",
     p: "2vmin",
   },
-});
+})

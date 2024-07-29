@@ -1,16 +1,16 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../Resources/Theme/ThemeContext";
-import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor";
-import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned";
-import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
-import { Button } from "@mui/material";
-import ThemeChanger from "../ThemeChanger/ThemeChanger";
-import LanguageChanger from "../LanguageChanger/LanguageChanger";
-import { useTranslation } from "react-i18next";
+import { useContext } from "react"
+import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
+import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
+import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
+import { Button } from "@mui/material"
+import ThemeChanger from "../ThemeChanger/ThemeChanger"
+import LanguageChanger from "../LanguageChanger/LanguageChanger"
+import { useTranslation } from "react-i18next"
 
 function NavigationDesktopComponent(porps) {
-  const { t } = useTranslation();
-  const { currentTheme } = useContext(ThemeContext);
+  const { t } = useTranslation()
+  const { currentTheme } = useContext(ThemeContext)
   return (
     <GridContainerWithThemeMainColor
       container
@@ -60,7 +60,7 @@ function NavigationDesktopComponent(porps) {
         <LanguageChanger />
       </GridItemAligned>
     </GridContainerWithThemeMainColor>
-  );
+  )
 }
 
-export default NavigationDesktopComponent;
+export default NavigationDesktopComponent

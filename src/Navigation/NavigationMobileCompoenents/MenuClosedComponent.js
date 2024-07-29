@@ -1,14 +1,14 @@
-import ThemeChanger from "../ThemeChanger/ThemeChanger";
-import LanguageChanger from "../LanguageChanger/LanguageChanger";
-import { useContext } from "react";
-import { ThemeContext } from "../../Resources/Theme/ThemeContext";
-import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor";
-import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned";
-import { IconButton } from "@mui/material";
-import { Menu } from "@mui/icons-material";
+import ThemeChanger from "../ThemeChanger/ThemeChanger"
+import LanguageChanger from "../LanguageChanger/LanguageChanger"
+import { useContext } from "react"
+import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
+import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
+import { IconButton } from "@mui/material"
+import { Menu } from "@mui/icons-material"
 
 function MenuClosedComponent({ setMenuOpen }) {
-  const { currentTheme } = useContext(ThemeContext);
+  const { currentTheme } = useContext(ThemeContext)
 
   return (
     <>
@@ -34,7 +34,7 @@ function MenuClosedComponent({ setMenuOpen }) {
         </GridItemAligned>
       </GridContainerWithThemeMainColor>
     </>
-  );
+  )
 }
 
-export default MenuClosedComponent;
+export default MenuClosedComponent

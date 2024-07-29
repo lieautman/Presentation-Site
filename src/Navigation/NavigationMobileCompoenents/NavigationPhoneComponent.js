@@ -1,9 +1,9 @@
-import { useState } from "react";
-import MenuClosedComponent from "./MenuClosedComponent";
-import MenuOpenComponent from "./MenuOpenComponent";
+import { useState } from "react"
+import MenuClosedComponent from "./MenuClosedComponent"
+import MenuOpenComponent from "./MenuOpenComponent"
 
 function NavigationPhoneComponent({ setPageNo }) {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <>
       {menuOpen ? (
@@ -13,7 +13,7 @@ function NavigationPhoneComponent({ setPageNo }) {
       )}
       <MenuClosedComponent setMenuOpen={setMenuOpen} />
     </>
-  );
+  )
 }
 
-export default NavigationPhoneComponent;
+export default NavigationPhoneComponent

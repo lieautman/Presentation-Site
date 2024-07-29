@@ -1,22 +1,22 @@
-import Home from "./Home/Home";
-import About from "./About/About";
-import Contact from "./Contact/Contact";
-import Resume from "./Resume/Resume";
-import Error from "./Error";
+import Home from "./Home/Home"
+import About from "./About/About"
+import Contact from "./Contact/Contact"
+import Resume from "./Resume/Resume"
+import Error from "./Error"
 
 function Pages(props) {
   switch (props.pageNo) {
     case 1:
-      return <Home />;
+      return <Home />
     case 2:
-      return <About />;
+      return <About />
     case 3:
-      return <Contact />;
+      return <Contact />
     case 4:
-      return <Resume />;
+      return <Resume />
     default:
-      return <Error />;
+      return <Error />
   }
 }
 
-export default Pages;
+export default Pages

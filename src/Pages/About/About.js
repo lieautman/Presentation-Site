@@ -1,4 +1,4 @@
-import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
+import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 
 function About() {
   return (
@@ -34,7 +34,7 @@ function About() {
         am dorit o pozitie careia nu ma pot dedica.
       </TypographyWithTheme>
     </>
-  );
+  )
 }
 
-export default About;
+export default About

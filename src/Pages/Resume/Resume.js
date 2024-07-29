@@ -1,27 +1,27 @@
-import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh";
-import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
-import { useContext } from "react";
-import { ThemeContext } from "../../Resources/Theme/ThemeContext";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTranslation } from "react-i18next";
-import { Box, IconButton } from "@mui/material";
-import { AssignmentInd } from "@mui/icons-material";
+import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
+import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
+import { useContext } from "react"
+import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import useMediaQuery from "@mui/material/useMediaQuery"
+import { useTranslation } from "react-i18next"
+import { Box, IconButton } from "@mui/material"
+import { AssignmentInd } from "@mui/icons-material"
 
 function Resume() {
-  const { t, i18n } = useTranslation();
-  const { currentTheme } = useContext(ThemeContext);
-  const matches = useMediaQuery("(min-width:600px)");
+  const { t, i18n } = useTranslation()
+  const { currentTheme } = useContext(ThemeContext)
+  const matches = useMediaQuery("(min-width:600px)")
 
   const onButtonClick = () => {
-    const pdfUrl = i18n.language === "en" ? "CV_EN.pdf" : "CV_RO.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
+    const pdfUrl = i18n.language === "en" ? "CV_EN.pdf" : "CV_RO.pdf"
+    const link = document.createElement("a")
+    link.href = pdfUrl
     link.download =
-      i18n.language === "en" ? "resume.pdf" : "curriculum-vitae.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+      i18n.language === "en" ? "resume.pdf" : "curriculum-vitae.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <>
@@ -104,7 +104,9 @@ function Resume() {
           <Box onClick={onButtonClick}>
             <IconButton style={{ color: currentTheme.colors.textColor }}>
               <AssignmentInd
-                style={{ fontSize: currentTheme.fontSizesPhone.h1Big }}
+                style={{
+                  fontSize: currentTheme.fontSizesPhone.h1Big,
+                }}
               />
             </IconButton>
             <TypographyWithTheme color={currentTheme.colors.textColor}>
@@ -122,7 +124,7 @@ function Resume() {
         </BoxWithvh>
       </BoxWithvh>
     </>
-  );
+  )
 }
 
-export default Resume;
+export default Resume

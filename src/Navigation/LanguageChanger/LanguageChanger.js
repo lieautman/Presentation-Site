@@ -1,16 +1,16 @@
-import { useTranslation } from "react-i18next";
-import { Select, MenuItem } from "@mui/material";
-import { useContext } from "react";
-import { ThemeContext } from "../../Resources/Theme/ThemeContext";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTranslation } from "react-i18next"
+import { Select, MenuItem } from "@mui/material"
+import { useContext } from "react"
+import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import useMediaQuery from "@mui/material/useMediaQuery"
 
 const LanguageChanger = () => {
-  const { currentTheme } = useContext(ThemeContext);
-  const matches = useMediaQuery("(min-width:600px)");
-  const { t, i18n } = useTranslation();
+  const { currentTheme } = useContext(ThemeContext)
+  const matches = useMediaQuery("(min-width:600px)")
+  const { t, i18n } = useTranslation()
   const changeLang = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+    i18n.changeLanguage(lng)
+  }
 
   return (
     <>
@@ -31,7 +31,7 @@ const LanguageChanger = () => {
         </MenuItem>
       </Select>
     </>
-  );
-};
+  )
+}
 
-export default LanguageChanger;
+export default LanguageChanger

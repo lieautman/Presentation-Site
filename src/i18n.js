@@ -1,8 +1,8 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import i18n from "i18next"
+import { initReactI18next } from "react-i18next"
 
-import translationEN from "./locales/en/translation.json";
-import translationRO from "./locales/ro/translation.json";
+import translationEN from "./locales/en/translation.json"
+import translationRO from "./locales/ro/translation.json"
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -19,6 +19,6 @@ i18n.use(initReactI18next).init({
   interpolation: {
     escapeValue: false, // React already does escaping
   },
-});
+})
 
-export default i18n;
+export default i18n

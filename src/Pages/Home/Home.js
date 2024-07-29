@@ -1,14 +1,14 @@
-import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh";
-import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
-import { useContext } from "react";
-import { ThemeContext } from "../../Resources/Theme/ThemeContext";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTranslation } from "react-i18next";
+import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
+import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
+import { useContext } from "react"
+import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import useMediaQuery from "@mui/material/useMediaQuery"
+import { useTranslation } from "react-i18next"
 
 function Home() {
-  const { t } = useTranslation();
-  const { currentTheme } = useContext(ThemeContext);
-  const matches = useMediaQuery("(min-width:600px)");
+  const { t } = useTranslation()
+  const { currentTheme } = useContext(ThemeContext)
+  const matches = useMediaQuery("(min-width:600px)")
 
   return (
     <>
@@ -129,7 +129,7 @@ function Home() {
         </BoxWithvh>
       </BoxWithvh>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home
