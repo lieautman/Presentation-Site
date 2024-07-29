@@ -1,41 +1,41 @@
 {
-    "Nav": {
-        "ChangeLanguage": {
-            "label": "Alege limba",
-            "English": "Engleza",
-            "Romanian": "Romana"
-        },
-        "ChangeTheme": {
-            "label": "Schimba tema"
-        },
-        "Pages": {
-            "Home": "Acasa",
-            "About": "Despre",
-            "Contact": "Contact",
-            "Resume": "Curriculum vitae"
-        }
+  "Nav": {
+    "ChangeLanguage": {
+      "label": "Alege limba",
+      "English": "Engleza",
+      "Romanian": "Romana"
     },
-    "Home": {
-        "Page1": {
-            "Title1": "Salutare lume si bine ati venit in website-ul meu!",
-            "Title2": "Citeste scopul site-ului mai jos!"
-        },
-        "Page2": {
-            "Title1": "Read.me pentru a documenta tot",
-            "Paragraph1": "Acest site doreste sa fie cartea mea de vizita pentru cat mai multe din interactiunile parcursului meu academic si profesional.",
-            "Paragraph2": "Prezinta reusitele si calea mea academica si profesionala in sectiunea 'Despre'.",
-            "Paragraph3": "Sectiunile 'Contact' si 'Curriculum vitae' prezinta informatii si cai de contact.",
-            "Paragraph4": "Aceste sectiuni, alaturi de un schimbator de tema si unul pentru limba se afla in bara de navigatie."
-        }
+    "ChangeTheme": {
+      "label": "Schimba tema"
     },
-    "Resume": {
-        "Page1": {
-            "Title1": "Mai jos puteti descarca curriculum vitae-el meu!",
-            "Title2": "Limba acestula va fi cea a site-ului"
-        },
-        "Page2": {
-            "Title1": "Majoritatea detaliilor din acest site pot fi regasite aici",
-            "Paragraph1": "curriculum-vitae.pdf"
-        }
+    "Pages": {
+      "Home": "Acasa",
+      "About": "Despre",
+      "Contact": "Contact",
+      "Resume": "Curriculum vitae"
     }
+  },
+  "Home": {
+    "Page1": {
+      "Title1": "Salutare lume si bine ati venit in website-ul meu!",
+      "Title2": "Citeste scopul site-ului mai jos!"
+    },
+    "Page2": {
+      "Title1": "Read.me pentru a documenta tot",
+      "Paragraph1": "Acest site doreste sa fie cartea mea de vizita pentru cat mai multe din interactiunile parcursului meu academic si profesional.",
+      "Paragraph2": "Prezinta reusitele si calea mea academica si profesionala in sectiunea 'Despre'.",
+      "Paragraph3": "Sectiunile 'Contact' si 'Curriculum vitae' prezinta informatii si cai de contact.",
+      "Paragraph4": "Aceste sectiuni, alaturi de un schimbator de tema si unul pentru limba se afla in bara de navigatie."
+    }
+  },
+  "Resume": {
+    "Page1": {
+      "Title1": "Mai jos puteti descarca curriculum vitae-el meu!",
+      "Title2": "Limba acestula va fi cea a site-ului"
+    },
+    "Page2": {
+      "Title1": "Majoritatea detaliilor din acest site pot fi regasite aici",
+      "Paragraph1": "curriculum-vitae.pdf"
+    }
+  }
 }

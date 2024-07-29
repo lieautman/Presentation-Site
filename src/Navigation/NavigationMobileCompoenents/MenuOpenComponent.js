@@ -6,7 +6,7 @@ import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWith
 import { useTranslation } from "react-i18next";
 import { MenuOpen } from "@mui/icons-material";
 import { IconButton, Button } from "@mui/material";
-import "../../Resources/Css/NavBarTransition.css"
+import "../../Resources/Css/NavBarTransition.css";
 
 function MenuOpenComponent({ setPageNo, setMenuOpen }) {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
           height: "100vh",
           zIndex: "100",
           animation: "1s ease-in 0s 1 slideInFromTop",
-          position: "absolute"
+          position: "absolute",
         }}
       >
         <GridItemAligned item xs={12}>

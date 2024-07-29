@@ -21,11 +21,7 @@ const ThemeChanger = () => {
       }
       style={{ cursor: "pointer" }}
     >
-      <Grid
-        item
-        xs={6}
-        style={{ float: "right", textAlign: "right" }}
-      >
+      <Grid item xs={6} style={{ float: "right", textAlign: "right" }}>
         <img
           src={currentTheme.images.navBarThemeImage}
           alt="Logo"

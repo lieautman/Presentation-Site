@@ -1,14 +1,14 @@
 body {
-    padding: 0;
-    margin: 0;
-    background-color: black;
+  padding: 0;
+  margin: 0;
+  background-color: black;
 }
 
 html::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 .scrollSnapSection {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
