@@ -8,7 +8,11 @@ function NavigationContainer() {
   const { setPageNo } = useContext(PageContext)
   const matches = useMediaQuery("(min-width:600px)")
 
-  return matches ? <NavigationDesktopComponent setPageNo={setPageNo} /> : <NavigationPhoneComponent setPageNo={setPageNo} />
+  return matches ? (
+    <NavigationDesktopComponent setPageNo={setPageNo} />
+  ) : (
+    <NavigationPhoneComponent setPageNo={setPageNo} />
+  )
 }
 
 export default NavigationContainer

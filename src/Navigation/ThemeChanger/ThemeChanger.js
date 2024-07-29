@@ -12,7 +12,10 @@ const ThemeChanger = () => {
   const { currentTheme, setCurrentTheme } = useContext(ThemeContext)
   const matches = useMediaQuery("(min-width:600px)")
   return (
-    <GridItemAligned container onClick={() => (currentTheme === darkTheme ? setCurrentTheme(lightTheme) : setCurrentTheme(darkTheme))} style={{ cursor: "pointer" }}>
+    <GridItemAligned
+      container
+      onClick={() => (currentTheme === darkTheme ? setCurrentTheme(lightTheme) : setCurrentTheme(darkTheme))}
+      style={{ cursor: "pointer" }}>
       <Grid item xs={6} style={{ float: "right", textAlign: "right" }}>
         <img
           src={currentTheme.images.navBarThemeImage}

@@ -24,7 +24,10 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
           position: "absolute",
         }}>
         <GridItemAligned item xs={12}>
-          <IconButton aria-label="delete" style={{ color: currentTheme.colors.textColor }} onClick={() => setMenuOpen(false)}>
+          <IconButton
+            aria-label="delete"
+            style={{ color: currentTheme.colors.textColor }}
+            onClick={() => setMenuOpen(false)}>
             <MenuOpen />
           </IconButton>
         </GridItemAligned>
