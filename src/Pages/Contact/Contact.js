@@ -1,11 +1,10 @@
-import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext, useState } from "react"
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import emailjs from "@emailjs/browser"
-import { Input } from "@mui/material"
+import { Button, Input } from "@mui/material"
 import Box from "@mui/material/Box"
 
 function Contact() {
@@ -59,31 +58,6 @@ function Contact() {
           height: "91vh",
         }}
       >
-        <Input
-          type="text"
-          placeholder="Your name"
-          value={name}
-          onChange={(e) => {
-            setName(e.target.value)
-          }}
-        />
-        <Input
-          type="text"
-          placeholder="Your email"
-          onChange={(e) => {
-            setEmail(e.target.value)
-          }}
-        />
-        <Input
-          type="text"
-          placeholder="Your message"
-          onChange={(e) => {
-            setMessage(e.target.value)
-          }}
-        />
-        <button type="submit" onClick={handleSubmit}>
-          Send email
-        </button>
         <TypographyWithTheme color={currentTheme.colors.titleColor}>
           <h1
             style={{
@@ -107,20 +81,22 @@ function Contact() {
           </h2>
         </TypographyWithTheme>
       </Box>
-      <BoxWithvh
-        height={100}
+      <Box
         className="scrollSnapSection"
-        backgroundColor={currentTheme.colors.primaryAccentsColor}
+        sx={{
+          backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
+          height: "100vh",
+        }}
       >
-        <BoxWithvh
-          height={10}
-          backgroundColor={currentTheme.colors.secondaryColor}
+        <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
+            backgroundColor: `${currentTheme.colors.secondaryColor}`,
+            height: "10vh",
           }}
         >
           <TypographyWithTheme color={currentTheme.colors.titleColor}>
@@ -134,10 +110,8 @@ function Contact() {
               {t("Contact.Page2.Title1")}
             </h1>
           </TypographyWithTheme>
-        </BoxWithvh>
-        <BoxWithvh
-          height={40}
-          backgroundColor={currentTheme.colors.secondaryColor}
+        </Box>
+        <Box
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -145,9 +119,37 @@ function Contact() {
             justifyContent: "center",
             marginTop: "25vh",
             textAlign: "center",
+            backgroundColor: `${currentTheme.colors.secondaryColor}`,
+            height: "40vh",
           }}
-        ></BoxWithvh>
-      </BoxWithvh>
+        >
+          <Input
+            type="text"
+            placeholder="Your name"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value)
+            }}
+          />
+          <Input
+            type="text"
+            placeholder="Your email"
+            onChange={(e) => {
+              setEmail(e.target.value)
+            }}
+          />
+          <Input
+            type="text"
+            placeholder="Your message"
+            onChange={(e) => {
+              setMessage(e.target.value)
+            }}
+          />
+          <Button type="submit" onClick={handleSubmit}>
+            Send email
+          </Button>
+        </Box>
+      </Box>
     </>
   )
 }
