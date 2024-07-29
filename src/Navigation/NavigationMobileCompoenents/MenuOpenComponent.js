@@ -20,7 +20,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         style={{
           height: "100vh",
           zIndex: "100",
-          animation: "1s ease-in-out 0s 1 slideInFromLeft",
+          animation: "1s ease-in 0s 1 slideInFromTop",
           position: "absolute"
         }}
       >
