@@ -114,6 +114,7 @@ function Contact() {
             type="text"
             placeholder="Your name"
             value={name}
+            sx={{ margin: "10px", width: "20vw", color: `${currentTheme.colors.textColor}` }}
             onChange={(e) => {
               setName(e.target.value)
             }}
@@ -121,6 +122,7 @@ function Contact() {
           <Input
             type="text"
             placeholder="Your email"
+            sx={{ margin: "10px", width: "20vw", color: `${currentTheme.colors.textColor}` }}
             onChange={(e) => {
               setEmail(e.target.value)
             }}
@@ -128,11 +130,18 @@ function Contact() {
           <Input
             type="text"
             placeholder="Your message"
+            multiline
+            rows={5}
+            variant="standard"
+            sx={{ margin: "10px", width: "20vw", color: `${currentTheme.colors.textColor}` }}
             onChange={(e) => {
               setMessage(e.target.value)
             }}
           />
-          <Button type="submit" onClick={handleSubmit}>
+          <Button
+            type="submit"
+            onClick={handleSubmit}
+            sx={{ margin: "10px", color: `${currentTheme.colors.textColor}` }}>
             Send email
           </Button>
         </Box>
