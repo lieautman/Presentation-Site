@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { ThemeContext } from "../Resources/Theme/ThemeContext"
-import GridContainerWithThemeMainColor from "../Resources/StyledComponents/GridContainerWithThemeMainColor";
-import GridItemAligned from "../Resources/StyledComponents/GridItemAligned";
-import TypographyWithTheme from "../Resources/StyledComponents/TypographyWithTheme";
+import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor";
+import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned";
+import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme";
 import { Button } from "@mui/material";
-import ThemeChanger from "./ThemeChanger/ThemeChanger";
-import LanguageChanger from "./LanguageChanger/LanguageChanger";
+import ThemeChanger from "../ThemeChanger/ThemeChanger";
+import LanguageChanger from "../LanguageChanger/LanguageChanger";
 import { useTranslation } from 'react-i18next';
 
 function NavigationDesktopComponent(porps) {
