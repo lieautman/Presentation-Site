@@ -11,7 +11,7 @@ function NavigationPhoneComponent({ setPageNo }) {
       ) : (
         <></>
       )}
-      <MenuClosedComponent setMenuOpen={setMenuOpen} />;
+      <MenuClosedComponent setMenuOpen={setMenuOpen} />
     </>
   );
 }

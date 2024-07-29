@@ -21,7 +21,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
           height: "100vh",
           zIndex: "100",
           animation: "1s ease-in-out 0s 1 slideInFromLeft",
-          
+          position: "absolute"
         }}
       >
         <GridItemAligned item xs={12}>
