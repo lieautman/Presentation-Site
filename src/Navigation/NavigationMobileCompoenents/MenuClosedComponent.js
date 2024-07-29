@@ -4,12 +4,10 @@ import { useContext } from "react";
 import { ThemeContext } from "../../Resources/Theme/ThemeContext";
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor";
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned";
-import { useTranslation } from "react-i18next";
 import { IconButton } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 
 function MenuClosedComponent({ setMenuOpen }) {
-  const { t } = useTranslation();
   const { currentTheme } = useContext(ThemeContext);
 
   return (
