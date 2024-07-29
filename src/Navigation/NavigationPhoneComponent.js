@@ -7,7 +7,7 @@ import ThemeChanger from "./ThemeChanger/ThemeChanger";
 import LanguageChanger from "./LanguageChanger/LanguageChanger";
 import { useTranslation } from 'react-i18next';
 import { IconButton, Button } from "@mui/material";
-import { Menu } from '@mui/icons-material';
+import { Menu, MenuOpen } from '@mui/icons-material';
 
 function NavigationPhoneComponent({setPageNo, menuOpen, setMenuOpen}) {
     const { t } = useTranslation();
@@ -18,7 +18,7 @@ function NavigationPhoneComponent({setPageNo, menuOpen, setMenuOpen}) {
                 <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{ height: "100vh", zIndex: "100" }}>
                     <GridItemAligned item xs={12}>
                         <IconButton aria-label="delete" style={{ color: currentTheme.colors.textColor }} onClick={() => setMenuOpen(false)}>
-                            <Menu />
+                            <MenuOpen />
                         </IconButton>
                     </GridItemAligned>
                     <GridItemAligned item xs={12}><Button onClick={() => {setPageNo(1); setMenuOpen(false)}}><TypographyWithTheme color={currentTheme.colors.textColor}><h3 style={{ fontSize: currentTheme.fontSizesPhone.h3 }}>{t("Nav.Pages.Home")}</h3></TypographyWithTheme></Button></GridItemAligned>

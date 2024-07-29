@@ -5,7 +5,8 @@ import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTranslation } from 'react-i18next';
 import emailjs from "@emailjs/browser";
-
+import { Input } from "@mui/material"
+import Box from '@mui/material/Box';
 
 function Contact() {
     const { t } = useTranslation();
@@ -16,19 +17,19 @@ function Contact() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        to_name: "Cristi",
+        message: message
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
         const ServiceId = "service_qa9ig88";
         const TemplateId = "template_gkk4c6b";
         const PublicKey = "IuBo1lXrKMjYBbSKG";
-
-        const templateParams = {
-            from_name: name,
-            from_email: email,
-            to_name: "Cristi",
-            message: message
-        };
 
         emailjs.send(ServiceId, TemplateId, templateParams, PublicKey).then((response) => {
             console.log("Email sent succesfully!", response);
@@ -42,25 +43,29 @@ function Contact() {
 
     return (
         <>
-            <BoxWithvh
-                height={91}
-                sx={{
-                    backgroundImage: `url(${currentTheme.images.resumeFirstImage})`,
-                    backgroundSize: matches ? "100% 100%" : "150% 100%",
-                    backgroundPosition: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textAlign: "center"
-                }}>
+
+            <Box sx={{
+                backgroundImage: `url(${currentTheme.images.resumeFirstImage})`,
+                backgroundSize: matches ? "100% 100%" : "150% 100%",
+                backgroundPosition: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                textAlign: "center",
+                height: "91vh"
+            }}>
+                <Input type="text" placeholder="Your name" value={name} onChange={(e) => { setName(e.target.value) }} />
+                <Input type="text" placeholder="Your email" onChange={(e) => { setEmail(e.target.value) }} />
+                <Input type="text" placeholder="Your message" onChange={(e) => { setMessage(e.target.value) }} />
+                <button type="submit" onClick={handleSubmit}>Send email</button>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
                     <h1 style={{ fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1 }}>{t("Contact.Page1.Title1")}</h1>
                 </TypographyWithTheme>
                 <TypographyWithTheme color={currentTheme.colors.titleColor}>
                     <h2 style={{ fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2 }}>{t("Contact.Page1.Title2")}</h2>
                 </TypographyWithTheme>
-            </BoxWithvh >
+            </Box >
             <BoxWithvh
                 height={100}
                 className="scrollSnapSection"
@@ -93,12 +98,7 @@ function Contact() {
                         textAlign: "center"
                     }}
                 >
-                    <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} />
-                        <input type="text" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        <textarea cols="30" rows="30" value={message} onChange={(e) => setMessage(e.target.value)} />
-                        <button type="submit">Send email</button>
-                    </form>
+
                 </BoxWithvh>
             </BoxWithvh>
         </>
