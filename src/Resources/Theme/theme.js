@@ -32,7 +32,7 @@ export const darkTheme = createTheme({
   },
   fontSizesPhone: {
     h1Big: "8vmin",
-    h1: "5vmin",
+    h1: "6vmin",
     h2: "4vmin",
     h3: "3vmin",
     p: "2vmin",
@@ -63,7 +63,7 @@ export const lightTheme = createTheme({
   },
   fontSizesPhone: {
     h1Big: "8vmin",
-    h1: "5vmin",
+    h1: "6vmin",
     h2: "4vmin",
     h3: "3vmin",
     p: "2vmin",
