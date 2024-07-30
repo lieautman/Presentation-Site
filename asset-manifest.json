@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/Presentation-Site/static/css/main.a6122df2.css",
-    "main.js": "/Presentation-Site/static/js/main.d16b32fa.js",
+    "main.css": "/Presentation-Site/static/css/main.13e28769.css",
+    "main.js": "/Presentation-Site/static/js/main.31dd23c5.js",
     "static/media/darkBackgroundHome.jpg": "/Presentation-Site/static/media/darkBackgroundHome.cff49f6333c32311ed0a.jpg",
     "static/media/lightBackgroundResume.jpg": "/Presentation-Site/static/media/lightBackgroundResume.863bcdf26ab765ef5f82.jpg",
     "static/media/lightBackgroundHome.jpg": "/Presentation-Site/static/media/lightBackgroundHome.63dae0c106a1e8dcdf11.jpg",
     "static/media/darkBackgroundResume.jpg": "/Presentation-Site/static/media/darkBackgroundResume.0f07e7861feb8db0d158.jpg",
+    "static/media/lightBackgroundContact.jpg": "/Presentation-Site/static/media/lightBackgroundContact.d9c3f1635e273896a5b0.jpg",
+    "static/media/darkBackgroundContact.jpg": "/Presentation-Site/static/media/darkBackgroundContact.1476788603f49882facf.jpg",
     "static/media/logoLight.png": "/Presentation-Site/static/media/logoLight.179027cc66c483ab6e91.png",
     "static/media/logoDark.png": "/Presentation-Site/static/media/logoDark.a2093a031bb6e2e6d6d8.png",
     "index.html": "/Presentation-Site/index.html",
-    "main.a6122df2.css.map": "/Presentation-Site/static/css/main.a6122df2.css.map",
-    "main.d16b32fa.js.map": "/Presentation-Site/static/js/main.d16b32fa.js.map"
+    "main.13e28769.css.map": "/Presentation-Site/static/css/main.13e28769.css.map",
+    "main.31dd23c5.js.map": "/Presentation-Site/static/js/main.31dd23c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6122df2.css",
-    "static/js/main.d16b32fa.js"
+    "static/css/main.13e28769.css",
+    "static/js/main.31dd23c5.js"
   ]
 }
