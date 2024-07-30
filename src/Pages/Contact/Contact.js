@@ -106,7 +106,7 @@ function Contact() {
             type="text"
             placeholder="Your name"
             value={name}
-            sx={{ margin: "10px", width: "20vw", color: `${currentTheme.colors.textColor}` }}
+            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textColor}` }}
             onChange={(e) => {
               setName(e.target.value)
             }}
@@ -114,7 +114,7 @@ function Contact() {
           <Input
             type="text"
             placeholder="Your email"
-            sx={{ margin: "10px", width: "20vw", color: `${currentTheme.colors.textColor}` }}
+            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textColor}` }}
             onChange={(e) => {
               setEmail(e.target.value)
             }}
@@ -125,7 +125,7 @@ function Contact() {
             multiline
             rows={5}
             variant="standard"
-            sx={{ margin: "10px", width: "20vw", color: `${currentTheme.colors.textColor}` }}
+            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textColor}` }}
             onChange={(e) => {
               setMessage(e.target.value)
             }}
