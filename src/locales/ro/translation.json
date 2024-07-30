@@ -28,6 +28,14 @@
       "Paragraph4": "Aceste sectiuni, alaturi de un schimbator de tema si unul pentru limba se afla in bara de navigatie."
     }
   },
+  "Contact": {
+    "Page1": {
+      "Title1": "Contacteaza-ma aici!"
+    },
+    "Page2": {
+      "Title1": "Mai jos poti imi poti trimite un email direct!"
+    }
+  },
   "Resume": {
     "Page1": {
       "Title1": "Mai jos puteti descarca curriculum vitae-el meu!",

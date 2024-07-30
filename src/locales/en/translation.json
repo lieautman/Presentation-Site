@@ -28,6 +28,14 @@
       "Paragraph4": "These sections, as well as a theme changer and a language changer appear in a navigation bar."
     }
   },
+  "Contact": {
+    "Page1": {
+      "Title1": "Contact me here!"
+    },
+    "Page2": {
+      "Title1": "Below you can email me directly!"
+    }
+  },
   "Resume": {
     "Page1": {
       "Title1": "Down below you can download my resume!",
