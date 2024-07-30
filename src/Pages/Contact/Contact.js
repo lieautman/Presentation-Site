@@ -47,7 +47,7 @@ function Contact() {
     <>
       <Box
         sx={{
-          backgroundImage: `url(${currentTheme.images.resumeFirstImage})`,
+          backgroundImage: `url(${currentTheme.images.contactFirstImage})`,
           backgroundSize: matches ? "100% 100%" : "150% 100%",
           backgroundPosition: "center",
           display: "flex",
