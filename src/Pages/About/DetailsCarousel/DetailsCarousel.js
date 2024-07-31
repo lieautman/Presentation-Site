@@ -36,14 +36,9 @@ function DetailsCarousel({ items }) {
         }>
         {items.map((item) => (
           <Box sx={{ height: "50vh", width: "70vw", display: "flex" }}>
-            {matches ? (
-              <Box sx={{ backgroundColor: "red", height: "50vh", width: "35vw" }}>{item.imageUrl}</Box>
-            ) : (
-              <></>
-            )}
+            {matches ? <Box sx={{ height: "50vh", width: "35vw" }}>{item.image}</Box> : <></>}
             <Box
               sx={{
-                backgroundColor: "yellow",
                 height: "50vh",
                 width: matches ? "35vw" : "70vw",
               }}>
