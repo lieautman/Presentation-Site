@@ -43,10 +43,10 @@ function Page2() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "25vh",
+            marginTop: "15vh",
             textAlign: "center",
             backgroundColor: `${currentTheme.colors.secondaryColor}`,
-            height: "40vh",
+            height: "60vh",
           }}></Box>
       </Box>
     </>

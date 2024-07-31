@@ -43,10 +43,10 @@ function Page2() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "25vh",
+            marginTop: "15vh",
             textAlign: "center",
             backgroundColor: `${currentTheme.colors.secondaryColor}`,
-            height: "40vh",
+            height: "60vh",
           }}>
           <TypographyWithTheme>
             M-am nascut in Bucuresti, Romania, in toamna anului 2000. La scurt timp, impreuna cu familia mea, ne-am
