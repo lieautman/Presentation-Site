@@ -4,6 +4,7 @@ import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
+import DetailsCarousel from "./DetailsCarousel/DetailsCarousel"
 
 function Page2() {
   const { t } = useTranslation()
@@ -47,7 +48,10 @@ function Page2() {
             textAlign: "center",
             backgroundColor: `${currentTheme.colors.secondaryColor}`,
             height: "60vh",
-          }}></Box>
+          }}>
+          {" "}
+          <DetailsCarousel pageNo={3} />
+        </Box>
       </Box>
     </>
   )
