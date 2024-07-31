@@ -1,5 +1,5 @@
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
