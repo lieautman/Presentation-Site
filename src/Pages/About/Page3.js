@@ -50,7 +50,12 @@ function Page2() {
             height: "60vh",
           }}>
           {" "}
-          <DetailsCarousel pageNo={3} />
+          <DetailsCarousel
+            items={[
+              { image: "aaa", header: "aaa", text: "aaa" },
+              { image: "bbb", header: "bbb", text: "bbb" },
+            ]}
+          />
         </Box>
       </Box>
     </>

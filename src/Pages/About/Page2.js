@@ -49,7 +49,12 @@ function Page2() {
             backgroundColor: `${currentTheme.colors.secondaryColor}`,
             height: "60vh",
           }}>
-          <DetailsCarousel pageNo={2} />
+          <DetailsCarousel
+            items={[
+              { image: "aaa", header: "aaa", text: "aaa" },
+              { image: "bbb", header: "bbb", text: "bbb" },
+            ]}
+          />
         </Box>
       </Box>
     </>
