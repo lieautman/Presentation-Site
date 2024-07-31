@@ -31,6 +31,15 @@
   "About": {
     "Page1": {
       "Title1": "Below you can find details about my education and career!"
+    },
+    "Page2": {
+      "Title1": "This is my professional background!"
+    },
+    "Page3": {
+      "Title1": "This is my educational background!"
+    },
+    "Page4": {
+      "Title1": "This are my hobbies!"
     }
   },
   "Contact": {

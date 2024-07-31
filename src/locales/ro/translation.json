@@ -31,6 +31,15 @@
   "About": {
     "Page1": {
       "Title1": "Mai jos poti gasi detalii despre educatia si cariera mea!"
+    },
+    "Page2": {
+      "Title1": "Acesta este parcursul meu profesional!"
+    },
+    "Page3": {
+      "Title1": "Acesta este parcursul meu academic!"
+    },
+    "Page4": {
+      "Title1": "Acestea sunt hobbie-urile mele!"
     }
   },
   "Contact": {

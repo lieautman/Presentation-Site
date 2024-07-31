@@ -33,7 +33,7 @@ function Page2() {
               style={{
                 fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
               }}>
-              {t("About.Page2.Title1")}
+              {t("About.Page4.Title1")}
             </h1>
           </TypographyWithTheme>
         </Box>
