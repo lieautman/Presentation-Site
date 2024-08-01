@@ -14,7 +14,7 @@ function Page1() {
     <>
       <Box
         sx={{
-          backgroundImage: `url(${currentTheme.images.contactFirstImage})`,
+          backgroundImage: `url(${currentTheme.images.aboutFirstImage})`,
           backgroundSize: matches ? "100% 100%" : "150% 100%",
           backgroundPosition: "center",
           display: "flex",

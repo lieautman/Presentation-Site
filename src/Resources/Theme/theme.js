@@ -1,6 +1,8 @@
 import { createTheme } from "@mui/material/styles"
 import darkBackgroundHome from "../../Resources/Images/darkBackgroundHome.jpg"
 import lightBackgroundHome from "../../Resources/Images/lightBackgroundHome.jpg"
+import darkBackgroundAbout from "../../Resources/Images/darkBackgroundAbout.jpg"
+import lightBackgroundAbout from "../../Resources/Images/lightBackgroundAbout.jpg"
 import darkBackgroundContact from "../../Resources/Images/darkBackgroundContact.jpg"
 import lightBackgroundContact from "../../Resources/Images/lightBackgroundContact.jpg"
 import darkBackgroundResume from "../../Resources/Images/darkBackgroundResume.jpg"
@@ -20,6 +22,7 @@ export const darkTheme = createTheme({
   images: {
     navBarThemeImage: navBarDark,
     homeFirstImage: darkBackgroundHome,
+    aboutFirstImage: darkBackgroundAbout,
     contactFirstImage: darkBackgroundContact,
     resumeFirstImage: darkBackgroundResume,
   },
@@ -51,6 +54,7 @@ export const lightTheme = createTheme({
   images: {
     navBarThemeImage: navBarLight,
     homeFirstImage: lightBackgroundHome,
+    aboutFirstImage: lightBackgroundAbout,
     contactFirstImage: lightBackgroundContact,
     resumeFirstImage: lightBackgroundResume,
   },
