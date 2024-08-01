@@ -5,6 +5,8 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "./DetailsCarousel/DetailsCarousel"
+import AboutPage2CarouselItem1 from "../../Resources/Images/AboutPage2CarouselItem1.jpg"
+import AboutPage2CarouselItem2 from "../../Resources/Images/AboutPage2CarouselItem2.jpg"
 
 function Page2() {
   const { t } = useTranslation()
@@ -52,12 +54,12 @@ function Page2() {
           <DetailsCarousel
             items={[
               {
-                image: "aaa",
+                image: AboutPage2CarouselItem2,
                 header: t("About.Page2.Carousel.item2.header"),
                 text: t("About.Page2.Carousel.item2.text"),
               },
               {
-                image: "bbb",
+                image: AboutPage2CarouselItem1,
                 header: t("About.Page2.Carousel.item1.header"),
                 text: t("About.Page2.Carousel.item1.text"),
               },
