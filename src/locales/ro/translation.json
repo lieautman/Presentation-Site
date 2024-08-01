@@ -34,19 +34,22 @@
     },
     "Page2": {
       "Title1": "Acesta este parcursul meu profesional!",
-      "Carousel1":{
+      "Carousel":{
         "item1":{
-          "header":"Angajare TotalSoft",
+          "header":"Internship Banca Transilvania",
           "text":"aaa"
         },
         "item2":{
-          "header":"Internship Banca Transilvania",
+          "header":"Angajare TotalSoft",
           "text":"bbb"
         }
-      },
-      "Carousel2":{
+      }
+    },
+    "Page3": {
+      "Title1": "Acesta este parcursul meu academic!",
+      "Carousel":{
         "item1":{
-          "header":"Terminare master Securitate Cibernetica",
+          "header":"Terminare liceu Mate-info Bilingv",
           "text":"aaa"
         },
         "item2":{
@@ -54,13 +57,10 @@
           "text":"bbb"
         },
         "item3":{
-          "header":"Terminare liceu Mate-info Bilingv",
+          "header":"Terminare master Securitate Cibernetica",
           "text":"bbb"
         }
       }
-    },
-    "Page3": {
-      "Title1": "Acesta este parcursul meu academic!"
     },
     "Page4": {
       "Title1": "Acestea sunt hobbie-urile mele!"
