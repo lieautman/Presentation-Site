@@ -36,6 +36,16 @@
       "Title1": "Acesta este parcursul meu profesional!",
       "Carousel1":{
         "item1":{
+          "header":"Angajare TotalSoft",
+          "text":"aaa"
+        },
+        "item2":{
+          "header":"Internship Banca Transilvania",
+          "text":"bbb"
+        }
+      },
+      "Carousel2":{
+        "item1":{
           "header":"Internship Banca Transilvania",
           "text":"aaa"
         },

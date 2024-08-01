@@ -43,6 +43,16 @@
           "header":"Emplyment at TotalSoft",
           "text":"bbb"
         }
+      },
+      "Carousel2":{
+        "item1":{
+          "header":"Transilvania's Bank internship",
+          "text":"aaa"
+        },
+        "item2":{
+          "header":"Emplyment at TotalSoft",
+          "text":"bbb"
+        }
       }
     },
     "Page3": {
