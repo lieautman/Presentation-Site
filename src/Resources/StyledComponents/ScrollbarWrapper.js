@@ -9,6 +9,7 @@ const ScrollbarWrapper = (props) => {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-behaviour: smooth;
     &::-webkit-scrollbar {
       width: ${props.display ? "8px" : "0px"};
     }
