@@ -54,13 +54,13 @@ function Page2() {
             items={[
               {
                 image: "aaa",
-                header: t("About.Page2.Carousel2.item2.header"),
-                text: t("About.Page2.Carousel2.item2.text"),
+                header: t("About.Page3.Carousel.item2.header"),
+                text: t("About.Page3.Carousel.item2.text"),
               },
               {
                 image: "bbb",
-                header: t("About.Page2.Carousel2.item1.header"),
-                text: t("About.Page2.Carousel2.item1.text"),
+                header: t("About.Page3.Carousel.item1.header"),
+                text: t("About.Page3.Carousel.item1.text"),
               },
             ]}
           />

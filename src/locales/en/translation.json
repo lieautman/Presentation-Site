@@ -34,17 +34,7 @@
     },
     "Page2": {
       "Title1": "This is my professional background!",
-      "Carousel1":{
-        "item1":{
-          "header":"Transilvania's Bank internship",
-          "text":"aaa"
-        },
-        "item2":{
-          "header":"Emplyment at TotalSoft",
-          "text":"bbb"
-        }
-      },
-      "Carousel2":{
+      "Carousel":{
         "item1":{
           "header":"Transilvania's Bank internship",
           "text":"aaa"
@@ -56,7 +46,21 @@
       }
     },
     "Page3": {
-      "Title1": "This is my educational background!"
+      "Title1": "This is my educational background!",
+      "Carousel":{
+        "item1":{
+          "header":"Finalizing master in Information Security",
+          "text":"aaa"
+        },
+        "item2":{
+          "header":"Finalizing batchelor's in Software Development",
+          "text":"bbb"
+        },
+        "item3":{
+          "header":"Finalizing highschool in Bilingual math-info",
+          "text":"bbb"
+        }
+      }
     },
     "Page4": {
       "Title1": "This are my hobbies!"

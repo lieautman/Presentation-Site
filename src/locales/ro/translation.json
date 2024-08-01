@@ -46,11 +46,15 @@
       },
       "Carousel2":{
         "item1":{
-          "header":"Internship Banca Transilvania",
+          "header":"Terminare master Securitate Cibernetica",
           "text":"aaa"
         },
         "item2":{
-          "header":"Angajare TotalSoft",
+          "header":"Terminare licenta Dezvoltare Software",
+          "text":"bbb"
+        },
+        "item3":{
+          "header":"Terminare liceu Mate-info Bilingv",
           "text":"bbb"
         }
       }
