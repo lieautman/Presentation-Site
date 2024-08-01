@@ -1,10 +1,14 @@
 import { Box } from "@mui/material"
 import useMediaQuery from "@mui/material/useMediaQuery"
+import { useContext } from "react"
+import TypographyWithTheme from "../../../Resources/StyledComponents/TypographyWithTheme"
+import { ThemeContext } from "../../../Resources/Theme/ThemeContext"
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 function DetailsCarousel({ items }) {
   const matches = useMediaQuery("(min-width:1000px)")
+  const { currentTheme } = useContext(ThemeContext)
 
   const arrowStyles = {
     position: "absolute",
@@ -41,9 +45,24 @@ function DetailsCarousel({ items }) {
               sx={{
                 height: "50vh",
                 width: matches ? "35vw" : "70vw",
+                backgroundColor: `${currentTheme.colors.secondaryAccentsColor}`,
               }}>
-              <h3>{item.header}</h3>
-              <p>{item.text}</p>
+              <TypographyWithTheme color={currentTheme.colors.textColor}>
+                <h3
+                  sx={{
+                    fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+                  }}>
+                  {item.header}
+                </h3>
+              </TypographyWithTheme>
+              <TypographyWithTheme color={currentTheme.colors.textColor}>
+                <p
+                  sx={{
+                    fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
+                  }}>
+                  {item.text}
+                </p>
+              </TypographyWithTheme>
             </Box>
           </Box>
         ))}

@@ -33,7 +33,17 @@
       "Title1": "Mai jos poti gasi detalii despre educatia si cariera mea!"
     },
     "Page2": {
-      "Title1": "Acesta este parcursul meu profesional!"
+      "Title1": "Acesta este parcursul meu profesional!",
+      "Carousel":{
+        "item1":{
+          "header":"Internship Banca Transilvania",
+          "text":"aaa"
+        },
+        "item2":{
+          "header":"Angajare TotalSoft",
+          "text":"bbb"
+        }
+      }
     },
     "Page3": {
       "Title1": "Acesta este parcursul meu academic!"

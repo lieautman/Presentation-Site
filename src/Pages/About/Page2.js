@@ -51,8 +51,16 @@ function Page2() {
           }}>
           <DetailsCarousel
             items={[
-              { image: "aaa", header: "aaa", text: "aaa" },
-              { image: "bbb", header: "bbb", text: "bbb" },
+              {
+                image: "aaa",
+                header: t("About.Page2.Carousel.item1.header"),
+                text: t("About.Page2.Carousel.item1.text"),
+              },
+              {
+                image: "bbb",
+                header: t("About.Page2.Carousel.item2.header"),
+                text: t("About.Page2.Carousel.item2.text"),
+              },
             ]}
           />
         </Box>

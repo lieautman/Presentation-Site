@@ -33,7 +33,17 @@
       "Title1": "Below you can find details about my education and career!"
     },
     "Page2": {
-      "Title1": "This is my professional background!"
+      "Title1": "This is my professional background!",
+      "Carousel":{
+        "item1":{
+          "header":"Transilvania's Bank internship",
+          "text":"aaa"
+        },
+        "item2":{
+          "header":"Emplyment at TotalSoft",
+          "text":"bbb"
+        }
+      }
     },
     "Page3": {
       "Title1": "This is my educational background!"
