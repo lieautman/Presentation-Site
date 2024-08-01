@@ -6,8 +6,8 @@ import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "./DetailsCarousel/DetailsCarousel"
 import AboutPage3CarouselItem3 from "../../Resources/Images/AboutPage3CarouselItem3.jpg"
-//import AboutPage3CarouselItem2 from "../../Resources/Images/AboutPage3CarouselItem2.jpg"
-//import AboutPage3CarouselItem1 from "../../Resources/Images/AboutPage3CarouselItem1.jpg"
+import AboutPage3CarouselItem2 from "../../Resources/Images/AboutPage3CarouselItem2.jpg"
+import AboutPage3CarouselItem1 from "../../Resources/Images/AboutPage3CarouselItem1.jpg"
 
 function Page2() {
   const { t } = useTranslation()
@@ -61,12 +61,12 @@ function Page2() {
                 text: t("About.Page3.Carousel.item3.text"),
               },
               {
-                image: AboutPage3CarouselItem3,
+                image: AboutPage3CarouselItem2,
                 header: t("About.Page3.Carousel.item2.header"),
                 text: t("About.Page3.Carousel.item2.text"),
               },
               {
-                image: AboutPage3CarouselItem3,
+                image: AboutPage3CarouselItem1,
                 header: t("About.Page3.Carousel.item1.header"),
                 text: t("About.Page3.Carousel.item1.text"),
               },
