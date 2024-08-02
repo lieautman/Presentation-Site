@@ -1,21 +1,29 @@
 {
   "files": {
     "main.css": "/Presentation-Site/static/css/main.e610da17.css",
-    "main.js": "/Presentation-Site/static/js/main.d2b42550.js",
+    "main.js": "/Presentation-Site/static/js/main.45cbfcff.js",
     "static/media/darkBackgroundHome.jpg": "/Presentation-Site/static/media/darkBackgroundHome.cff49f6333c32311ed0a.jpg",
     "static/media/lightBackgroundResume.jpg": "/Presentation-Site/static/media/lightBackgroundResume.863bcdf26ab765ef5f82.jpg",
     "static/media/lightBackgroundHome.jpg": "/Presentation-Site/static/media/lightBackgroundHome.63dae0c106a1e8dcdf11.jpg",
     "static/media/darkBackgroundResume.jpg": "/Presentation-Site/static/media/darkBackgroundResume.0f07e7861feb8db0d158.jpg",
+    "static/media/AboutPage3CarouselItem3.jpg": "/Presentation-Site/static/media/AboutPage3CarouselItem3.81e56cad3c6d33594a48.jpg",
+    "static/media/AboutPage2CarouselItem1.jpg": "/Presentation-Site/static/media/AboutPage2CarouselItem1.226af53f9013f47c9d0c.jpg",
+    "static/media/AboutPage2CarouselItem3.jpg": "/Presentation-Site/static/media/AboutPage2CarouselItem3.e8f1a599103c85984550.jpg",
+    "static/media/lightBackgroundAbout.jpg": "/Presentation-Site/static/media/lightBackgroundAbout.7651c2d02e9867f4dd1e.jpg",
+    "static/media/darkBackgroundAbout.jpg": "/Presentation-Site/static/media/darkBackgroundAbout.ddd25c9d1f7c28d79088.jpg",
     "static/media/lightBackgroundContact.jpg": "/Presentation-Site/static/media/lightBackgroundContact.d9c3f1635e273896a5b0.jpg",
     "static/media/darkBackgroundContact.jpg": "/Presentation-Site/static/media/darkBackgroundContact.1476788603f49882facf.jpg",
+    "static/media/AboutPage3CarouselItem2.jpg": "/Presentation-Site/static/media/AboutPage3CarouselItem2.fa917c1d362585f6361c.jpg",
+    "static/media/AboutPage2CarouselItem2.jpg": "/Presentation-Site/static/media/AboutPage2CarouselItem2.8f57f7ce79a25ee193fd.jpg",
+    "static/media/AboutPage3CarouselItem1.jpg": "/Presentation-Site/static/media/AboutPage3CarouselItem1.7735ca1870fad438099b.jpg",
     "static/media/logoLight.png": "/Presentation-Site/static/media/logoLight.179027cc66c483ab6e91.png",
     "static/media/logoDark.png": "/Presentation-Site/static/media/logoDark.a2093a031bb6e2e6d6d8.png",
     "index.html": "/Presentation-Site/index.html",
     "main.e610da17.css.map": "/Presentation-Site/static/css/main.e610da17.css.map",
-    "main.d2b42550.js.map": "/Presentation-Site/static/js/main.d2b42550.js.map"
+    "main.45cbfcff.js.map": "/Presentation-Site/static/js/main.45cbfcff.js.map"
   },
   "entrypoints": [
     "static/css/main.e610da17.css",
-    "static/js/main.d2b42550.js"
+    "static/js/main.45cbfcff.js"
   ]
 }
