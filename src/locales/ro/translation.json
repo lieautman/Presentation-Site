@@ -36,10 +36,14 @@
       "Title1": "Acesta este parcursul meu profesional!",
       "Carousel":{
         "item1":{
-          "header":"Internship Banca Transilvania",
-          "text":"aaa"
+          "header":"Practica Ernst&Young",
+          "text":"In anul 2 de licenta, 2017, am fost admis la practica la firma Ernst&Young. Aici am invatat si creat roboti software ce automatizau nevoi interne in acea firma. Acest stadiu de practica a fost unul scurt, avand sansa doar de a intelege tehnologia folosita si a crea un mic proiect demo."
         },
         "item2":{
+          "header":"Internship Banca Transilvania",
+          "text":"In anul 3 de licenta, 2018, m-am angajat ca intern la Banca Transilvania, in zona de Audit IT, timp de 6 luni. Aici am invatat atat modul de functionare, cat si conduita unei firme mari. Pe langa soft skills, ne-au fost explicate si prezentate atat modul de lucru al unui auditor, cat si tehnic ce presupune un audit. Aceasta experienta mi-a indus o dorinta de a studia mai mult zona de securitate, atat pe partea software, cat si pe partea de dev-ops si network."
+        },
+        "item3":{
           "header":"Angajare TotalSoft",
           "text":"bbb"
         }

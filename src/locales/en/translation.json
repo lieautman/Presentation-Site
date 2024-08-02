@@ -36,10 +36,14 @@
       "Title1": "This is my professional background!",
       "Carousel":{
         "item1":{
-          "header":"Transilvania's Bank internship",
+          "header":"Ernst&Young practical stage",
           "text":"aaa"
         },
         "item2":{
+          "header":"Transilvania's Bank internship",
+          "text":"aaa"
+        },
+        "item3":{
           "header":"Emplyment at TotalSoft",
           "text":"bbb"
         }
