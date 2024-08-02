@@ -37,15 +37,15 @@
       "Carousel":{
         "item1":{
           "header":"Ernst&Young practical stage",
-          "text":"aaa"
+          "text":"In 2017, my second year of batchelor's, I was admited for practical stage at Ernst&Yound, a big accounting and audit firm. Here I learnt about and created software robots that could automate business needs. This practical stage was short, only being able to understand the technologi, business and create a small demo project."
         },
         "item2":{
           "header":"Transilvania's Bank internship",
-          "text":"aaa"
+          "text":"In 2018, my third year of batchelor's, I was hired as an intern at Transilvania's Bank, for their IT Audit team, for 6 months. Here I have learnt about the way a big firm works and its security conduct. Soft skills aside, I was shown and explaied the way and auditor works and how an audit must be conducted. This experience made me wish to learn more about not only software but also dev-ops and networking security."
         },
         "item3":{
           "header":"Emplyment at TotalSoft",
-          "text":"bbb"
+          "text":"At the beggining of my master's, in the year 2022, I was employed, first as an intern, than as a full-time emplyee at TotalSoft. Here I refined my programming abilities, in a full-stack environment, working with multiple back-end servers and front-end typologies, along site SQL-Server databases. I can say that my abilities learnt along the way helped me at the begining and that the coleagues here tought me how to look past the imense code-bases ahead and understand the project as a whole, while focusing on the pieces that needed modification."
         }
       }
     },

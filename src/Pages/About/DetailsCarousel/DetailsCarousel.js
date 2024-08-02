@@ -4,6 +4,7 @@ import { useContext } from "react"
 import TypographyWithTheme from "../../../Resources/StyledComponents/TypographyWithTheme"
 import { ThemeContext } from "../../../Resources/Theme/ThemeContext"
 import { Carousel } from "react-responsive-carousel"
+import { ArrowBack, ArrowForward } from "@mui/icons-material"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 function DetailsCarousel({ items }) {
