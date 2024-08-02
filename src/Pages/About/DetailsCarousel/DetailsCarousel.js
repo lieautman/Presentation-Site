@@ -1,4 +1,4 @@
-import { Box } from "@mui/material"
+import { Box, IconButton } from "@mui/material"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useContext } from "react"
 import TypographyWithTheme from "../../../Resources/StyledComponents/TypographyWithTheme"
@@ -27,16 +27,16 @@ function DetailsCarousel({ items }) {
         showStatus={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev && (
-            <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 }}>
-              -
-            </button>
+            <IconButton type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 }}>
+              <ArrowBack />
+            </IconButton>
           )
         }
         renderArrowNext={(onClickHandler, hasNext, label) =>
           hasNext && (
-            <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 15 }}>
-              +
-            </button>
+            <IconButton type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 15 }}>
+              <ArrowForward />
+            </IconButton>
           )
         }>
         {items.map((item) => (
