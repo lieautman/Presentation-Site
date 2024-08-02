@@ -58,22 +58,26 @@ function DetailsCarousel({ items }) {
                 width: matches ? "35vw" : "70vw",
                 backgroundColor: `${currentTheme.colors.secondaryAccentsColor}`,
               }}>
-              <TypographyWithTheme color={currentTheme.colors.textColor}>
-                <h3
-                  sx={{
-                    fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-                  }}>
-                  {item.header}
-                </h3>
-              </TypographyWithTheme>
-              <TypographyWithTheme color={currentTheme.colors.textColor}>
-                <p
-                  sx={{
-                    fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
-                  }}>
-                  {item.text}
-                </p>
-              </TypographyWithTheme>
+              <Box>
+                <TypographyWithTheme color={currentTheme.colors.textColor}>
+                  <h3
+                    sx={{
+                      fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+                    }}>
+                    {item.header}
+                  </h3>
+                </TypographyWithTheme>
+              </Box>
+              <Box sx={{ textAlign: "left", margin: "20px" }}>
+                <TypographyWithTheme color={currentTheme.colors.textColor}>
+                  <p
+                    sx={{
+                      fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
+                    }}>
+                    {item.text}
+                  </p>
+                </TypographyWithTheme>
+              </Box>
             </Box>
           </Box>
         ))}
