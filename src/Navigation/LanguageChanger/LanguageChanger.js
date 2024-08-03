@@ -18,7 +18,6 @@ const LanguageChanger = () => {
       <Select
         value={i18n.language}
         sx={{
-          //color: currentTheme.colors.textColor,
           fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h2,
           color: currentTheme.colors.textColor,
           ".MuiOutlinedInput-notchedOutline": {
