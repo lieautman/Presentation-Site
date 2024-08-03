@@ -26,8 +26,7 @@ function MenuClosedComponent({ setMenuOpen }) {
           <IconButton
             aria-label="delete"
             style={{ color: currentTheme.colors.textColor }}
-            onClick={() => setMenuOpen(true)}
-            size={"small"}>
+            onClick={() => setMenuOpen(true)}>
             <Menu />
           </IconButton>
         </GridItemAligned>

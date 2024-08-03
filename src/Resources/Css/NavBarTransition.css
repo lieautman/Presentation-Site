@@ -1,8 +1,9 @@
-@keyframes slideInFromTop {
+@keyframes slideInFromLeft {
   from {
-    transform: translateY(-100%);
+    transform: translateX(50%);
   }
+
   to {
-    transform: translateY(0);
+    transform: translateX(0%);
   }
 }

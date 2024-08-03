@@ -3,11 +3,10 @@ import ThemeChanger from "../ThemeChanger/ThemeChanger"
 import { useContext } from "react"
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
-import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"
 import { MenuOpen } from "@mui/icons-material"
-import { IconButton, Button } from "@mui/material"
+import { IconButton, Button, Grid } from "@mui/material"
 import "../../Resources/Css/NavBarTransition.css"
 
 function MenuOpenComponent({ setPageNo, setMenuOpen }) {
@@ -21,19 +20,21 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         className="scrollSnapSection"
         style={{
           height: "100vh",
+          width: "50vw",
+          marginLeft: "50vw",
           zIndex: "100",
-          animation: "1s ease-in 0s 1 slideInFromTop",
+          animation: "0.25s ease-in 0s 1 slideInFromLeft",
           position: "absolute",
         }}>
-        <GridItemAligned item xs={12}>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <IconButton
             aria-label="delete"
             style={{ color: currentTheme.colors.textColor }}
             onClick={() => setMenuOpen(false)}>
             <MenuOpen />
           </IconButton>
-        </GridItemAligned>
-        <GridItemAligned item xs={12}>
+        </Grid>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Button
             onClick={() => {
               setPageNo(1)
@@ -48,8 +49,8 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               </h3>
             </TypographyWithTheme>
           </Button>
-        </GridItemAligned>
-        <GridItemAligned item xs={12}>
+        </Grid>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Button
             onClick={() => {
               setPageNo(2)
@@ -64,8 +65,8 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               </h3>
             </TypographyWithTheme>
           </Button>
-        </GridItemAligned>
-        <GridItemAligned item xs={12}>
+        </Grid>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Button
             onClick={() => {
               setPageNo(3)
@@ -80,8 +81,8 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               </h3>
             </TypographyWithTheme>
           </Button>
-        </GridItemAligned>
-        <GridItemAligned item xs={12}>
+        </Grid>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Button
             onClick={() => {
               setPageNo(4)
@@ -96,13 +97,13 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               </h3>
             </TypographyWithTheme>
           </Button>
-        </GridItemAligned>
-        <GridItemAligned item xs={12}>
+        </Grid>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <ThemeChanger />
-        </GridItemAligned>
-        <GridItemAligned item xs={12}>
+        </Grid>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <LanguageChanger />
-        </GridItemAligned>
+        </Grid>
       </GridContainerWithThemeMainColor>
     </>
   )
