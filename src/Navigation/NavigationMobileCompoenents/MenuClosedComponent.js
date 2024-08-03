@@ -16,7 +16,7 @@ function MenuClosedComponent({ setMenuOpen }) {
             aria-label="delete"
             style={{ color: currentTheme.colors.textColor }}
             onClick={() => setMenuOpen(true)}>
-            <Menu />
+            <Menu sx={{ fontSize: currentTheme.fontSizesPhone.h1 }} />
           </IconButton>
         </GridItemAligned>
         <GridItemAligned item xs={6}>
@@ -24,8 +24,7 @@ function MenuClosedComponent({ setMenuOpen }) {
             src={currentTheme.images.navBarThemeImage}
             alt="Logo"
             style={{
-              width: "auto",
-              height: currentTheme.fontSizesPhone.h1Big,
+              height: currentTheme.logoSize,
             }}
           />
         </GridItemAligned>

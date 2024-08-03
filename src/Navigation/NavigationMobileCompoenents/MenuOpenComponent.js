@@ -30,7 +30,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             aria-label="delete"
             style={{ color: currentTheme.colors.textColor }}
             onClick={() => setMenuOpen(false)}>
-            <MenuOpen />
+            <MenuOpen sx={{ fontSize: currentTheme.fontSizesPhone.h1 }} />
           </IconButton>
         </Grid>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>

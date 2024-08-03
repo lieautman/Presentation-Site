@@ -40,6 +40,7 @@ export const darkTheme = createTheme({
     h3: "3vmin",
     p: "2vmin",
   },
+  logoSize: "8vh",
 })
 
 export const lightTheme = createTheme({
@@ -72,4 +73,5 @@ export const lightTheme = createTheme({
     h3: "3vmin",
     p: "2vmin",
   },
+  logoSize: "8vh",
 })

@@ -19,7 +19,7 @@ function NavigationDesktopComponent(porps) {
           alt="Logo"
           style={{
             width: "auto",
-            height: currentTheme.fontSizes.h1Big,
+            height: currentTheme.logoSize,
           }}
         />
       </GridItemAligned>
