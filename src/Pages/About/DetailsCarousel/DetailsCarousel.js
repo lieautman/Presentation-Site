@@ -60,7 +60,7 @@ function DetailsCarousel({ items }) {
                 height: "50vh",
                 width: matches ? "35vw" : "70vw",
                 backgroundColor: `${currentTheme.colors.secondaryAccentsColor}`,
-                overflow: "scroll",
+                overflow: "auto",
               }}>
               <Box>
                 <TypographyWithTheme color={currentTheme.colors.textColor}>
