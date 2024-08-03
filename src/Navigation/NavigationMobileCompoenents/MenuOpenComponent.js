@@ -21,12 +21,11 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         style={{
           height: "100vh",
           width: "50vw",
-          marginLeft: "50vw",
           zIndex: "100",
           animation: "0.25s ease-in 0s 1 slideInFromLeft",
           position: "absolute",
         }}>
-        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <IconButton
             aria-label="delete"
             style={{ color: currentTheme.colors.textColor }}
@@ -34,7 +33,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             <MenuOpen />
           </IconButton>
         </Grid>
-        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
               setPageNo(1)
@@ -50,7 +49,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             </TypographyWithTheme>
           </Button>
         </Grid>
-        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
               setPageNo(2)
@@ -66,7 +65,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             </TypographyWithTheme>
           </Button>
         </Grid>
-        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
               setPageNo(3)
@@ -82,7 +81,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             </TypographyWithTheme>
           </Button>
         </Grid>
-        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
               setPageNo(4)
@@ -98,10 +97,10 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             </TypographyWithTheme>
           </Button>
         </Grid>
-        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <ThemeChanger />
         </Grid>
-        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <LanguageChanger />
         </Grid>
       </GridContainerWithThemeMainColor>

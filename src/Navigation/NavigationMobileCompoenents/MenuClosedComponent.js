@@ -12,6 +12,14 @@ function MenuClosedComponent({ setMenuOpen }) {
     <>
       <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{ height: "9vh" }}>
         <GridItemAligned item xs={6}>
+          <IconButton
+            aria-label="delete"
+            style={{ color: currentTheme.colors.textColor }}
+            onClick={() => setMenuOpen(true)}>
+            <Menu />
+          </IconButton>
+        </GridItemAligned>
+        <GridItemAligned item xs={6}>
           <img
             src={currentTheme.images.navBarThemeImage}
             alt="Logo"
@@ -20,15 +28,6 @@ function MenuClosedComponent({ setMenuOpen }) {
               height: currentTheme.fontSizesPhone.h1Big,
             }}
           />
-        </GridItemAligned>
-
-        <GridItemAligned item xs={6}>
-          <IconButton
-            aria-label="delete"
-            style={{ color: currentTheme.colors.textColor }}
-            onClick={() => setMenuOpen(true)}>
-            <Menu />
-          </IconButton>
         </GridItemAligned>
       </GridContainerWithThemeMainColor>
     </>

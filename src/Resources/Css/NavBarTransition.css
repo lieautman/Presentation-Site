@@ -1,6 +1,6 @@
 @keyframes slideInFromLeft {
   from {
-    transform: translateX(50%);
+    transform: translateX(-50%);
   }
 
   to {
