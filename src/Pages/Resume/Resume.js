@@ -4,8 +4,8 @@ import { useContext } from "react"
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
-import { Box, IconButton } from "@mui/material"
-import { AssignmentInd } from "@mui/icons-material"
+import { Button, IconButton } from "@mui/material"
+import { Download } from "@mui/icons-material"
 
 function Resume() {
   const { t, i18n } = useTranslation()
@@ -84,9 +84,9 @@ function Resume() {
             marginTop: "25vh",
             textAlign: "center",
           }}>
-          <Box onClick={onButtonClick}>
+          <Button onClick={onButtonClick} sx={{ cursor: "pointer" }}>
             <IconButton style={{ color: currentTheme.colors.textColor }}>
-              <AssignmentInd
+              <Download
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h1Big,
                 }}
@@ -100,7 +100,7 @@ function Resume() {
                 {t("Resume.Page2.Paragraph1")}
               </h1>
             </TypographyWithTheme>
-          </Box>
+          </Button>
         </BoxWithvh>
       </BoxWithvh>
     </>
