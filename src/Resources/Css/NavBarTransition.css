@@ -1,4 +1,4 @@
-@keyframes slideInFromLeft {
+@keyframes slide {
   from {
     transform: translateX(-50%);
   }

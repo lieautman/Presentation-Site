@@ -26,14 +26,16 @@ function DetailsCarousel({ items }) {
         swipeable
         showStatus={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && (
+          hasPrev &&
+          matches && (
             <IconButton type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 }}>
               <ArrowBack />
             </IconButton>
           )
         }
         renderArrowNext={(onClickHandler, hasNext, label) =>
-          hasNext && (
+          hasNext &&
+          matches && (
             <IconButton type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 15 }}>
               <ArrowForward />
             </IconButton>

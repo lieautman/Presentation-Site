@@ -22,7 +22,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
           height: "100vh",
           width: "50vw",
           zIndex: "100",
-          animation: "0.25s ease-in 0s 1 slideInFromLeft",
+          animation: "0.25s ease-in 0s 1 slide",
           position: "absolute",
         }}>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
