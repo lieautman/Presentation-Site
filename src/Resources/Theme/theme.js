@@ -75,3 +75,36 @@ export const lightTheme = createTheme({
   },
   logoSize: "8vh",
 })
+
+export const simpleTheme = createTheme({
+  colors: {
+    primaryColor: "rgba(15, 15, 15, 1)",
+    secondaryColor: "rgba(40, 40, 40, 1)",
+    primaryAccentsColor: "rgba(15, 15, 15, 1)",
+    secondaryAccentsColor: "rgba(20, 20, 20, 1)",
+    textColor: "white",
+    titleColor: "white",
+  },
+  images: {
+    navBarThemeImage: navBarDark,
+    homeFirstImage: lightBackgroundHome,
+    aboutFirstImage: lightBackgroundAbout,
+    contactFirstImage: lightBackgroundContact,
+    resumeFirstImage: lightBackgroundResume,
+  },
+  fontSizes: {
+    h1Big: "5vmin",
+    h1: "4vmin",
+    h2: "3vmin",
+    h3: "2vmin",
+    p: "1vmin",
+  },
+  fontSizesPhone: {
+    h1Big: "8vmin",
+    h1: "6vmin",
+    h2: "4vmin",
+    h3: "3vmin",
+    p: "2vmin",
+  },
+  logoSize: "8vh",
+})

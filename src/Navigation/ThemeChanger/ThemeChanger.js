@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
-import { darkTheme, lightTheme } from "../../Resources/Theme/Theme"
+import { darkTheme, simpleTheme } from "../../Resources/Theme/Theme"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"
 import { Button } from "@mui/material"
@@ -11,7 +11,9 @@ const ThemeChanger = () => {
   const { currentTheme, setCurrentTheme } = useContext(ThemeContext)
   const matches = useMediaQuery("(min-width:600px)")
   return (
-    <Button onClick={() => (currentTheme === darkTheme ? setCurrentTheme(lightTheme) : setCurrentTheme(darkTheme))}>
+    <Button
+      onClick={() => (currentTheme === darkTheme ? setCurrentTheme(simpleTheme) : setCurrentTheme(darkTheme))}
+      sx={{ height: "9vh" }}>
       <TypographyWithTheme color={currentTheme.colors.textColor}>
         <h3
           style={{
