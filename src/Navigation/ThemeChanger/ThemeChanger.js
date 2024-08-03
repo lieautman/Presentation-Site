@@ -5,38 +5,22 @@ import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWith
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import { Grid } from "@mui/material"
 import { useTranslation } from "react-i18next"
-import useMediaQuery from "@mui/material/useMediaQuery"
+import { Button } from "@mui/material"
 
 const ThemeChanger = () => {
   const { t } = useTranslation()
   const { currentTheme, setCurrentTheme } = useContext(ThemeContext)
-  const matches = useMediaQuery("(min-width:600px)")
   return (
-    <GridItemAligned
-      container
-      onClick={() => (currentTheme === darkTheme ? setCurrentTheme(lightTheme) : setCurrentTheme(darkTheme))}
-      style={{ cursor: "pointer" }}>
-      <Grid item xs={6} style={{ float: "right", textAlign: "right" }}>
-        <img
-          src={currentTheme.images.navBarThemeImage}
-          alt="Logo"
+    <Button onClick={() => (currentTheme === darkTheme ? setCurrentTheme(lightTheme) : setCurrentTheme(darkTheme))}>
+      <TypographyWithTheme color={currentTheme.colors.textColor}>
+        <h3
           style={{
-            width: "auto",
-            height: matches ? currentTheme.fontSizes.h1Big : currentTheme.fontSizesPhone.h1Big,
-          }}
-        />
-      </Grid>
-      <Grid item xs={6}>
-        <TypographyWithTheme color={currentTheme.colors.textColor}>
-          <h3
-            style={{
-              fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
-            }}>
-            {t("Nav.ChangeTheme.label")}
-          </h3>
-        </TypographyWithTheme>
-      </Grid>
-    </GridItemAligned>
+            fontSize: currentTheme.fontSizes.h3,
+          }}>
+          {t("Nav.ChangeTheme.label")}
+        </h3>
+      </TypographyWithTheme>
+    </Button>
   )
 }
 
