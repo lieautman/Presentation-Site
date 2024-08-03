@@ -42,7 +42,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h3
                 style={{
-                  fontSize: currentTheme.fontSizesPhone.h3,
+                  fontSize: currentTheme.fontSizesPhone.h2,
                 }}>
                 {t("Nav.Pages.Home")}
               </h3>
@@ -58,7 +58,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h3
                 style={{
-                  fontSize: currentTheme.fontSizesPhone.h3,
+                  fontSize: currentTheme.fontSizesPhone.h2,
                 }}>
                 {t("Nav.Pages.About")}
               </h3>
@@ -74,7 +74,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h3
                 style={{
-                  fontSize: currentTheme.fontSizesPhone.h3,
+                  fontSize: currentTheme.fontSizesPhone.h2,
                 }}>
                 {t("Nav.Pages.Contact")}
               </h3>
@@ -90,7 +90,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             <TypographyWithTheme color={currentTheme.colors.textColor}>
               <h3
                 style={{
-                  fontSize: currentTheme.fontSizesPhone.h3,
+                  fontSize: currentTheme.fontSizesPhone.h2,
                 }}>
                 {t("Nav.Pages.Resume")}
               </h3>

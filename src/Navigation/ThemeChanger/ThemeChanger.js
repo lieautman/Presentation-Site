@@ -15,7 +15,7 @@ const ThemeChanger = () => {
       <TypographyWithTheme color={currentTheme.colors.textColor}>
         <h3
           style={{
-            fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+            fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h2,
           }}>
           {t("Nav.ChangeTheme.label")}
         </h3>
