@@ -1,3 +1,5 @@
+import LanguageChanger from "../LanguageChanger/LanguageChanger"
+import ThemeChanger from "../ThemeChanger/ThemeChanger"
 import { useContext } from "react"
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
@@ -94,6 +96,12 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               </h3>
             </TypographyWithTheme>
           </Button>
+        </GridItemAligned>
+        <GridItemAligned item xs={12}>
+          <ThemeChanger />
+        </GridItemAligned>
+        <GridItemAligned item xs={12}>
+          <LanguageChanger />
         </GridItemAligned>
       </GridContainerWithThemeMainColor>
     </>

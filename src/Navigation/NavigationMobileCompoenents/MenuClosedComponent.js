@@ -1,5 +1,3 @@
-import ThemeChanger from "../ThemeChanger/ThemeChanger"
-import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import { useContext } from "react"
 import { ThemeContext } from "../../Resources/Theme/ThemeContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
@@ -13,19 +11,25 @@ function MenuClosedComponent({ setMenuOpen }) {
   return (
     <>
       <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{ height: "9vh" }}>
-        <GridItemAligned item xs={5}>
-          <ThemeChanger />
+        <GridItemAligned item xs={6}>
+          <img
+            src={currentTheme.images.navBarThemeImage}
+            alt="Logo"
+            style={{
+              width: "auto",
+              height: currentTheme.fontSizesPhone.h1Big,
+            }}
+          />
         </GridItemAligned>
-        <GridItemAligned item xs={2}>
+
+        <GridItemAligned item xs={6}>
           <IconButton
             aria-label="delete"
             style={{ color: currentTheme.colors.textColor }}
-            onClick={() => setMenuOpen(true)}>
+            onClick={() => setMenuOpen(true)}
+            size={"small"}>
             <Menu />
           </IconButton>
-        </GridItemAligned>
-        <GridItemAligned item xs={5}>
-          <LanguageChanger />
         </GridItemAligned>
       </GridContainerWithThemeMainColor>
     </>

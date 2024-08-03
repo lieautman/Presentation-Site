@@ -7,12 +7,10 @@ import { Button } from "@mui/material"
 import ThemeChanger from "../ThemeChanger/ThemeChanger"
 import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import { useTranslation } from "react-i18next"
-import useMediaQuery from "@mui/material/useMediaQuery"
 
 function NavigationDesktopComponent(porps) {
   const { t } = useTranslation()
   const { currentTheme } = useContext(ThemeContext)
-  const matches = useMediaQuery("(min-width:600px)")
   return (
     <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{ height: "9vh" }}>
       <GridItemAligned item xs={1}>
@@ -21,7 +19,7 @@ function NavigationDesktopComponent(porps) {
           alt="Logo"
           style={{
             width: "auto",
-            height: matches ? currentTheme.fontSizes.h1Big : currentTheme.fontSizesPhone.h1Big,
+            height: currentTheme.fontSizes.h1Big,
           }}
         />
       </GridItemAligned>
