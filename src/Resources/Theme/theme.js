@@ -87,10 +87,6 @@ export const simpleTheme = createTheme({
   },
   images: {
     navBarThemeImage: navBarDark,
-    homeFirstImage: lightBackgroundHome,
-    aboutFirstImage: lightBackgroundAbout,
-    contactFirstImage: lightBackgroundContact,
-    resumeFirstImage: lightBackgroundResume,
   },
   fontSizes: {
     h1Big: "5vmin",

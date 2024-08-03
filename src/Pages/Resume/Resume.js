@@ -30,6 +30,7 @@ function Resume() {
           backgroundImage: `url(${currentTheme.images.resumeFirstImage})`,
           backgroundSize: matches ? "100% 100%" : "150% 100%",
           backgroundPosition: "center",
+          backgroundColor: `${currentTheme.colors.secondaryColor}`,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

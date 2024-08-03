@@ -18,6 +18,7 @@ function Home() {
           backgroundImage: `url(${currentTheme.images.homeFirstImage})`,
           backgroundSize: matches ? "100% 100%" : "150% 100%",
           backgroundPosition: "center",
+          backgroundColor: `${currentTheme.colors.secondaryColor}`,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
