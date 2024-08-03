@@ -18,8 +18,21 @@ const LanguageChanger = () => {
       <Select
         value={i18n.language}
         sx={{
-          color: currentTheme.colors.textColor,
+          //color: currentTheme.colors.textColor,
           fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h2,
+          color: currentTheme.colors.textColor,
+          ".MuiOutlinedInput-notchedOutline": {
+            borderColor: "rgba(228, 219, 233, 0.25)",
+          },
+          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            borderColor: "rgba(228, 219, 233, 0.25)",
+          },
+          "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: "rgba(228, 219, 233, 0.25)",
+          },
+          ".MuiSvgIcon-root ": {
+            fill: "white !important",
+          },
         }}>
         <MenuItem value={"en"} onClick={() => changeLang("en")}>
           {t("Nav.ChangeLanguage.English")}
