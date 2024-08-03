@@ -1,10 +1,7 @@
 import { styled } from "@mui/material"
 import Box from "@mui/material/Grid"
-import { useTranslation } from "react-i18next"
 
 const ScrollbarWrapper = (props) => {
-  const { i18n } = useTranslation()
-
   const ScrollbarWrapperStyled = styled(Box)`
     height: 100vh;
     overflow-y: scroll;
@@ -14,7 +11,7 @@ const ScrollbarWrapper = (props) => {
       width: ${props.display ? "8px" : "0px"};
     }
     &::-webkit-scrollbar-thumb {
-      background: linear-gradient(90deg, ${i18n.language === "en" ? "red, white, blue" : "red, yellow, blue"});
+      background: gray;
     }
   `
   return <ScrollbarWrapperStyled {...props}>{props.children}</ScrollbarWrapperStyled>
