@@ -2,14 +2,11 @@ import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import ThemeChanger from "../ThemeChanger/ThemeChanger"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
-import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
-import { useTranslation } from "react-i18next"
 import { MenuOpen } from "@mui/icons-material"
-import { IconButton, Button, Grid } from "@mui/material"
+import { IconButton, Grid } from "@mui/material"
 import "../../Resources/Css/NavBarTransition.css"
 
 function MenuOpenComponent({ setPageNo, setMenuOpen }) {
-  const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
 
   return (
