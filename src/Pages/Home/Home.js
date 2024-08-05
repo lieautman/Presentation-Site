@@ -1,7 +1,7 @@
 import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext } from "react"
-import { themeContext } from "../../contexts/themeContext"
+import { themeContext } from "../../Contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 

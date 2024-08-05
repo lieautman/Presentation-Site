@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import NavigationDesktopComponent from "./NavigationDesktopComponents/NavigationDesktopComponent"
 import NavigationPhoneComponent from "./NavigationMobileCompoenents/NavigationPhoneComponent"
-import { pageContext } from "../contexts/pageContext"
+import { pageContext } from "../Contexts/pageContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
 function NavigationContainer() {

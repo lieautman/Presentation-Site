@@ -1,7 +1,7 @@
 import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import ThemeChanger from "../ThemeChanger/ThemeChanger"
 import { useContext } from "react"
-import { themeContext } from "../../contexts/themeContext"
+import { themeContext } from "../../Contexts/themeContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"

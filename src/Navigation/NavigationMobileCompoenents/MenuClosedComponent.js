@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { themeContext } from "../../contexts/themeContext"
+import { themeContext } from "../../Contexts/themeContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import { IconButton } from "@mui/material"
