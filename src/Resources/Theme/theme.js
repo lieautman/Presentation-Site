@@ -43,7 +43,7 @@ export const darkTheme = createTheme({
   logoSize: "8vh",
 })
 
-export const simpleTheme = createTheme({
+export const purpleTheme = createTheme({
   colors: {
     primaryColor: "rgba(15, 15, 15, 1)",
     secondaryColor: "rgba(40, 40, 40, 1)",
