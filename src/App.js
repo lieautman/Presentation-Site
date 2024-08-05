@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import NavigationContainer from "./Navigation/NavigationContainer"
 import Pages from "./Pages"
 import { pageContext } from "./Contexts/pageContext"
