@@ -30,28 +30,28 @@ function NavigationDesktopComponent(porps) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button onClick={() => porps.setPageNo(1)}>
-          <TypographyWithTheme color={currentTheme.colors.textColor}>
+          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Home")}</h3>
           </TypographyWithTheme>
         </Button>
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button onClick={() => porps.setPageNo(2)}>
-          <TypographyWithTheme color={currentTheme.colors.textColor}>
+          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.About")}</h3>
           </TypographyWithTheme>
         </Button>
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button onClick={() => porps.setPageNo(3)}>
-          <TypographyWithTheme color={currentTheme.colors.textColor}>
+          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Contact")}</h3>
           </TypographyWithTheme>
         </Button>
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button onClick={() => porps.setPageNo(4)}>
-          <TypographyWithTheme color={currentTheme.colors.textColor}>
+          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Resume")}</h3>
           </TypographyWithTheme>
         </Button>

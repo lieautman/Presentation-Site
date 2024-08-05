@@ -28,7 +28,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <IconButton
             aria-label="delete"
-            style={{ color: currentTheme.colors.textColor }}
+            style={{ color: currentTheme.colors.textOnDark }}
             onClick={() => setMenuOpen(false)}>
             <MenuOpen sx={{ fontSize: currentTheme.fontSizesPhone.h1 }} />
           </IconButton>
@@ -39,7 +39,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               setPageNo(1)
               setMenuOpen(false)
             }}>
-            <TypographyWithTheme color={currentTheme.colors.textColor}>
+            <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h3
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h2,
@@ -55,7 +55,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               setPageNo(2)
               setMenuOpen(false)
             }}>
-            <TypographyWithTheme color={currentTheme.colors.textColor}>
+            <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h3
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h2,
@@ -71,7 +71,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               setPageNo(3)
               setMenuOpen(false)
             }}>
-            <TypographyWithTheme color={currentTheme.colors.textColor}>
+            <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h3
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h2,
@@ -87,7 +87,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               setPageNo(4)
               setMenuOpen(false)
             }}>
-            <TypographyWithTheme color={currentTheme.colors.textColor}>
+            <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h3
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h2,

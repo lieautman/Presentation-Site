@@ -63,7 +63,7 @@ function Page2() {
             backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
             height: "10vh",
           }}>
-          <TypographyWithTheme color={currentTheme.colors.titleColor}>
+          <TypographyWithTheme color={currentTheme.colors.textOnLight}>
             <h1
               style={{
                 fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
@@ -87,7 +87,7 @@ function Page2() {
             type="text"
             placeholder="Your name"
             value={name}
-            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textColor}` }}
+            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textOnDark}` }}
             onChange={(e) => {
               setName(e.target.value)
             }}
@@ -95,7 +95,7 @@ function Page2() {
           <Input
             type="text"
             placeholder="Your email"
-            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textColor}` }}
+            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textOnDark}` }}
             onChange={(e) => {
               setEmail(e.target.value)
             }}
@@ -106,7 +106,7 @@ function Page2() {
             multiline
             rows={5}
             variant="standard"
-            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textColor}` }}
+            sx={{ margin: "10px", width: matches ? "20vw" : "40vw", color: `${currentTheme.colors.textOnDark}` }}
             onChange={(e) => {
               setMessage(e.target.value)
             }}
@@ -114,7 +114,7 @@ function Page2() {
           <Button
             type="submit"
             onClick={handleSubmit}
-            sx={{ margin: "10px", color: `${currentTheme.colors.textColor}` }}>
+            sx={{ margin: "10px", color: `${currentTheme.colors.textOnDark}` }}>
             Send email
           </Button>
         </Box>

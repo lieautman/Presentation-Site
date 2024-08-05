@@ -63,7 +63,7 @@ function DetailsCarousel({ items }) {
                 overflow: "auto",
               }}>
               <Box>
-                <TypographyWithTheme color={currentTheme.colors.textColor}>
+                <TypographyWithTheme color={currentTheme.colors.textOnDark}>
                   <h3
                     sx={{
                       fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
@@ -73,7 +73,7 @@ function DetailsCarousel({ items }) {
                 </TypographyWithTheme>
               </Box>
               <Box sx={{ textAlign: "left", margin: "20px" }}>
-                <TypographyWithTheme color={currentTheme.colors.textColor}>
+                <TypographyWithTheme color={currentTheme.colors.textOnDark}>
                   <p
                     sx={{
                       fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,

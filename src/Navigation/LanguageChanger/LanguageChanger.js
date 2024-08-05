@@ -19,7 +19,7 @@ const LanguageChanger = () => {
         value={i18n.language}
         sx={{
           fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h2,
-          color: currentTheme.colors.textColor,
+          color: currentTheme.colors.textOnDark,
           ".MuiOutlinedInput-notchedOutline": {
             borderColor: "rgba(228, 219, 233, 0.25)",
           },

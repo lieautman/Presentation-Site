@@ -14,7 +14,7 @@ const ThemeChanger = () => {
     <Button
       onClick={() => (currentTheme === darkTheme ? setCurrentTheme(simpleTheme) : setCurrentTheme(darkTheme))}
       sx={{ height: "9vh" }}>
-      <TypographyWithTheme color={currentTheme.colors.textColor}>
+      <TypographyWithTheme color={currentTheme.colors.textOnDark}>
         <h3
           style={{
             fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h2,

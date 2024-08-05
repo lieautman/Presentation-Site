@@ -39,7 +39,7 @@ function Resume() {
           justifyContent: "center",
           textAlign: "center",
         }}>
-        <TypographyWithTheme color={currentTheme.colors.titleColor}>
+        <TypographyWithTheme color={currentTheme.colors.textOnLight}>
           <h1
             style={{
               fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
@@ -47,7 +47,7 @@ function Resume() {
             {t("Resume.Page1.Title1")}
           </h1>
         </TypographyWithTheme>
-        <TypographyWithTheme color={currentTheme.colors.titleColor}>
+        <TypographyWithTheme color={currentTheme.colors.textOnLight}>
           <h2
             style={{
               fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
@@ -70,7 +70,7 @@ function Resume() {
             justifyContent: "center",
             textAlign: "center",
           }}>
-          <TypographyWithTheme color={currentTheme.colors.titleColor}>
+          <TypographyWithTheme color={currentTheme.colors.textOnLight}>
             <h1
               style={{
                 fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
@@ -91,14 +91,14 @@ function Resume() {
             textAlign: "center",
           }}>
           <Button onClick={onButtonClick} sx={{ cursor: "pointer" }}>
-            <IconButton style={{ color: currentTheme.colors.textColor }}>
+            <IconButton style={{ color: currentTheme.colors.textOnDark }}>
               <Download
                 style={{
                   fontSize: currentTheme.fontSizesPhone.h1Big,
                 }}
               />
             </IconButton>
-            <TypographyWithTheme color={currentTheme.colors.textColor}>
+            <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h1
                 style={{
                   fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,

@@ -25,7 +25,7 @@ function Page1() {
           textAlign: "center",
           height: "91vh",
         }}>
-        <TypographyWithTheme color={currentTheme.colors.titleColor}>
+        <TypographyWithTheme color={currentTheme.colors.textOnLight}>
           <h1
             style={{
               fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
