@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { browserContext } from "../../Contexts/browserContext"
+import { inputContext } from "../../Contexts/inputContext"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import { Grid, IconButton, Button } from "@mui/material"
 import { Menu } from "@mui/icons-material"
@@ -11,11 +12,13 @@ function MenuClosedComponent({ setPageNo, setMenuOpen }) {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { browser } = useContext(browserContext)
+  const { input } = useContext(inputContext)
 
+  console.log("ceva", input)
   return (
     <Grid
       container
-      className={browser !== "Chrome" ? "scrollSnapSection" : ""}
+      className={browser !== "Chrome" && input !== "mouse" ? "scrollSnapSection" : ""}
       style={{ height: "9vh", backgroundColor: currentTheme.colors.primaryColor }}>
       <GridItemAligned item xs={2}>
         <IconButton

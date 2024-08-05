@@ -2,6 +2,7 @@ import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWith
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { browserContext } from "../../Contexts/browserContext"
+import { inputContext } from "../../Contexts/inputContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
@@ -14,12 +15,13 @@ function Page2() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { browser } = useContext(browserContext)
+  const { input } = useContext(inputContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   return (
     <>
       <Box
-        className={browser !== "Chrome" ? "scrollSnapSection" : ""}
+        className={browser !== "Chrome" && input !== "mouse" ? "scrollSnapSection" : ""}
         sx={{
           backgroundColor: `${currentTheme.colors.secondaryColor}`,
           height: "100vh",

@@ -3,6 +3,7 @@ import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWith
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { browserContext } from "../../Contexts/browserContext"
+import { inputContext } from "../../Contexts/inputContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Button, IconButton } from "@mui/material"
@@ -12,6 +13,7 @@ function Resume() {
   const { t, i18n } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { browser } = useContext(browserContext)
+  const { input } = useContext(inputContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   const onButtonClick = () => {
@@ -58,7 +60,7 @@ function Resume() {
       </BoxWithvh>
       <BoxWithvh
         height={100}
-        className={browser !== "Chrome" ? "scrollSnapSection" : ""}
+        className={browser !== "Chrome" && input !== "mouse" ? "scrollSnapSection" : ""}
         backgroundColor={currentTheme.colors.secondaryColor}>
         <BoxWithvh
           height={10}

@@ -10,7 +10,7 @@ import { createTheme } from "@mui/material/styles"
 import navBarDark from "../../Resources/Images/logoDark.png"
 //import navBarLight from "../../Resources/Images/logoLight.png"
 
-export const darkTheme = createTheme({
+export const purpleTheme = createTheme({
   colors: {
     primaryColor: "rgba(92, 44, 95, 1)",
     secondaryColor: "rgba(90, 90, 117, 1)",
@@ -43,7 +43,7 @@ export const darkTheme = createTheme({
   logoSize: "8vh",
 })
 
-export const purpleTheme = createTheme({
+export const darkTheme = createTheme({
   colors: {
     primaryColor: "rgba(15, 15, 15, 1)",
     secondaryColor: "rgba(40, 40, 40, 1)",
