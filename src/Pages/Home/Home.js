@@ -2,12 +2,14 @@ import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
+import { browserContext } from "../../Contexts/browserContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 
 function Home() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
+  const { browser } = useContext(browserContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   return (
@@ -42,7 +44,10 @@ function Home() {
           </h2>
         </TypographyWithTheme>
       </BoxWithvh>
-      <BoxWithvh height={100} className="scrollSnapSection" backgroundColor={currentTheme.colors.primaryAccentsColor}>
+      <BoxWithvh
+        height={100}
+        className={browser !== "Chrome" ? "scrollSnapSection" : ""}
+        backgroundColor={currentTheme.colors.primaryAccentsColor}>
         <BoxWithvh
           height={10}
           backgroundColor={currentTheme.colors.secondaryColor}

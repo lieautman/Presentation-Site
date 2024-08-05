@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
+import { browserContext } from "../../Contexts/browserContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
@@ -11,8 +12,13 @@ import { useTranslation } from "react-i18next"
 function NavigationDesktopComponent(porps) {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
+  const { browser } = useContext(browserContext)
+
   return (
-    <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{ height: "9vh" }}>
+    <GridContainerWithThemeMainColor
+      container
+      className={browser !== "Chrome" ? "scrollSnapSection" : ""}
+      style={{ height: "9vh" }}>
       <GridItemAligned item xs={1}>
         <img
           src={currentTheme.images.navBarThemeImage}
