@@ -43,21 +43,17 @@ export const darkTheme = createTheme({
   logoSize: "8vh",
 })
 
-export const lightTheme = createTheme({
+export const simpleTheme = createTheme({
   colors: {
-    primaryColor: "rgba(79, 115, 108, 1)",
-    secondaryColor: "rgba(119, 152, 121, 1)",
-    primaryAccentsColor: "rgba(45, 45, 45, 1)",
-    secondaryAccentsColor: "rgba(150, 223, 223, 1)",
-    textColor: "black",
-    titleColor: "rgba(56, 17, 74, 1)",
+    primaryColor: "rgba(15, 15, 15, 1)",
+    secondaryColor: "rgba(40, 40, 40, 1)",
+    primaryAccentsColor: "rgba(15, 15, 15, 1)",
+    secondaryAccentsColor: "rgba(20, 20, 20, 1)",
+    textColor: "white",
+    titleColor: "white",
   },
   images: {
-    navBarThemeImage: navBarLight,
-    homeFirstImage: lightBackgroundHome,
-    aboutFirstImage: lightBackgroundAbout,
-    contactFirstImage: lightBackgroundContact,
-    resumeFirstImage: lightBackgroundResume,
+    navBarThemeImage: navBarDark,
   },
   fontSizes: {
     h1Big: "5vmin",
@@ -76,17 +72,21 @@ export const lightTheme = createTheme({
   logoSize: "8vh",
 })
 
-export const simpleTheme = createTheme({
+export const lightTheme = createTheme({
   colors: {
-    primaryColor: "rgba(15, 15, 15, 1)",
-    secondaryColor: "rgba(40, 40, 40, 1)",
-    primaryAccentsColor: "rgba(15, 15, 15, 1)",
-    secondaryAccentsColor: "rgba(20, 20, 20, 1)",
-    textColor: "white",
-    titleColor: "white",
+    primaryColor: "rgba(79, 115, 108, 1)",
+    secondaryColor: "rgba(119, 152, 121, 1)",
+    primaryAccentsColor: "rgba(45, 45, 45, 1)",
+    secondaryAccentsColor: "rgba(150, 223, 223, 1)",
+    textColor: "black",
+    titleColor: "rgba(56, 17, 74, 1)",
   },
   images: {
-    navBarThemeImage: navBarDark,
+    navBarThemeImage: navBarLight,
+    homeFirstImage: lightBackgroundHome,
+    aboutFirstImage: lightBackgroundAbout,
+    contactFirstImage: lightBackgroundContact,
+    resumeFirstImage: lightBackgroundResume,
   },
   fontSizes: {
     h1Big: "5vmin",

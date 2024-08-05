@@ -1,10 +1,9 @@
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { browserContext } from "../../Contexts/browserContext"
-import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
-import { Button } from "@mui/material"
+import { Button, Grid } from "@mui/material"
 import ThemeChanger from "../ThemeChanger/ThemeChanger"
 import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import { useTranslation } from "react-i18next"
@@ -15,10 +14,10 @@ function NavigationDesktopComponent(porps) {
   const { browser } = useContext(browserContext)
 
   return (
-    <GridContainerWithThemeMainColor
+    <Grid
       container
       className={browser !== "Chrome" ? "scrollSnapSection" : ""}
-      style={{ height: "9vh" }}>
+      style={{ height: "9vh", backgroundColor: currentTheme.colors.primaryColor }}>
       <GridItemAligned item xs={1}>
         <img
           src={currentTheme.images.navBarThemeImage}
@@ -63,7 +62,7 @@ function NavigationDesktopComponent(porps) {
       <GridItemAligned item xs={2}>
         <LanguageChanger />
       </GridItemAligned>
-    </GridContainerWithThemeMainColor>
+    </Grid>
   )
 }
 

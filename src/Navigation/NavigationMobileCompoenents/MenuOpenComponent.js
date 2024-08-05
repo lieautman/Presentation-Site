@@ -2,7 +2,6 @@ import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import ThemeChanger from "../ThemeChanger/ThemeChanger"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
-import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"
 import { MenuOpen } from "@mui/icons-material"
@@ -15,7 +14,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
 
   return (
     <>
-      <GridContainerWithThemeMainColor
+      <Grid
         container
         className="scrollSnapSection"
         style={{
@@ -24,6 +23,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
           zIndex: "100",
           animation: "0.25s ease-in 0s 1 slide",
           position: "absolute",
+          backgroundColor: currentTheme.colors.primaryColor,
         }}>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <IconButton
@@ -103,7 +103,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <LanguageChanger />
         </Grid>
-      </GridContainerWithThemeMainColor>
+      </Grid>
     </>
   )
 }

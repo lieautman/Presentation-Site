@@ -1,9 +1,8 @@
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { browserContext } from "../../Contexts/browserContext"
-import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
-import { IconButton } from "@mui/material"
+import { Grid, IconButton } from "@mui/material"
 import { Menu } from "@mui/icons-material"
 
 function MenuClosedComponent({ setMenuOpen }) {
@@ -12,10 +11,10 @@ function MenuClosedComponent({ setMenuOpen }) {
 
   return (
     <>
-      <GridContainerWithThemeMainColor
+      <Grid
         container
         className={browser !== "Chrome" ? "scrollSnapSection" : ""}
-        style={{ height: "9vh" }}>
+        style={{ height: "9vh", backgroundColor: currentTheme.colors.primaryColor }}>
         <GridItemAligned item xs={6}>
           <IconButton
             aria-label="delete"
@@ -33,7 +32,7 @@ function MenuClosedComponent({ setMenuOpen }) {
             }}
           />
         </GridItemAligned>
-      </GridContainerWithThemeMainColor>
+      </Grid>
     </>
   )
 }
