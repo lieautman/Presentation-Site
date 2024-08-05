@@ -2,8 +2,6 @@ import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
-import { browserContext } from "../../Contexts/browserContext"
-import { inputContext } from "../../Contexts/inputContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Button, IconButton } from "@mui/material"
@@ -12,8 +10,6 @@ import { Download } from "@mui/icons-material"
 function Resume() {
   const { t, i18n } = useTranslation()
   const { currentTheme } = useContext(themeContext)
-  const { browser } = useContext(browserContext)
-  const { input } = useContext(inputContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   const onButtonClick = () => {
@@ -58,10 +54,7 @@ function Resume() {
           </h2>
         </TypographyWithTheme>
       </BoxWithvh>
-      <BoxWithvh
-        height={100}
-        className={browser !== "Chrome" && input !== "mouse" ? "scrollSnapSection" : ""}
-        backgroundColor={currentTheme.colors.secondaryColor}>
+      <BoxWithvh height={100} className={"scrollSnapSection"} backgroundColor={currentTheme.colors.secondaryColor}>
         <BoxWithvh
           height={10}
           backgroundColor={currentTheme.colors.primaryAccentsColor}

@@ -1,21 +1,17 @@
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
-import { browserContext } from "../../Contexts/browserContext"
-import { inputContext } from "../../Contexts/inputContext"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import { Grid, IconButton } from "@mui/material"
 import { Menu } from "@mui/icons-material"
 
 function MenuClosedComponent({ setMenuOpen }) {
   const { currentTheme } = useContext(themeContext)
-  const { browser } = useContext(browserContext)
-  const { input } = useContext(inputContext)
 
   return (
     <>
       <Grid
         container
-        className={browser !== "Chrome" && input !== "mouse" ? "scrollSnapSection" : ""}
+        className={"scrollSnapSection"}
         style={{ height: "9vh", backgroundColor: currentTheme.colors.primaryColor }}>
         <GridItemAligned item xs={6}>
           <IconButton

@@ -1,8 +1,6 @@
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext, useState } from "react"
 import { themeContext } from "../../Contexts/themeContext"
-import { browserContext } from "../../Contexts/browserContext"
-import { inputContext } from "../../Contexts/inputContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import emailjs from "@emailjs/browser"
@@ -12,8 +10,6 @@ import Box from "@mui/material/Box"
 function Page2() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
-  const { browser } = useContext(browserContext)
-  const { input } = useContext(inputContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   const [name, setName] = useState("")
@@ -50,7 +46,7 @@ function Page2() {
   return (
     <>
       <Box
-        className={browser !== "Chrome" && input !== "mouse" ? "scrollSnapSection" : ""}
+        className={"scrollSnapSection"}
         sx={{
           backgroundColor: `${currentTheme.colors.secondaryColor}`,
           height: "100vh",
