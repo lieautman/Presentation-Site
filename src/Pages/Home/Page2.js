@@ -5,6 +5,7 @@ import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Box } from "@mui/material"
+import { motion } from "framer-motion"
 
 function Page2() {
   const { t } = useTranslation()
@@ -27,12 +28,16 @@ function Page2() {
           backgroundColor: currentTheme.colors.primaryAccentsColor,
         }}>
         <TypographyWithTheme color={currentTheme.colors.textOnDark}>
-          <h1
+          <motion.h1
             style={{
               fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-            }}>
+            }}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 1 }}>
             {t("Home.Page2.Title1")}
-          </h1>
+          </motion.h1>
         </TypographyWithTheme>
       </Box>
       <Box

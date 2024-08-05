@@ -6,6 +6,7 @@ import { Grid, IconButton, Button } from "@mui/material"
 import { Menu } from "@mui/icons-material"
 import { useTranslation } from "react-i18next"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
+import { motion } from "framer-motion"
 
 function MenuClosedComponent({ setPageNo, setMenuOpen }) {
   const { t } = useTranslation()
@@ -21,46 +22,103 @@ function MenuClosedComponent({ setPageNo, setMenuOpen }) {
         <IconButton
           aria-label="delete"
           style={{ color: currentTheme.colors.textOnDark }}
-          onClick={() => setMenuOpen(true)}>
+          onClick={() => setMenuOpen(true)}
+          component={motion.div}
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.25 }}
+          whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.3 },
+          }}
+          whileTap={{ scale: 0.9 }}>
           <Menu sx={{ fontSize: currentTheme.fontSizes.h1 }} />
         </IconButton>
       </GridItemAligned>
       <GridItemAligned item xs={2}>
-        <Button onClick={() => setPageNo(1)}>
+        <Button
+          onClick={() => setPageNo(1)}
+          component={motion.div}
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.25 }}
+          whileHover={{
+            scale: 0.9,
+            transition: { duration: 0.3 },
+          }}>
           <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Home")}</h3>
           </TypographyWithTheme>
         </Button>
       </GridItemAligned>
       <GridItemAligned item xs={2}>
-        <Button onClick={() => setPageNo(2)}>
+        <Button
+          onClick={() => setPageNo(2)}
+          component={motion.div}
+          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.1 } }}
+          initial={{ opacity: 0, y: 20 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.25 }}
+          whileHover={{
+            scale: 0.9,
+            transition: { duration: 0.3 },
+          }}
+          whileTap={{ scale: 0.7 }}>
           <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.About")}</h3>
           </TypographyWithTheme>
         </Button>
       </GridItemAligned>
       <GridItemAligned item xs={2}>
-        <Button onClick={() => setPageNo(3)}>
+        <Button
+          onClick={() => setPageNo(3)}
+          component={motion.div}
+          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+          initial={{ opacity: 0, y: 20 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.25 }}
+          whileHover={{
+            scale: 0.9,
+            transition: { duration: 0.3 },
+          }}
+          whileTap={{ scale: 0.7 }}>
           <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Contact")}</h3>
           </TypographyWithTheme>
         </Button>
       </GridItemAligned>
       <GridItemAligned item xs={2}>
-        <Button onClick={() => setPageNo(4)}>
+        <Button
+          onClick={() => setPageNo(4)}
+          component={motion.div}
+          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
+          initial={{ opacity: 0, y: 20 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.25 }}
+          whileHover={{
+            scale: 0.9,
+            transition: { duration: 0.3 },
+          }}
+          whileTap={{ scale: 0.7 }}>
           <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h3 style={{ fontSize: currentTheme.fontSizes.h3 }}>{t("Nav.Pages.Resume")}</h3>
           </TypographyWithTheme>
         </Button>
       </GridItemAligned>
       <GridItemAligned item xs={2}>
-        <img
+        <motion.img
           src={currentTheme.images.navBarThemeImage}
           alt="Logo"
           style={{
             width: "auto",
             height: currentTheme.logoSize,
           }}
+          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
+          initial={{ opacity: 0, y: -20 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.25 }}
         />
       </GridItemAligned>
     </Grid>

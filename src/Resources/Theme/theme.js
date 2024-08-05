@@ -50,7 +50,7 @@ export const darkTheme = createTheme({
     primaryAccentsColor: "rgba(15, 15, 15, 1)",
     secondaryAccentsColor: "rgba(90, 90, 90, 1)",
     textOnDark: "white",
-    textOnLight: "white",
+    textOnLight: "rgba(197, 121, 189, 1)",
   },
   images: {
     navBarThemeImage: navBarDark,
