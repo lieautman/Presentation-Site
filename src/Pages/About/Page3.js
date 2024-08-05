@@ -1,6 +1,7 @@
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
+import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
@@ -12,12 +13,13 @@ import AboutPage3CarouselItem1 from "../../Resources/Images/AboutPage3CarouselIt
 function Page2() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
+  const { scrollSnap } = useContext(scrollSnapContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   return (
     <>
       <Box
-        className={"scrollSnapSection"}
+        className={scrollSnap ? "scrollSnapSection" : ""}
         sx={{
           backgroundColor: `${currentTheme.colors.secondaryColor}`,
           height: "100vh",

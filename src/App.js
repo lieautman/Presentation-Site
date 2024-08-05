@@ -7,24 +7,13 @@ import { scrollSnapContext } from "./Contexts/scrollSnapContext"
 import ScrollbarWrapper from "./Resources/StyledComponents/ScrollbarWrapper"
 import { darkTheme } from "./Resources/Theme/Theme"
 import useMediaQuery from "@mui/material/useMediaQuery"
+import "./Resources/Css/scrollSnap.css"
 
 function App() {
   const [pageNo, setPageNo] = useState(1)
   const [currentTheme, setCurrentTheme] = useState(darkTheme)
   const [scrollSnap, setScrollSnap] = useState(true)
   const matches = useMediaQuery("(min-width:600px)")
-
-  useEffect(() => {
-    console.log("ceva", scrollSnap)
-    const loadScrollSnap = async () => {
-      if (scrollSnap) {
-        await import("./Resources/Css/scrollSnap.css")
-      } else {
-        await import("./Resources/Css/noScrollSnap.css")
-      }
-    }
-    loadScrollSnap()
-  }, [scrollSnap])
 
   return (
     <ScrollbarWrapper display={matches}>
