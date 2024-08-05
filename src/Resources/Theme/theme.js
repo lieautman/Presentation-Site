@@ -13,11 +13,11 @@ import navBarDark from "../../Resources/Images/logoDark.png"
 export const purpleTheme = createTheme({
   colors: {
     primaryColor: "rgba(92, 44, 95, 1)",
-    secondaryColor: "rgba(90, 90, 117, 1)",
+    secondaryColor: "rgba(50, 50, 50, 1)",
     primaryAccentsColor: "rgba(35, 35, 35, 1)",
     secondaryAccentsColor: "rgba(15, 15, 15, 1)",
     textOnDark: "white",
-    textOnLight: "rgba(60, 10, 60, 1)",
+    textOnLight: "rgba(164, 143, 192, 1)",
   },
   images: {
     navBarThemeImage: navBarDark,
