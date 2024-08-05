@@ -1,11 +1,11 @@
 import { useContext } from "react"
 import NavigationDesktopComponent from "./NavigationDesktopComponents/NavigationDesktopComponent"
 import NavigationPhoneComponent from "./NavigationMobileCompoenents/NavigationPhoneComponent"
-import { PageContext } from "./State/PageContext"
+import { pageContext } from "../contexts/pageContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
 function NavigationContainer() {
-  const { setPageNo } = useContext(PageContext)
+  const { setPageNo } = useContext(pageContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   return matches ? (

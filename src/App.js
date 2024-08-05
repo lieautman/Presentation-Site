@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import NavigationContainer from "./Navigation/NavigationContainer"
 import Pages from "./Pages"
-import { PageContext } from "./Navigation/State/PageContext"
+import { pageContext } from "./contexts/pageContext"
 import { themeContext } from "./contexts/themeContext"
 import ScrollbarWrapper from "./Resources/StyledComponents/ScrollbarWrapper"
 import { darkTheme } from "./Resources/Theme/Theme"
@@ -14,12 +14,12 @@ function App() {
 
   return (
     <ScrollbarWrapper display={matches}>
-      <PageContext.Provider value={{ pageNo, setPageNo }}>
+      <pageContext.Provider value={{ pageNo, setPageNo }}>
         <themeContext.Provider value={{ currentTheme, setCurrentTheme }}>
           <NavigationContainer />
           <Pages pageNo={pageNo} />
         </themeContext.Provider>
-      </PageContext.Provider>
+      </pageContext.Provider>
     </ScrollbarWrapper>
   )
 }

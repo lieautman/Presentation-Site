@@ -1,6 +1,6 @@
 import { createContext } from "react"
 
-export const PageContext = createContext({
+export const pageContext = createContext({
   pageNo: 1,
   setPageNo: (pageNo) => {},
 })
