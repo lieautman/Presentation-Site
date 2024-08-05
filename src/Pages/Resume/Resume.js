@@ -59,10 +59,10 @@ function Resume() {
       <BoxWithvh
         height={100}
         className={browser !== "Chrome" ? "scrollSnapSection" : ""}
-        backgroundColor={currentTheme.colors.primaryAccentsColor}>
+        backgroundColor={currentTheme.colors.secondaryColor}>
         <BoxWithvh
           height={10}
-          backgroundColor={currentTheme.colors.secondaryColor}
+          backgroundColor={currentTheme.colors.primaryAccentsColor}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -81,7 +81,7 @@ function Resume() {
         </BoxWithvh>
         <BoxWithvh
           height={40}
-          backgroundColor={currentTheme.colors.secondaryColor}
+          backgroundColor={currentTheme.colors.primaryAccentsColor}
           sx={{
             display: "flex",
             flexDirection: "column",

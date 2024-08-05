@@ -21,7 +21,7 @@ function Page2() {
       <Box
         className={browser !== "Chrome" ? "scrollSnapSection" : ""}
         sx={{
-          backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
+          backgroundColor: `${currentTheme.colors.secondaryColor}`,
           height: "100vh",
         }}>
         <Box
@@ -31,7 +31,7 @@ function Page2() {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            backgroundColor: `${currentTheme.colors.secondaryColor}`,
+            backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
             height: "10vh",
           }}>
           <TypographyWithTheme color={currentTheme.colors.titleColor}>
@@ -51,7 +51,7 @@ function Page2() {
             justifyContent: "center",
             marginTop: "15vh",
             textAlign: "center",
-            backgroundColor: `${currentTheme.colors.secondaryColor}`,
+            backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
             height: "60vh",
           }}>
           {" "}
