@@ -63,7 +63,7 @@ function Page2() {
             backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
             height: "10vh",
           }}>
-          <TypographyWithTheme color={currentTheme.colors.textOnLight}>
+          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h1
               style={{
                 fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,

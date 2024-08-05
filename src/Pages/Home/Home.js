@@ -58,7 +58,7 @@ function Home() {
             justifyContent: "center",
             textAlign: "center",
           }}>
-          <TypographyWithTheme color={currentTheme.colors.textOnLight}>
+          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <h1
               style={{
                 fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
