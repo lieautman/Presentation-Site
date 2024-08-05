@@ -6,7 +6,7 @@ function NavigationDesktopComponent({ setPageNo }) {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <>
-      {menuOpen ? <MenuOpenComponent setPageNo={setPageNo} setMenuOpen={setMenuOpen} /> : <></>}
+      {menuOpen ? <MenuOpenComponent setMenuOpen={setMenuOpen} /> : <></>}
       <MenuClosedComponent setPageNo={setPageNo} setMenuOpen={setMenuOpen} />
     </>
   )

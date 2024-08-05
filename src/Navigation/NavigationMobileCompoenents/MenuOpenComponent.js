@@ -1,5 +1,6 @@
 import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import ThemeChanger from "../ThemeChanger/ThemeChanger"
+import ScrollSnapChanger from "../ScrollSnapChanger/ScrollSnapChanger"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
@@ -99,6 +100,9 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         </Grid>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <ThemeChanger />
+        </Grid>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
+          <ScrollSnapChanger />
         </Grid>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <LanguageChanger />

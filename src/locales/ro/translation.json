@@ -8,6 +8,9 @@
     "ChangeTheme": {
       "label": "Schimba tema"
     },
+    "ChangeScrollSnap": {
+      "label": "Schimba scroll"
+    },
     "Pages": {
       "Home": "Acasa",
       "About": "Despre",

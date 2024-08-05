@@ -1,30 +1,33 @@
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
-import { darkTheme, purpleTheme } from "../../Resources/Theme/Theme"
+import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"
 import { Button, Switch } from "@mui/material"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
-const ThemeChanger = () => {
+const ScrollSnapChanger = () => {
   const { t } = useTranslation()
-  const { currentTheme, setCurrentTheme } = useContext(themeContext)
+  const { currentTheme } = useContext(themeContext)
+  const { scrollSnap, setScrollSnap } = useContext(scrollSnapContext)
   const matches = useMediaQuery("(min-width:600px)")
   return (
     <Button
-      onClick={() => (currentTheme === darkTheme ? setCurrentTheme(purpleTheme) : setCurrentTheme(darkTheme))}
+      onClick={() => {
+        setScrollSnap(!scrollSnap)
+      }}
       sx={{ height: "9vh" }}>
       <TypographyWithTheme color={currentTheme.colors.textOnDark}>
         <h3
           style={{
             fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h2,
           }}>
-          {t("Nav.ChangeTheme.label")}
+          {t("Nav.ChangeScrollSnap.label")}
         </h3>
       </TypographyWithTheme>
-      <Switch checked={currentTheme === purpleTheme ? true : false} color="secondary" />
+      <Switch checked={scrollSnap} color="secondary" />
     </Button>
   )
 }
 
-export default ThemeChanger
+export default ScrollSnapChanger

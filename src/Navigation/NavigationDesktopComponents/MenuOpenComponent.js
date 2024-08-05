@@ -1,12 +1,13 @@
-import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import ThemeChanger from "../ThemeChanger/ThemeChanger"
+import ScrollSnapChanger from "../ScrollSnapChanger/ScrollSnapChanger"
+import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { MenuOpen } from "@mui/icons-material"
 import { IconButton, Grid } from "@mui/material"
 import "../../Resources/Css/NavBarTransition.css"
 
-function MenuOpenComponent({ setPageNo, setMenuOpen }) {
+function MenuOpenComponent({ setMenuOpen }) {
   const { currentTheme } = useContext(themeContext)
 
   return (
@@ -32,6 +33,9 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         </Grid>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <ThemeChanger />
+        </Grid>
+        <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
+          <ScrollSnapChanger />
         </Grid>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <LanguageChanger />

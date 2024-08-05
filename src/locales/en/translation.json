@@ -8,6 +8,9 @@
     "ChangeTheme": {
       "label": "Change theme"
     },
+    "ChangeScrollSnap": {
+      "label": "Change scroll"
+    },
     "Pages": {
       "Home": "Home",
       "About": "About",
