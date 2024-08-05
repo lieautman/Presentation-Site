@@ -7,6 +7,7 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Button, IconButton } from "@mui/material"
 import { Download } from "@mui/icons-material"
+import { motion } from "framer-motion"
 
 function Resume() {
   const { t, i18n } = useTranslation()
@@ -71,12 +72,16 @@ function Resume() {
             textAlign: "center",
           }}>
           <TypographyWithTheme color={currentTheme.colors.textOnDark}>
-            <h1
+            <motion.h1
               style={{
                 fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-              }}>
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 1 }}>
               {t("Resume.Page2.Title1")}
-            </h1>
+            </motion.h1>
           </TypographyWithTheme>
         </BoxWithvh>
         <BoxWithvh
@@ -90,7 +95,19 @@ function Resume() {
             marginTop: "25vh",
             textAlign: "center",
           }}>
-          <Button onClick={onButtonClick} sx={{ cursor: "pointer" }}>
+          <Button
+            onClick={onButtonClick}
+            sx={{ cursor: "pointer" }}
+            component={motion.div}
+            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.1 } }}
+            initial={{ opacity: 0, y: 20 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.25 }}
+            whileHover={{
+              scale: 0.9,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.7 }}>
             <IconButton style={{ color: currentTheme.colors.textOnDark }}>
               <Download
                 style={{

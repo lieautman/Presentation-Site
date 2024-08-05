@@ -6,6 +6,7 @@ import { themeContext } from "../../Contexts/themeContext"
 import { MenuOpen } from "@mui/icons-material"
 import { IconButton, Grid } from "@mui/material"
 import "../../Resources/Css/NavBarTransition.css"
+import { motion } from "framer-motion"
 
 function MenuOpenComponent({ setMenuOpen }) {
   const { currentTheme } = useContext(themeContext)
@@ -27,7 +28,16 @@ function MenuOpenComponent({ setMenuOpen }) {
           <IconButton
             aria-label="delete"
             style={{ color: currentTheme.colors.textOnDark }}
-            onClick={() => setMenuOpen(false)}>
+            onClick={() => setMenuOpen(false)}
+            component={motion.div}
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 1, x: -100 }}
+            transition={{ duration: 0.25 }}
+            whileHover={{
+              scale: 0.9,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.7 }}>
             <MenuOpen sx={{ fontSize: currentTheme.fontSizes.h1 }} />
           </IconButton>
         </Grid>

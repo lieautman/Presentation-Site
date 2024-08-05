@@ -6,6 +6,7 @@ import { themeContext } from "../../../Contexts/themeContext"
 import { Carousel } from "react-responsive-carousel"
 import { ArrowBack, ArrowForward } from "@mui/icons-material"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { motion } from "framer-motion"
 
 function DetailsCarousel({ items }) {
   const matches = useMediaQuery("(min-width:1000px)")
@@ -21,7 +22,12 @@ function DetailsCarousel({ items }) {
   }
 
   return (
-    <Box sx={{ height: "50vh", width: "70vw" }}>
+    <Box
+      sx={{ height: "50vh", width: "70vw" }}
+      component={motion.div}
+      whileInView={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
+      initial={{ opacity: 0, x: 50 }}
+      transition={{ duration: 0.7 }}>
       <Carousel
         swipeable
         showStatus={false}

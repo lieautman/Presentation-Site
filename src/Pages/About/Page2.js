@@ -9,6 +9,7 @@ import DetailsCarousel from "./DetailsCarousel/DetailsCarousel"
 import AboutPage2CarouselItem3 from "../../Resources/Images/AboutPage2CarouselItem3.jpg"
 import AboutPage2CarouselItem2 from "../../Resources/Images/AboutPage2CarouselItem2.jpg"
 import AboutPage2CarouselItem1 from "../../Resources/Images/AboutPage2CarouselItem1.jpg"
+import { motion } from "framer-motion"
 
 function Page2() {
   const { t } = useTranslation()
@@ -35,12 +36,16 @@ function Page2() {
             height: "10vh",
           }}>
           <TypographyWithTheme color={currentTheme.colors.textOnDark}>
-            <h1
+            <motion.h1
               style={{
                 fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-              }}>
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 1 }}>
               {t("About.Page2.Title1")}
-            </h1>
+            </motion.h1>
           </TypographyWithTheme>
         </Box>
         <Box
