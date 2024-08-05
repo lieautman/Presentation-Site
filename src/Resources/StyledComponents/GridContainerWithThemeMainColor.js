@@ -1,10 +1,10 @@
 import { styled } from "@mui/material"
 import Grid from "@mui/material/Grid"
 import { useContext } from "react"
-import { ThemeContext } from "../Theme/ThemeContext"
+import { themeContext } from "../../contexts/themeContext"
 
 const GridContainerWithThemeMainColor = (props) => {
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme } = useContext(themeContext)
 
   const GridStyled = styled(Grid)`
     background-color: ${currentTheme.colors.primaryColor};

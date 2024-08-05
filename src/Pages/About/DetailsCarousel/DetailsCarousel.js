@@ -2,14 +2,14 @@ import { Box, IconButton } from "@mui/material"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useContext } from "react"
 import TypographyWithTheme from "../../../Resources/StyledComponents/TypographyWithTheme"
-import { ThemeContext } from "../../../Resources/Theme/ThemeContext"
+import { themeContext } from "../../../contexts/themeContext"
 import { Carousel } from "react-responsive-carousel"
 import { ArrowBack, ArrowForward } from "@mui/icons-material"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 function DetailsCarousel({ items }) {
   const matches = useMediaQuery("(min-width:1000px)")
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme } = useContext(themeContext)
 
   const arrowStyles = {
     position: "absolute",

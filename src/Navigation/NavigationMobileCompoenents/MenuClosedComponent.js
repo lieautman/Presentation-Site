@@ -1,12 +1,12 @@
 import { useContext } from "react"
-import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import { themeContext } from "../../contexts/themeContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import { IconButton } from "@mui/material"
 import { Menu } from "@mui/icons-material"
 
 function MenuClosedComponent({ setMenuOpen }) {
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme } = useContext(themeContext)
 
   return (
     <>

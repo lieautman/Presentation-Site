@@ -1,7 +1,7 @@
 import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext } from "react"
-import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import { themeContext } from "../../contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Button, IconButton } from "@mui/material"
@@ -9,7 +9,7 @@ import { Download } from "@mui/icons-material"
 
 function Resume() {
   const { t, i18n } = useTranslation()
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme } = useContext(themeContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   const onButtonClick = () => {

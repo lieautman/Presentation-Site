@@ -1,7 +1,7 @@
 import LanguageChanger from "../LanguageChanger/LanguageChanger"
 import ThemeChanger from "../ThemeChanger/ThemeChanger"
 import { useContext } from "react"
-import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import { themeContext } from "../../contexts/themeContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"
@@ -11,7 +11,7 @@ import "../../Resources/Css/NavBarTransition.css"
 
 function MenuOpenComponent({ setPageNo, setMenuOpen }) {
   const { t } = useTranslation()
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme } = useContext(themeContext)
 
   return (
     <>

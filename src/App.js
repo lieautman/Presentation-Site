@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import NavigationContainer from "./Navigation/NavigationContainer"
 import Pages from "./Pages"
 import { PageContext } from "./Navigation/State/PageContext"
-import { ThemeContext } from "./Resources/Theme/ThemeContext"
+import { themeContext } from "./contexts/themeContext"
 import ScrollbarWrapper from "./Resources/StyledComponents/ScrollbarWrapper"
 import { darkTheme } from "./Resources/Theme/Theme"
 import useMediaQuery from "@mui/material/useMediaQuery"
@@ -15,10 +15,10 @@ function App() {
   return (
     <ScrollbarWrapper display={matches}>
       <PageContext.Provider value={{ pageNo, setPageNo }}>
-        <ThemeContext.Provider value={{ currentTheme, setCurrentTheme }}>
+        <themeContext.Provider value={{ currentTheme, setCurrentTheme }}>
           <NavigationContainer />
           <Pages pageNo={pageNo} />
-        </ThemeContext.Provider>
+        </themeContext.Provider>
       </PageContext.Provider>
     </ScrollbarWrapper>
   )

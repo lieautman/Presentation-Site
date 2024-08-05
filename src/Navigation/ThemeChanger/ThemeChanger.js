@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import { themeContext } from "../../contexts/themeContext"
 import { darkTheme, simpleTheme } from "../../Resources/Theme/Theme"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"
@@ -8,7 +8,7 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 
 const ThemeChanger = () => {
   const { t } = useTranslation()
-  const { currentTheme, setCurrentTheme } = useContext(ThemeContext)
+  const { currentTheme, setCurrentTheme } = useContext(themeContext)
   const matches = useMediaQuery("(min-width:600px)")
   return (
     <Button

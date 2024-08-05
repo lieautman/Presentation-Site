@@ -1,7 +1,7 @@
 import { createContext } from "react"
-import { darkTheme } from "./Theme"
+import { darkTheme } from "../Resources/Theme/Theme"
 
-export const ThemeContext = createContext({
+export const themeContext = createContext({
   currentTheme: darkTheme,
   setCurrentTheme: (theme) => {},
 })

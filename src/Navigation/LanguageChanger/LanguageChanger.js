@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next"
 import { Select, MenuItem } from "@mui/material"
 import { useContext } from "react"
-import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import { themeContext } from "../../contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
 const LanguageChanger = () => {
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme } = useContext(themeContext)
   const matches = useMediaQuery("(min-width:600px)")
   const { t, i18n } = useTranslation()
   const changeLang = (lng) => {

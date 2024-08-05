@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { ThemeContext } from "../../Resources/Theme/ThemeContext"
+import { themeContext } from "../../contexts/themeContext"
 import GridContainerWithThemeMainColor from "../../Resources/StyledComponents/GridContainerWithThemeMainColor"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next"
 
 function NavigationDesktopComponent(porps) {
   const { t } = useTranslation()
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme } = useContext(themeContext)
   return (
     <GridContainerWithThemeMainColor container className="scrollSnapSection" style={{ height: "9vh" }}>
       <GridItemAligned item xs={1}>
