@@ -54,25 +54,25 @@ function Page2() {
         <TypographyWithTheme color={currentTheme.colors.textOnDark}>
           <h3
             style={{
-              fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+              fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.p,
             }}>
             {t("Home.Page2.Paragraph1")}
           </h3>
           <h3
             style={{
-              fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+              fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
             }}>
             {t("Home.Page2.Paragraph2")}
           </h3>
           <h3
             style={{
-              fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+              fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.h3,
             }}>
             {t("Home.Page2.Paragraph3")}
           </h3>
           <h3
             style={{
-              fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+              fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
             }}>
             {t("Home.Page2.Paragraph4")}
           </h3>
