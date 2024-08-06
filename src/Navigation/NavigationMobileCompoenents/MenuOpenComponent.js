@@ -26,7 +26,12 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
           animation: "0.25s ease-in 0s 1 slide",
           position: "absolute",
           backgroundColor: currentTheme.colors.secondaryAccentsColor,
-        }}>
+        }}
+        component={motion.div}
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.05 }}>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <IconButton
             aria-label="delete"
