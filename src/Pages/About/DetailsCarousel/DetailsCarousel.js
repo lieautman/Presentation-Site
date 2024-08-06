@@ -38,7 +38,11 @@ function DetailsCarousel({ items }) {
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev &&
           matches1100 && (
-            <IconButton type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 }}>
+            <IconButton
+              type="button"
+              onClick={onClickHandler}
+              title={label}
+              style={{ ...arrowStyles, left: 5, color: currentTheme.colors.primaryColor }}>
               <ArrowBack />
             </IconButton>
           )
@@ -46,7 +50,11 @@ function DetailsCarousel({ items }) {
         renderArrowNext={(onClickHandler, hasNext, label) =>
           hasNext &&
           matches1100 && (
-            <IconButton type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 15 }}>
+            <IconButton
+              type="button"
+              onClick={onClickHandler}
+              title={label}
+              style={{ ...arrowStyles, right: 5, color: currentTheme.colors.primaryColor }}>
               <ArrowForward />
             </IconButton>
           )
