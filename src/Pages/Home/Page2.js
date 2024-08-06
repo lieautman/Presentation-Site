@@ -34,7 +34,6 @@ function Page2() {
             }}
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
-            exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 1 }}>
             {t("Home.Page2.Title1")}
           </motion.h1>
@@ -47,10 +46,13 @@ function Page2() {
           alignItems: "center",
           justifyContent: "center",
           marginTop: "25vh",
-          textAlign: "center",
           backgroundColor: currentTheme.colors.primaryAccentsColor,
           height: "40vh",
-        }}>
+        }}
+        component={motion.div}
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -20 }}
+        transition={{ duration: 1 }}>
         <TypographyWithTheme color={currentTheme.colors.textOnDark}>
           <h3
             style={{
