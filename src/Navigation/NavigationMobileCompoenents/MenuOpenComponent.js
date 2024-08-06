@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next"
 import { MenuOpen } from "@mui/icons-material"
 import { IconButton, Button, Grid } from "@mui/material"
 import "../../Resources/Css/NavBarTransition.css"
+import { motion } from "framer-motion"
 
 function MenuOpenComponent({ setPageNo, setMenuOpen }) {
   const { t } = useTranslation()
@@ -30,7 +31,16 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
           <IconButton
             aria-label="delete"
             style={{ color: currentTheme.colors.textOnDark }}
-            onClick={() => setMenuOpen(false)}>
+            onClick={() => setMenuOpen(false)}
+            component={motion.div}
+            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.1 } }}
+            initial={{ opacity: 0, x: -150 }}
+            transition={{ duration: 0.25 }}
+            whileHover={{
+              scale: 0.9,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.7 }}>
             <MenuOpen sx={{ fontSize: currentTheme.fontSizesPhone.h1 }} />
           </IconButton>
         </Grid>
@@ -39,7 +49,16 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => {
               setPageNo(1)
               setMenuOpen(false)
-            }}>
+            }}
+            component={motion.div}
+            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2 } }}
+            initial={{ opacity: 0, x: -150 }}
+            transition={{ duration: 0.25 }}
+            whileHover={{
+              scale: 0.9,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.7 }}>
             <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h3
                 style={{
@@ -55,7 +74,16 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => {
               setPageNo(2)
               setMenuOpen(false)
-            }}>
+            }}
+            component={motion.div}
+            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
+            initial={{ opacity: 0, x: -150 }}
+            transition={{ duration: 0.25 }}
+            whileHover={{
+              scale: 0.9,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.7 }}>
             <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h3
                 style={{
@@ -71,7 +99,16 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => {
               setPageNo(3)
               setMenuOpen(false)
-            }}>
+            }}
+            component={motion.div}
+            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.4 } }}
+            initial={{ opacity: 0, x: -150 }}
+            transition={{ duration: 0.25 }}
+            whileHover={{
+              scale: 0.9,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.7 }}>
             <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h3
                 style={{
@@ -87,7 +124,16 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => {
               setPageNo(4)
               setMenuOpen(false)
-            }}>
+            }}
+            component={motion.div}
+            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.5 } }}
+            initial={{ opacity: 0, x: -150 }}
+            transition={{ duration: 0.25 }}
+            whileHover={{
+              scale: 0.9,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.7 }}>
             <TypographyWithTheme color={currentTheme.colors.textOnDark}>
               <h3
                 style={{
