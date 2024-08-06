@@ -33,7 +33,7 @@ function Page2() {
             justifyContent: "center",
             textAlign: "center",
             backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
-            height: "10vh",
+            height: matches ? "10vh" : "15vh",
           }}>
           <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <motion.h1
@@ -54,10 +54,10 @@ function Page2() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "15vh",
+            marginTop: matches ? "15vh" : "5vh",
             textAlign: "center",
             backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
-            height: "60vh",
+            height: matches ? "60vh" : "75vh",
           }}>
           {" "}
           <DetailsCarousel

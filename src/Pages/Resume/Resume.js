@@ -5,7 +5,7 @@ import { themeContext } from "../../Contexts/themeContext"
 import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
-import { Button, IconButton } from "@mui/material"
+import { Box, Button, IconButton } from "@mui/material"
 import { Download } from "@mui/icons-material"
 import { motion, useAnimate } from "framer-motion"
 
@@ -17,23 +17,25 @@ function Resume() {
   const [scope, animate] = useAnimate()
 
   const myAnimation = useCallback(async () => {
-    await animate(scope.current, { rotate: -180 })
-    await animate(scope.current, { scale: 1.3 })
-    await animate(scope.current, { rotate: 0 })
-    await animate(scope.current, { scale: 1 })
+    try {
+      await animate(scope.current, { rotate: -180 })
+      await animate(scope.current, { scale: 1.3 })
+      await animate(scope.current, { rotate: 0 })
+      await animate(scope.current, { scale: 1 })
 
-    animate(
-      scope.current,
-      {
-        scale: 1.3,
-      },
-      {
-        repeat: Infinity,
-        repeatType: "mirror",
-        ease: "easeInOut",
-        duration: 1,
-      }
-    )
+      animate(
+        scope.current,
+        {
+          scale: 1.3,
+        },
+        {
+          repeat: Infinity,
+          repeatType: "mirror",
+          ease: "easeInOut",
+          duration: 1,
+        }
+      )
+    } catch (e) {}
   }, [animate, scope])
 
   useEffect(() => {
@@ -86,15 +88,15 @@ function Resume() {
         height={100}
         className={scrollSnap ? "scrollSnapSection" : ""}
         backgroundColor={currentTheme.colors.secondaryColor}>
-        <BoxWithvh
-          height={10}
-          backgroundColor={currentTheme.colors.primaryAccentsColor}
+        <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
+            height: matches ? "10vh" : "15vh",
+            backgroundColor: currentTheme.colors.primaryAccentsColor,
           }}>
           <TypographyWithTheme color={currentTheme.colors.textOnDark}>
             <motion.h1
@@ -108,7 +110,7 @@ function Resume() {
               {t("Resume.Page2.Title1")}
             </motion.h1>
           </TypographyWithTheme>
-        </BoxWithvh>
+        </Box>
         <BoxWithvh
           height={40}
           backgroundColor={currentTheme.colors.primaryAccentsColor}

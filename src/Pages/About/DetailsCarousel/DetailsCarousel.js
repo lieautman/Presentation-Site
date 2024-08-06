@@ -9,7 +9,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { motion } from "framer-motion"
 
 function DetailsCarousel({ items }) {
-  const matches = useMediaQuery("(min-width:1000px)")
+  const matches1100 = useMediaQuery("(min-width:1100px)")
+  const matches600 = useMediaQuery("(min-width:600px)")
   const { currentTheme } = useContext(themeContext)
 
   const arrowStyles = {
@@ -23,7 +24,10 @@ function DetailsCarousel({ items }) {
 
   return (
     <Box
-      sx={{ height: "50vh", width: "70vw" }}
+      sx={{
+        marginTop: "5vh",
+        width: "70vw",
+      }}
       component={motion.div}
       whileInView={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       initial={{ opacity: 0, x: 50 }}
@@ -33,7 +37,7 @@ function DetailsCarousel({ items }) {
         showStatus={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev &&
-          matches && (
+          matches1100 && (
             <IconButton type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 }}>
               <ArrowBack />
             </IconButton>
@@ -41,7 +45,7 @@ function DetailsCarousel({ items }) {
         }
         renderArrowNext={(onClickHandler, hasNext, label) =>
           hasNext &&
-          matches && (
+          matches1100 && (
             <IconButton type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 15 }}>
               <ArrowForward />
             </IconButton>
@@ -49,7 +53,7 @@ function DetailsCarousel({ items }) {
         }>
         {items.map((item) => (
           <Box sx={{ height: "50vh", width: "70vw", display: "flex" }}>
-            {matches ? (
+            {matches1100 ? (
               <Box
                 sx={{
                   height: "50vh",
@@ -64,25 +68,25 @@ function DetailsCarousel({ items }) {
             <Box
               sx={{
                 height: "50vh",
-                width: matches ? "35vw" : "70vw",
+                width: matches1100 ? "35vw" : "70vw",
                 backgroundColor: `${currentTheme.colors.secondaryAccentsColor}`,
                 overflow: "auto",
               }}>
               <Box>
                 <TypographyWithTheme color={currentTheme.colors.textOnDark}>
                   <h3
-                    sx={{
-                      fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+                    style={{
+                      fontSize: matches600 ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
                     }}>
                     {item.header}
                   </h3>
                 </TypographyWithTheme>
               </Box>
-              <Box sx={{ textAlign: "left", margin: "20px" }}>
+              <Box sx={{ textAlign: "left", margin: matches1100 ? "20px" : "5px" }}>
                 <TypographyWithTheme color={currentTheme.colors.textOnDark}>
                   <p
-                    sx={{
-                      fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
+                    style={{
+                      fontSize: matches600 ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
                     }}>
                     {item.text}
                   </p>
