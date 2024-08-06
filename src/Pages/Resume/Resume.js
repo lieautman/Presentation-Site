@@ -1,19 +1,44 @@
 import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
-import { useContext } from "react"
+import { useCallback, useContext, useEffect } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Button, IconButton } from "@mui/material"
 import { Download } from "@mui/icons-material"
-import { motion } from "framer-motion"
+import { motion, useAnimate } from "framer-motion"
 
 function Resume() {
   const { t, i18n } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { scrollSnap } = useContext(scrollSnapContext)
   const matches = useMediaQuery("(min-width:600px)")
+  const [scope, animate] = useAnimate()
+
+  const myAnimation = useCallback(async () => {
+    await animate(scope.current, { rotate: -180 })
+    await animate(scope.current, { scale: 1.3 })
+    await animate(scope.current, { rotate: 0 })
+    await animate(scope.current, { scale: 1 })
+
+    animate(
+      scope.current,
+      {
+        scale: 1.3,
+      },
+      {
+        repeat: Infinity,
+        repeatType: "mirror",
+        ease: "easeInOut",
+        duration: 1,
+      }
+    )
+  }, [animate, scope])
+
+  useEffect(() => {
+    myAnimation()
+  }, [myAnimation])
 
   const onButtonClick = () => {
     const pdfUrl = i18n.language === "en" ? "CV_EN.pdf" : "CV_RO.pdf"
@@ -95,19 +120,7 @@ function Resume() {
             marginTop: "25vh",
             textAlign: "center",
           }}>
-          <Button
-            onClick={onButtonClick}
-            sx={{ cursor: "pointer" }}
-            component={motion.div}
-            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.1 } }}
-            initial={{ opacity: 0, y: 20 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.25 }}
-            whileHover={{
-              scale: 0.9,
-              transition: { duration: 0.3 },
-            }}
-            whileTap={{ scale: 0.7 }}>
+          <Button onClick={onButtonClick} sx={{ cursor: "pointer" }} component={motion.div} ref={scope}>
             <IconButton style={{ color: currentTheme.colors.textOnDark }}>
               <Download
                 style={{
