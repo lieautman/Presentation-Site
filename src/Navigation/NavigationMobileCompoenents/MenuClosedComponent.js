@@ -5,6 +5,7 @@ import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import { Grid, IconButton } from "@mui/material"
 import { Menu } from "@mui/icons-material"
 import { motion } from "framer-motion"
+import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 
 function MenuClosedComponent({ setMenuOpen }) {
   const { currentTheme } = useContext(themeContext)
@@ -31,7 +32,8 @@ function MenuClosedComponent({ setMenuOpen }) {
               transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.9 }}>
-            <Menu sx={{ fontSize: currentTheme.fontSizesPhone.h1 }} />
+            <Menu sx={{ fontSize: currentTheme.fontSizesPhone.h1Big }} />
+            <TypographyWithTheme color={currentTheme.colors.textOnDark}>Menu</TypographyWithTheme>
           </IconButton>
         </GridItemAligned>
         <GridItemAligned item xs={6}>

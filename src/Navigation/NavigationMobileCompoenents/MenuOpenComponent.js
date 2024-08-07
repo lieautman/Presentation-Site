@@ -46,7 +46,8 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
               transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.7 }}>
-            <MenuOpen sx={{ fontSize: currentTheme.fontSizesPhone.h1 }} />
+            <MenuOpen sx={{ fontSize: currentTheme.fontSizesPhone.h1Big }} />
+            <TypographyWithTheme color={currentTheme.colors.textOnDark}>Menu</TypographyWithTheme>
           </IconButton>
         </Grid>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
