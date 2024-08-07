@@ -29,8 +29,8 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         }}
         component={motion.div}
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        exit={{ opacity: 0, x: -100 }}
+        initial={{ opacity: 0, x: -50 }}
+        exit={{ opacity: 0, x: -50 }}
         transition={{ duration: 0.05 }}>
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <IconButton
@@ -39,7 +39,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             onClick={() => setMenuOpen(false)}
             component={motion.div}
             whileInView={{ opacity: 1, x: 0, transition: { delay: 0.1 } }}
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.25 }}
             whileHover={{
               scale: 0.9,
@@ -57,7 +57,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             }}
             component={motion.div}
             whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2 } }}
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.25 }}
             whileHover={{
               scale: 0.9,
@@ -82,7 +82,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             }}
             component={motion.div}
             whileInView={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.25 }}
             whileHover={{
               scale: 0.9,
@@ -107,7 +107,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             }}
             component={motion.div}
             whileInView={{ opacity: 1, x: 0, transition: { delay: 0.4 } }}
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.25 }}
             whileHover={{
               scale: 0.9,
@@ -132,7 +132,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
             }}
             component={motion.div}
             whileInView={{ opacity: 1, x: 0, transition: { delay: 0.5 } }}
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.25 }}
             whileHover={{
               scale: 0.9,

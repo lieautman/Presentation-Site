@@ -5,7 +5,7 @@ import { pageContext } from "./Contexts/pageContext"
 import { themeContext } from "./Contexts/themeContext"
 import { scrollSnapContext } from "./Contexts/scrollSnapContext"
 import ScrollbarWrapper from "./Resources/StyledComponents/ScrollbarWrapper"
-import { darkTheme } from "./Resources/Theme/Theme"
+import { darkTheme } from "./Resources/Theme/theme"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import "./Resources/Css/scrollSnap.css"
 

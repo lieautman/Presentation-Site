@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
-import { darkTheme, purpleTheme } from "../../Resources/Theme/Theme"
+import { darkTheme, purpleTheme } from "../../Resources/Theme/theme"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"
 import { Button, Switch } from "@mui/material"
