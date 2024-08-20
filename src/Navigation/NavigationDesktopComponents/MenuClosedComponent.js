@@ -7,11 +7,13 @@ import { Menu } from "@mui/icons-material"
 import { useTranslation } from "react-i18next"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { motion } from "framer-motion"
+import { useNavigate } from "react-router-dom"
 
-function MenuClosedComponent({ setPageNo, setMenuOpen }) {
+function MenuClosedComponent({ setMenuOpen }) {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { scrollSnap } = useContext(scrollSnapContext)
+  const navigate = useNavigate()
 
   return (
     <Grid
@@ -38,7 +40,7 @@ function MenuClosedComponent({ setPageNo, setMenuOpen }) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button
-          onClick={() => setPageNo(1)}
+          onClick={() => navigate("/home")}
           component={motion.div}
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
@@ -55,7 +57,7 @@ function MenuClosedComponent({ setPageNo, setMenuOpen }) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button
-          onClick={() => setPageNo(2)}
+          onClick={() => navigate("/about")}
           component={motion.div}
           whileInView={{ opacity: 1, y: 0, transition: { delay: 0.1 } }}
           initial={{ opacity: 0, y: 20 }}
@@ -73,7 +75,7 @@ function MenuClosedComponent({ setPageNo, setMenuOpen }) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button
-          onClick={() => setPageNo(3)}
+          onClick={() => navigate("/contact")}
           component={motion.div}
           whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
           initial={{ opacity: 0, y: 20 }}
@@ -91,7 +93,7 @@ function MenuClosedComponent({ setPageNo, setMenuOpen }) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button
-          onClick={() => setPageNo(4)}
+          onClick={() => navigate("/resume")}
           component={motion.div}
           whileInView={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
           initial={{ opacity: 0, y: 20 }}

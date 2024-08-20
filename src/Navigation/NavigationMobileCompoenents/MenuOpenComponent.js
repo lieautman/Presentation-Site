@@ -9,10 +9,12 @@ import { MenuOpen } from "@mui/icons-material"
 import { IconButton, Button, Grid } from "@mui/material"
 import "../../Resources/Css/NavBarTransition.css"
 import { motion } from "framer-motion"
+import { useNavigate } from "react-router-dom"
 
-function MenuOpenComponent({ setPageNo, setMenuOpen }) {
+function MenuOpenComponent({ setMenuOpen }) {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
+  const navigate = useNavigate()
 
   return (
     <>
@@ -53,7 +55,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
-              setPageNo(1)
+              navigate("home")
               setMenuOpen(false)
             }}
             component={motion.div}
@@ -78,7 +80,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
-              setPageNo(2)
+              navigate("about")
               setMenuOpen(false)
             }}
             component={motion.div}
@@ -103,7 +105,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
-              setPageNo(3)
+              navigate("contact")
               setMenuOpen(false)
             }}
             component={motion.div}
@@ -128,7 +130,7 @@ function MenuOpenComponent({ setPageNo, setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
-              setPageNo(4)
+              navigate("resume")
               setMenuOpen(false)
             }}
             component={motion.div}

@@ -18,6 +18,11 @@
       "Resume": "Resume"
     }
   },
+  "Error": {
+    "Page1": {
+      "Title1": "You should not be able to get here!"
+    }
+  },
   "Home": {
     "Page1": {
       "Title1": "Hello World and welcome to my website!",

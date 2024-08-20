@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next"
 import { Box, Button, IconButton } from "@mui/material"
 import { Download } from "@mui/icons-material"
 import { motion, useAnimate } from "framer-motion"
+import NavigationContainer from "../../Navigation/NavigationContainer"
 
 function Resume() {
   const { t, i18n } = useTranslation()
@@ -54,6 +55,7 @@ function Resume() {
 
   return (
     <>
+      <NavigationContainer />
       <BoxWithvh
         height={91}
         sx={{

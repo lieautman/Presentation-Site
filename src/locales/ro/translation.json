@@ -18,6 +18,11 @@
       "Resume": "Curriculum vitae"
     }
   },
+  "Error": {
+    "Page1": {
+      "Title1": "Nu ar trebui sa poti ajunge aici!"
+    }
+  },
   "Home": {
     "Page1": {
       "Title1": "Salutare lume si bine ati venit in website-ul meu!",
