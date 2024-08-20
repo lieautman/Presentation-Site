@@ -33,6 +33,7 @@ function DetailsCarousel({ items }) {
       initial={{ opacity: 0, x: 50 }}
       transition={{ duration: 0.7 }}>
       <Carousel
+        showThumbs={false}
         swipeable
         showStatus={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
