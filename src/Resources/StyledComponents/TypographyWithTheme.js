@@ -5,7 +5,7 @@ const TypographyWithTheme = (props) => {
   const TypographyStyled = styled(Typography)`
     color: ${props.color};
   `
-  return <TypographyStyled>{props.children}</TypographyStyled>
+  return <TypographyStyled props={{ ...props }}>{props.children}</TypographyStyled>
 }
 
 export default TypographyWithTheme
