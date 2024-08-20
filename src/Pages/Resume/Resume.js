@@ -1,11 +1,10 @@
 import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
-import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useCallback, useContext, useEffect } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
-import { Box, Button, IconButton } from "@mui/material"
+import { Box, Button, IconButton, Typography } from "@mui/material"
 import { Download } from "@mui/icons-material"
 import { motion, useAnimate } from "framer-motion"
 import NavigationContainer from "../../Navigation/NavigationContainer"
@@ -69,22 +68,26 @@ function Resume() {
           justifyContent: "center",
           textAlign: "center",
         }}>
-        <TypographyWithTheme color={currentTheme.colors.textOnLight}>
-          <h1
-            style={{
-              fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-            }}>
-            {t("Resume.Page1.Title1")}
-          </h1>
-        </TypographyWithTheme>
-        <TypographyWithTheme color={currentTheme.colors.textOnLight}>
-          <h2
-            style={{
-              fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
-            }}>
-            {t("Resume.Page1.Title2")}
-          </h2>
-        </TypographyWithTheme>
+        <Typography
+          variant="h1"
+          gutterBottom
+          fontWeight={"fontWeightBold"}
+          style={{
+            color: currentTheme.colors.textOnLight,
+            fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+          }}>
+          {t("Resume.Page1.Title1")}
+        </Typography>
+        <Typography
+          variant="h2"
+          gutterBottom
+          fontWeight={"fontWeightBold"}
+          style={{
+            color: currentTheme.colors.textOnLight,
+            fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
+          }}>
+          {t("Resume.Page1.Title2")}
+        </Typography>
       </BoxWithvh>
       <BoxWithvh
         height={100}
@@ -100,18 +103,20 @@ function Resume() {
             height: matches ? "10vh" : "15vh",
             backgroundColor: currentTheme.colors.primaryAccentsColor,
           }}>
-          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
-            <motion.h1
-              style={{
-                fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-              }}
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 20 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 1 }}>
-              {t("Resume.Page2.Title1")}
-            </motion.h1>
-          </TypographyWithTheme>
+          <Typography
+            variant="h1"
+            fontWeight={"fontWeightBold"}
+            style={{
+              color: currentTheme.colors.textOnDark,
+              fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+            }}
+            component={motion.h1}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 1 }}>
+            {t("Resume.Page2.Title1")}
+          </Typography>
         </Box>
         <BoxWithvh
           height={40}
@@ -132,14 +137,16 @@ function Resume() {
                 }}
               />
             </IconButton>
-            <TypographyWithTheme color={currentTheme.colors.textOnDark}>
-              <h1
-                style={{
-                  fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-                }}>
-                {t("Resume.Page2.Paragraph1")}
-              </h1>
-            </TypographyWithTheme>
+            <Typography
+              variant="h1"
+              gutterBottom
+              fontWeight={"fontWeightBold"}
+              style={{
+                color: currentTheme.colors.textOnDark,
+                fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+              }}>
+              {t("Resume.Page2.Paragraph1")}
+            </Typography>
           </Button>
         </BoxWithvh>
       </BoxWithvh>
