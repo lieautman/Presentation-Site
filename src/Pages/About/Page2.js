@@ -6,12 +6,9 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "./DetailsCarousel/DetailsCarousel"
-import AboutPage2CarouselItem3 from "../../Resources/Images/AboutPage2CarouselItem3.jpg"
-import AboutPage2CarouselItem2 from "../../Resources/Images/AboutPage2CarouselItem2.jpg"
-import AboutPage2CarouselItem1 from "../../Resources/Images/AboutPage2CarouselItem1.jpg"
 import { motion } from "framer-motion"
 
-function Page2() {
+function Page3() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { scrollSnap } = useContext(scrollSnapContext)
@@ -59,29 +56,11 @@ function Page2() {
             backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
             height: matches ? "60vh" : "75vh",
           }}>
-          <DetailsCarousel
-            items={[
-              {
-                image: AboutPage2CarouselItem3,
-                header: t("About.Page2.Carousel.item3.header"),
-                text: t("About.Page2.Carousel.item3.text"),
-              },
-              {
-                image: AboutPage2CarouselItem2,
-                header: t("About.Page2.Carousel.item2.header"),
-                text: t("About.Page2.Carousel.item2.text"),
-              },
-              {
-                image: AboutPage2CarouselItem1,
-                header: t("About.Page2.Carousel.item1.header"),
-                text: t("About.Page2.Carousel.item1.text"),
-              },
-            ]}
-          />
+          <DetailsCarousel items={[]} />
         </Box>
       </Box>
     </>
   )
 }
 
-export default Page2
+export default Page3

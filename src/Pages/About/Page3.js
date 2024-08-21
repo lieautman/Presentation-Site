@@ -6,12 +6,15 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "./DetailsCarousel/DetailsCarousel"
+import AboutPage3CarouselItem6 from "../../Resources/Images/AboutPage3CarouselItem6.jpg"
+import AboutPage3CarouselItem5 from "../../Resources/Images/AboutPage3CarouselItem5.jpg"
+import AboutPage3CarouselItem4 from "../../Resources/Images/AboutPage3CarouselItem4.jpg"
 import AboutPage3CarouselItem3 from "../../Resources/Images/AboutPage3CarouselItem3.jpg"
 import AboutPage3CarouselItem2 from "../../Resources/Images/AboutPage3CarouselItem2.jpg"
 import AboutPage3CarouselItem1 from "../../Resources/Images/AboutPage3CarouselItem1.jpg"
 import { motion } from "framer-motion"
 
-function Page2() {
+function Page3() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { scrollSnap } = useContext(scrollSnapContext)
@@ -59,9 +62,23 @@ function Page2() {
             backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
             height: matches ? "60vh" : "75vh",
           }}>
-          {" "}
           <DetailsCarousel
             items={[
+              {
+                image: AboutPage3CarouselItem6,
+                header: t("About.Page3.Carousel.item6.header"),
+                text: t("About.Page3.Carousel.item6.text"),
+              },
+              {
+                image: AboutPage3CarouselItem5,
+                header: t("About.Page3.Carousel.item5.header"),
+                text: t("About.Page3.Carousel.item5.text"),
+              },
+              {
+                image: AboutPage3CarouselItem4,
+                header: t("About.Page3.Carousel.item4.header"),
+                text: t("About.Page3.Carousel.item4.text"),
+              },
               {
                 image: AboutPage3CarouselItem3,
                 header: t("About.Page3.Carousel.item3.header"),
@@ -85,4 +102,4 @@ function Page2() {
   )
 }
 
-export default Page2
+export default Page3
