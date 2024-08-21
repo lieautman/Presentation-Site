@@ -23,7 +23,7 @@ const MyComponent = ({ route, text }) => {
           }
         })
       },
-      { threshold: 1 }
+      { threshold: 0.99 }
     )
     if (divRef.current) {
       observer.observe(divRef.current)
