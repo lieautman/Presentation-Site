@@ -57,36 +57,40 @@ function Page2() {
         <Typography
           variant="p"
           gutterBottom
+          align={"center"}
           style={{
             color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+            fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
           }}>
           {t("Home.Page2.Paragraph1")}
         </Typography>
         <Typography
           variant="p"
           gutterBottom
+          align={"center"}
           style={{
             color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+            fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
           }}>
           {t("Home.Page2.Paragraph2")}
         </Typography>
         <Typography
           variant="p"
           gutterBottom
+          align={"center"}
           style={{
             color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+            fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
           }}>
           {t("Home.Page2.Paragraph3")}
         </Typography>
         <Typography
           variant="p"
           gutterBottom
+          align={"center"}
           style={{
             color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
+            fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
           }}>
           {t("Home.Page2.Paragraph4")}
         </Typography>

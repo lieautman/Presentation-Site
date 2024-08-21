@@ -31,7 +31,7 @@ export const purpleTheme = createTheme({
     h1: "4vmin",
     h2: "3vmin",
     h3: "2vmin",
-    p: "2vmin",
+    p: "2.5vmin",
   },
   fontSizesPhone: {
     h1Big: "8vmin",
@@ -60,7 +60,7 @@ export const darkTheme = createTheme({
     h1: "4vmin",
     h2: "3vmin",
     h3: "2vmin",
-    p: "2vmin",
+    p: "2.5vmin",
   },
   fontSizesPhone: {
     h1Big: "8vmin",
