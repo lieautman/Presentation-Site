@@ -46,7 +46,7 @@
       "Carousel":{
         "item1":{
           "header":"My GitHub",
-          "text":"I want to first link to my <1>GitHub</1>."
+          "text":"My <1>GitHub</1>. I have used this as an educational and professional hub for all my projects for the past 6 years and would like to display it first."
         }
       }
     },
