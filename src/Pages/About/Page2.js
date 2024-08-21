@@ -3,10 +3,11 @@ import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
-import { useTranslation } from "react-i18next"
+import { Trans, useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "./DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
+import AboutPage2CarouselItem1 from "../../Resources/Images/AboutPage2CarouselItem1.jpg"
 
 function Page3() {
   const { t } = useTranslation()
@@ -56,7 +57,19 @@ function Page3() {
             backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
             height: matches ? "60vh" : "75vh",
           }}>
-          <DetailsCarousel items={[]} />
+          <DetailsCarousel
+            items={[
+              {
+                image: AboutPage2CarouselItem1,
+                header: t("About.Page2.Carousel.item1.header"),
+                text: (
+                  <Trans i18nKey="About.Page2.Carousel.item1.text">
+                    This should be a <a href="https://github.com/lieautman">some link</a>
+                  </Trans>
+                ),
+              },
+            ]}
+          />
         </Box>
       </Box>
     </>

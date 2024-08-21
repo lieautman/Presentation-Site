@@ -42,7 +42,13 @@
       "Title1": "Below you can find details about my projects, education and career!"
     },
     "Page2": {
-      "Title1": "This are my notable projects!"
+      "Title1": "This are my notable projects!",
+      "Carousel":{
+        "item1":{
+          "header":"My GitHub",
+          "text":"I want to first link to my <1>GitHub</1>."
+        }
+      }
     },
     "Page3": {
       "Title1": "This is my professional and educational background!",

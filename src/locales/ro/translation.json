@@ -42,7 +42,13 @@
       "Title1": "Mai jos poti gasi detalii despre proiectele, educatia si cariera mea!"
     },
     "Page2": {
-      "Title1": "Acestea sunt proiectele mele!"
+      "Title1": "Acestea sunt proiectele mele!",
+      "Carousel":{
+        "item1":{
+          "header":"GitHub-ul meu",
+          "text":"Vreau mai intai sa prezint <1>GitHub-ul</1> meu."
+        }
+      }
     },
     "Page3": {
       "Title1": "Acesta este parcursul meu profesional si educational!",
