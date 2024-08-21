@@ -40,7 +40,7 @@ function MenuClosedComponent({ setMenuOpen }) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button
-          onClick={() => navigate("/Presentation-Site/home")}
+          onClick={() => navigate("/home")}
           component={motion.div}
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ function MenuClosedComponent({ setMenuOpen }) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button
-          onClick={() => navigate("/Presentation-Site/about")}
+          onClick={() => navigate("/about")}
           component={motion.div}
           whileInView={{ opacity: 1, y: 0, transition: { delay: 0.1 } }}
           initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ function MenuClosedComponent({ setMenuOpen }) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button
-          onClick={() => navigate("/Presentation-Site/contact")}
+          onClick={() => navigate("/contact")}
           component={motion.div}
           whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
           initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ function MenuClosedComponent({ setMenuOpen }) {
       </GridItemAligned>
       <GridItemAligned item xs={2}>
         <Button
-          onClick={() => navigate("/Presentation-Site/resume")}
+          onClick={() => navigate("/resume")}
           component={motion.div}
           whileInView={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
           initial={{ opacity: 0, y: 20 }}

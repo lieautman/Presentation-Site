@@ -55,7 +55,7 @@ function MenuOpenComponent({ setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
-              navigate("/Presentation-Site/home")
+              navigate("/home")
               setMenuOpen(false)
             }}
             component={motion.div}
@@ -80,7 +80,7 @@ function MenuOpenComponent({ setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
-              navigate("/Presentation-Site/about")
+              navigate("/about")
               setMenuOpen(false)
             }}
             component={motion.div}
@@ -105,7 +105,7 @@ function MenuOpenComponent({ setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
-              navigate("/Presentation-Site/contact")
+              navigate("/contact")
               setMenuOpen(false)
             }}
             component={motion.div}
@@ -130,7 +130,7 @@ function MenuOpenComponent({ setMenuOpen }) {
         <Grid item xs={12} sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "9vh" }}>
           <Button
             onClick={() => {
-              navigate("/Presentation-Site/resume")
+              navigate("/resume")
               setMenuOpen(false)
             }}
             component={motion.div}
