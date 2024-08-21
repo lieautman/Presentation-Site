@@ -8,12 +8,16 @@ import emailjs from "@emailjs/browser"
 import { Button, Input } from "@mui/material"
 import Box from "@mui/material/Box"
 import { motion } from "framer-motion"
+import ReCAPTCHA from "react-google-recaptcha"
+import { toast } from "react-toastify"
 
 function Page2() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { scrollSnap } = useContext(scrollSnapContext)
   const matches = useMediaQuery("(min-width:600px)")
+
+  const [capVal, setCapVal] = useState()
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -26,24 +30,33 @@ function Page2() {
     message: message,
   }
 
+  function emailIsValid(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
+    if (capVal && name && email && message && emailIsValid(email)) {
+      const ServiceId = "service_qa9ig88"
+      const TemplateId = "template_gkk4c6b"
+      const PublicKey = "IuBo1lXrKMjYBbSKG"
 
-    const ServiceId = "service_qa9ig88"
-    const TemplateId = "template_gkk4c6b"
-    const PublicKey = "IuBo1lXrKMjYBbSKG"
+      emailjs
+        .send(ServiceId, TemplateId, templateParams, PublicKey)
+        .then(() => {
+          toast(t("Contact.Page2.Success"))
+          setName("")
+          setEmail("")
+          setMessage("")
+        })
+        .catch(() => {
+          toast(t("Contact.Page2.Error"))
+        })
+    } else {
+      toast(t("Contact.Page2.Robot"))
+    }
 
-    emailjs
-      .send(ServiceId, TemplateId, templateParams, PublicKey)
-      .then((response) => {
-        console.log("Email sent succesfully!", response)
-        setName("")
-        setEmail("")
-        setMessage("")
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error)
-      })
+    setCapVal()
   }
 
   return (
@@ -83,10 +96,10 @@ function Page2() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "25vh",
+            marginTop: "20vh",
             textAlign: "center",
             backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
-            height: "40vh",
+            height: "50vh",
           }}>
           <Input
             type="text"
@@ -116,6 +129,7 @@ function Page2() {
               setMessage(e.target.value)
             }}
           />
+          <ReCAPTCHA sitekey="6Lc_QCwqAAAAALuTLns7R4MsPeKdRP0S_MehbCkY" onChange={(val) => setCapVal(val)} />
           <Button
             type="submit"
             onClick={handleSubmit}

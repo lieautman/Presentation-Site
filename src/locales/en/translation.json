@@ -85,7 +85,10 @@
       "Title1": "Below you can email me directly!"
     },
     "Page2": {
-      "Title1": "Contact me here!"
+      "Title1": "Contact me here!",
+      "Robot":"Are you a robot?",
+      "Success":"Email sent successfully!",
+      "Error":"Error!"
     }
   },
   "Resume": {

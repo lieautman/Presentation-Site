@@ -85,7 +85,10 @@
       "Title1": "Mai jos poti imi poti trimite un email direct!"
     },
     "Page2": {
-      "Title1": "Contacteaza-ma aici!"
+      "Title1": "Contacteaza-ma aici!",
+      "Robot":"Esti robot?",
+      "Success":"Email trimis cu succes!",
+      "Error":"Eroare!"
     }
   },
   "Resume": {
