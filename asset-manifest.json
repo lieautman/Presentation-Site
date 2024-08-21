@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Presentation-Site/static/css/main.6f351d2a.css",
-    "main.js": "/Presentation-Site/static/js/main.5ce36750.js",
+    "main.css": "/Presentation-Site/static/css/main.e2f7ddaf.css",
+    "main.js": "/Presentation-Site/static/js/main.7e24e11f.js",
     "static/media/AboutPage3CarouselItem3.jpg": "/Presentation-Site/static/media/AboutPage3CarouselItem3.81e56cad3c6d33594a48.jpg",
     "static/media/AboutPage3CarouselItem4.jpg": "/Presentation-Site/static/media/AboutPage3CarouselItem4.226af53f9013f47c9d0c.jpg",
     "static/media/AboutPage3CarouselItem6.jpg": "/Presentation-Site/static/media/AboutPage3CarouselItem6.e8f1a599103c85984550.jpg",
@@ -11,11 +11,11 @@
     "static/media/AboutPage3CarouselItem1.jpg": "/Presentation-Site/static/media/AboutPage3CarouselItem1.7735ca1870fad438099b.jpg",
     "static/media/logo1.png": "/Presentation-Site/static/media/logo1.a2093a031bb6e2e6d6d8.png",
     "index.html": "/Presentation-Site/index.html",
-    "main.6f351d2a.css.map": "/Presentation-Site/static/css/main.6f351d2a.css.map",
-    "main.5ce36750.js.map": "/Presentation-Site/static/js/main.5ce36750.js.map"
+    "main.e2f7ddaf.css.map": "/Presentation-Site/static/css/main.e2f7ddaf.css.map",
+    "main.7e24e11f.js.map": "/Presentation-Site/static/js/main.7e24e11f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f351d2a.css",
-    "static/js/main.5ce36750.js"
+    "static/css/main.e2f7ddaf.css",
+    "static/js/main.7e24e11f.js"
   ]
 }
