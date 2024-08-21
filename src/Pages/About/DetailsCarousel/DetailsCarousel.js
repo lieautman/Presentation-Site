@@ -1,7 +1,6 @@
-import { Box, IconButton } from "@mui/material"
+import { Box, IconButton, Typography } from "@mui/material"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useContext } from "react"
-import TypographyWithTheme from "../../../Resources/StyledComponents/TypographyWithTheme"
 import { themeContext } from "../../../Contexts/themeContext"
 import { Carousel } from "react-responsive-carousel"
 import { ArrowBack, ArrowForward } from "@mui/icons-material"
@@ -82,24 +81,27 @@ function DetailsCarousel({ items }) {
                 overflow: "auto",
               }}>
               <Box>
-                <TypographyWithTheme color={currentTheme.colors.textOnDark}>
-                  <h3
-                    style={{
-                      fontSize: matches600 ? currentTheme.fontSizes.h3 : currentTheme.fontSizesPhone.h3,
-                    }}>
-                    {item.header}
-                  </h3>
-                </TypographyWithTheme>
+                <Typography
+                  variant="h2"
+                  gutterBottom
+                  fontWeight={"fontWeightBold"}
+                  style={{
+                    color: currentTheme.colors.textOnDark,
+                    fontSize: matches600 ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
+                  }}>
+                  {item.header}
+                </Typography>
               </Box>
               <Box sx={{ textAlign: "left", margin: matches1100 ? "20px" : "5px" }}>
-                <TypographyWithTheme color={currentTheme.colors.textOnDark}>
-                  <p
-                    style={{
-                      fontSize: matches600 ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
-                    }}>
-                    {item.text}
-                  </p>
-                </TypographyWithTheme>
+                <Typography
+                  variant="p"
+                  gutterBottom
+                  style={{
+                    color: currentTheme.colors.textOnDark,
+                    fontSize: matches600 ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
+                  }}>
+                  {item.text}
+                </Typography>
               </Box>
             </Box>
           </Box>
