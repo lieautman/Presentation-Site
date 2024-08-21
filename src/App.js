@@ -3,12 +3,12 @@ import Pages from "./Pages"
 import { themeContext } from "./Contexts/themeContext"
 import { scrollSnapContext } from "./Contexts/scrollSnapContext"
 import ScrollbarWrapper from "./Resources/StyledComponents/ScrollbarWrapper"
-import { darkTheme } from "./Resources/Theme/theme"
+import { purpleTheme } from "./Resources/Theme/theme"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import "./Resources/Css/scrollSnap.css"
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState(darkTheme)
+  const [currentTheme, setCurrentTheme] = useState(purpleTheme)
   const [scrollSnap, setScrollSnap] = useState(true)
   const matches = useMediaQuery("(min-width:600px)")
 

@@ -7,8 +7,8 @@ import { createTheme } from "@mui/material/styles"
 // import lightBackgroundContact from "../../Resources/Images/lightBackgroundContact.jpg"
 // import darkBackgroundResume from "../../Resources/Images/darkBackgroundResume.jpg"
 // import lightBackgroundResume from "../../Resources/Images/lightBackgroundResume.jpg"
-import navBarDark from "../../Resources/Images/logoDark.png"
-//import navBarLight from "../../Resources/Images/logoLight.png"
+import navBarDark from "../../Resources/Images/logo1.png"
+//import navBarLight from "../../Resources/Images/logo2.png"
 
 export const purpleTheme = createTheme({
   colors: {
