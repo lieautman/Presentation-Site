@@ -20,7 +20,8 @@
   },
   "Error": {
     "Page1": {
-      "Title1": "Nu ar trebui sa poti ajunge aici!"
+      "Title1": "Nu ar trebui sa poti ajunge aici!",
+      "ButtonText1": "Spre acasa!"
     }
   },
   "Home": {

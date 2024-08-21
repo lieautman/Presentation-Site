@@ -20,7 +20,8 @@
   },
   "Error": {
     "Page1": {
-      "Title1": "You should not be able to get here!"
+      "Title1": "You should not be able to get here!",
+      "ButtonText1": "Go to home!"
     }
   },
   "Home": {

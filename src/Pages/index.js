@@ -1,8 +1,8 @@
-import Home from "./Home/Home"
-import About from "./About/About"
-import Contact from "./Contact/Contact"
-import Resume from "./Resume/Resume"
-import Error from "./Error"
+import Home from "./Home"
+import About from "./About"
+import Contact from "./Contact"
+import Resume from "./Resume"
+import NoPageFound from "./NoPageFound"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 function Pages() {
@@ -10,32 +10,32 @@ function Pages() {
     {
       path: "/",
       element: <Home />,
-      errorElement: <Error />,
+      errorElement: <NoPageFound />,
     },
     {
       path: "/Presentation-Site",
       element: <Home />,
-      errorElement: <Error />,
+      errorElement: <NoPageFound />,
     },
     {
       path: "/home",
       element: <Home />,
-      errorElement: <Error />,
+      errorElement: <NoPageFound />,
     },
     {
       path: "/about",
       element: <About />,
-      errorElement: <Error />,
+      errorElement: <NoPageFound />,
     },
     {
       path: "/contact",
       element: <Contact />,
-      errorElement: <Error />,
+      errorElement: <NoPageFound />,
     },
     {
       path: "/resume",
       element: <Resume />,
-      errorElement: <Error />,
+      errorElement: <NoPageFound />,
     },
   ])
 
