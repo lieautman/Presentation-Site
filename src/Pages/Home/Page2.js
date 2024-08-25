@@ -9,7 +9,7 @@ import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
 import HomePage2CarouselItem1 from "../../Resources/Images/HomePage2CarouselItem1.jpg"
 
-function Page3() {
+function Page2() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { scrollSnap } = useContext(scrollSnapContext)
@@ -76,4 +76,4 @@ function Page3() {
   )
 }
 
-export default Page3
+export default Page2
