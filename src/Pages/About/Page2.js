@@ -5,7 +5,7 @@ import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { Trans, useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
-import DetailsCarousel from "./DetailsCarousel/DetailsCarousel"
+import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
 import AboutPage2CarouselItem1 from "../../Resources/Images/AboutPage2CarouselItem1.jpg"
 

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useContext } from "react"
 import { useNavigate } from "react-router-dom"
-import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
+import { scrollSnapContext } from "../../../Contexts/scrollSnapContext"
 import { Box, Typography } from "@mui/material"
-import { themeContext } from "../../Contexts/themeContext"
+import { themeContext } from "../../../Contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
 const MyComponent = ({ route, text }) => {
