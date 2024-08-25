@@ -30,18 +30,6 @@
       "Title2": "Citeste portofoliul meu mai jos!"
     },
     "Page2": {
-      "Title1": "Read.me pentru a documenta tot",
-      "Paragraph1": "Acest site doreste sa fie cartea mea de vizita pentru cat mai multe din interactiunile parcursului meu academic si profesional.",
-      "Paragraph2": "Prezinta reusitele si calea mea academica si profesionala in sectiunea 'Despre'.",
-      "Paragraph3": "Sectiunile 'Contact' si 'Curriculum vitae' prezinta informatii si cai de contact.",
-      "Paragraph4": "Aceste sectiuni, alaturi de un schimbator de tema si unul pentru limba se afla in bara de navigatie."
-    }
-  },
-  "About": {
-    "Page1": {
-      "Title1": "Mai jos poti gasi detalii despre proiectele, educatia si cariera mea!"
-    },
-    "Page2": {
       "Title1": "Acestea sunt proiectele mele!",
       "Carousel":{
         "item1":{
@@ -49,8 +37,13 @@
           "text":"<1>GitHub-ul</1> meu. Acesta este tool-ul folosit de mine pentru a pastra proiectele mele educationale si profesionale pentru ultimi 6 ani si mi-ar placea sa il prezint initial."
         }
       }
+    }
+  },
+  "About": {
+    "Page1": {
+      "Title1": "Mai jos poti gasi detalii despre proiectele, educatia si cariera mea!"
     },
-    "Page3": {
+    "Page2": {
       "Title1": "Acesta este parcursul meu profesional si educational!",
       "Carousel":{
         "item1":{

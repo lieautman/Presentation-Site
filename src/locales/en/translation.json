@@ -30,18 +30,6 @@
       "Title2": "Read my portfolio below!"
     },
     "Page2": {
-      "Title1": "Read.me to document it all",
-      "Paragraph1": "This website aims to be my contact card for as much of my academic and professional interactions as possible.",
-      "Paragraph2": "It presents my academic or professional path and achivements in the 'About' section.",
-      "Paragraph3": "The 'Contact' and 'Resume' sections display professional information and ways to contact the author.",
-      "Paragraph4": "These sections, as well as a theme changer and a language changer appear in a navigation bar."
-    }
-  },
-  "About": {
-    "Page1": {
-      "Title1": "Below you can find details about my projects, education and career!"
-    },
-    "Page2": {
       "Title1": "This are my notable projects!",
       "Carousel":{
         "item1":{
@@ -49,8 +37,13 @@
           "text":"My <1>GitHub</1>. I have used this as an educational and professional hub for all my projects for the past 6 years and would like to display it first."
         }
       }
+    }
+  },
+  "About": {
+    "Page1": {
+      "Title1": "Below you can find details about my projects, education and career!"
     },
-    "Page3": {
+    "Page2": {
       "Title1": "This is my professional and educational background!",
       "Carousel":{
         "item1":{

@@ -1,102 +1,79 @@
+import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
-import { useTranslation } from "react-i18next"
-import { Box, Typography } from "@mui/material"
+import { Trans, useTranslation } from "react-i18next"
+import Box from "@mui/material/Box"
+import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
+import HomePage2CarouselItem1 from "../../Resources/Images/HomePage2CarouselItem1.jpg"
 
-function Page2() {
+function Page3() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const { scrollSnap } = useContext(scrollSnapContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   return (
-    <Box
-      className={scrollSnap ? "scrollSnapSection" : ""}
-      sx={{ backgroundColor: currentTheme.colors.secondaryColor, height: "100vh" }}>
+    <>
       <Box
+        className={scrollSnap ? "scrollSnapSection" : ""}
         sx={{
-          height: "10vh",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: currentTheme.colors.primaryAccentsColor,
+          backgroundColor: `${currentTheme.colors.secondaryColor}`,
+          height: "100vh",
         }}>
-        <Typography
-          variant="h1"
-          gutterBottom
-          fontWeight={"fontWeightBold"}
-          style={{
-            color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-          }}
-          component={motion.h1}
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 1 }}>
-          {t("Home.Page2.Title1")}
-        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
+            height: matches ? "10vh" : "15vh",
+          }}>
+          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
+            <motion.h1
+              style={{
+                fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 1 }}>
+              {t("Home.Page2.Title1")}
+            </motion.h1>
+          </TypographyWithTheme>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: matches ? "15vh" : "5vh",
+            textAlign: "center",
+            backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
+            height: matches ? "60vh" : "75vh",
+          }}>
+          <DetailsCarousel
+            items={[
+              {
+                image: HomePage2CarouselItem1,
+                header: t("Home.Page2.Carousel.item1.header"),
+                text: (
+                  <Trans i18nKey="Home.Page2.Carousel.item1.text">
+                    This should be a <a href="https://github.com/lieautman">some link</a>
+                  </Trans>
+                ),
+              },
+            ]}
+          />
+        </Box>
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop: "25vh",
-          backgroundColor: currentTheme.colors.primaryAccentsColor,
-          height: "40vh",
-        }}
-        component={motion.div}
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -20 }}
-        transition={{ duration: 1 }}>
-        <Typography
-          variant="p"
-          gutterBottom
-          align={"center"}
-          style={{
-            color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
-          }}>
-          {t("Home.Page2.Paragraph1")}
-        </Typography>
-        <Typography
-          variant="p"
-          gutterBottom
-          align={"center"}
-          style={{
-            color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
-          }}>
-          {t("Home.Page2.Paragraph2")}
-        </Typography>
-        <Typography
-          variant="p"
-          gutterBottom
-          align={"center"}
-          style={{
-            color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
-          }}>
-          {t("Home.Page2.Paragraph3")}
-        </Typography>
-        <Typography
-          variant="p"
-          gutterBottom
-          align={"center"}
-          style={{
-            color: currentTheme.colors.textOnDark,
-            fontSize: matches ? currentTheme.fontSizes.p : currentTheme.fontSizesPhone.p,
-          }}>
-          {t("Home.Page2.Paragraph4")}
-        </Typography>
-      </Box>
-    </Box>
+    </>
   )
 }
 
-export default Page2
+export default Page3
