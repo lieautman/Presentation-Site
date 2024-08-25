@@ -5,7 +5,7 @@ import { Box, Typography } from "@mui/material"
 import { themeContext } from "../../../Contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
-const MyComponent = ({ route, text }) => {
+export const NextPage = ({ route, text }) => {
   const divRef = useRef(null)
   const navigate = useNavigate()
   const { scrollSnap } = useContext(scrollSnapContext)
@@ -56,5 +56,3 @@ const MyComponent = ({ route, text }) => {
     </Box>
   )
 }
-
-export default MyComponent
