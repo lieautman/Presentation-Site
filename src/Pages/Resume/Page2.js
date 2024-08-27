@@ -1,11 +1,10 @@
-import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
 import { useCallback, useContext, useEffect } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Box, Button, IconButton, Typography } from "@mui/material"
-import { Download } from "@mui/icons-material"
+import { ArrowDownward, Download } from "@mui/icons-material"
 import { motion, useAnimate } from "framer-motion"
 
 function Resume() {
@@ -52,12 +51,10 @@ function Resume() {
   }
 
   return (
-    <BoxWithvh
-      height={100}
-      className={scrollSnap ? "scrollSnapSection" : ""}
-      backgroundColor={currentTheme.colors.secondaryColor}>
+    <Box className={scrollSnap ? "scrollSnapSection" : ""} backgroundColor={currentTheme.colors.secondaryColor}>
       <Box
         sx={{
+          height: "100vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -81,10 +78,10 @@ function Resume() {
           {t("Resume.Page2.Title1")}
         </Typography>
       </Box>
-      <BoxWithvh
-        height={40}
+      <Box
         backgroundColor={currentTheme.colors.primaryAccentsColor}
         sx={{
+          height: "40vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -111,8 +108,36 @@ function Resume() {
             {t("Resume.Page2.Paragraph1")}
           </Typography>
         </Button>
-      </BoxWithvh>
-    </BoxWithvh>
+      </Box>
+      <Box
+        style={{
+          width: "20%",
+          display: "grid",
+          position: "relative",
+          alignItems: "center",
+          textAlign: "center",
+          left: "80%",
+          top: "1%",
+        }}>
+        <Typography
+          variant="h2"
+          gutterBottom
+          fontWeight={"fontWeightBold"}
+          style={{
+            color: currentTheme.colors.textOnLight,
+            fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
+          }}>
+          {t("ScrollFor").concat(" ", t("Nav.Pages.Contact"))}
+        </Typography>
+        <IconButton style={{ color: currentTheme.colors.textOnDark }}>
+          <ArrowDownward
+            style={{
+              fontSize: currentTheme.fontSizesPhone.h1,
+            }}
+          />
+        </IconButton>
+      </Box>
+    </Box>
   )
 }
 

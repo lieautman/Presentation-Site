@@ -1,9 +1,8 @@
-import BoxWithvh from "../../Resources/StyledComponents/BoxWithvh"
 import { useContext } from "react"
 import { themeContext } from "../../Contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
-import { Typography } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 
 function Resume() {
   const { t } = useTranslation()
@@ -11,9 +10,9 @@ function Resume() {
   const matches = useMediaQuery("(min-width:600px)")
 
   return (
-    <BoxWithvh
-      height={91}
+    <Box
       sx={{
+        height: "91vh",
         backgroundImage: `url(${currentTheme.images.resumeFirstImage})`,
         backgroundSize: matches ? "100% 100%" : "150% 100%",
         backgroundPosition: "center",
@@ -44,7 +43,7 @@ function Resume() {
         }}>
         {t("Resume.Page1.Title2")}
       </Typography>
-    </BoxWithvh>
+    </Box>
   )
 }
 

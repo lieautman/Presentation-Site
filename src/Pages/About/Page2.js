@@ -13,6 +13,8 @@ import AboutPage2CarouselItem3 from "../../Resources/Images/AboutPage2CarouselIt
 import AboutPage2CarouselItem2 from "../../Resources/Images/AboutPage2CarouselItem2.jpg"
 import AboutPage2CarouselItem1 from "../../Resources/Images/AboutPage2CarouselItem1.jpg"
 import { motion } from "framer-motion"
+import { ArrowDownward } from "@mui/icons-material"
+import { IconButton, Typography } from "@mui/material"
 
 function Page2() {
   const { t } = useTranslation()
@@ -21,84 +23,110 @@ function Page2() {
   const matches = useMediaQuery("(min-width:600px)")
 
   return (
-    <>
+    <Box
+      className={scrollSnap ? "scrollSnapSection" : ""}
+      sx={{
+        backgroundColor: `${currentTheme.colors.secondaryColor}`,
+        height: "100vh",
+      }}>
       <Box
-        className={scrollSnap ? "scrollSnapSection" : ""}
         sx={{
-          backgroundColor: `${currentTheme.colors.secondaryColor}`,
-          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
+          height: matches ? "10vh" : "15vh",
         }}>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
-            height: matches ? "10vh" : "15vh",
-          }}>
-          <TypographyWithTheme color={currentTheme.colors.textOnDark}>
-            <motion.h1
-              style={{
-                fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
-              }}
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 20 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 1 }}>
-              {t("About.Page2.Title1")}
-            </motion.h1>
-          </TypographyWithTheme>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            marginTop: matches ? "15vh" : "5vh",
-            textAlign: "center",
-            backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
-            height: matches ? "60vh" : "75vh",
-          }}>
-          <DetailsCarousel
-            items={[
-              {
-                image: AboutPage2CarouselItem6,
-                header: t("About.Page2.Carousel.item6.header"),
-                text: t("About.Page2.Carousel.item6.text"),
-              },
-              {
-                image: AboutPage2CarouselItem5,
-                header: t("About.Page2.Carousel.item5.header"),
-                text: t("About.Page2.Carousel.item5.text"),
-              },
-              {
-                image: AboutPage2CarouselItem4,
-                header: t("About.Page2.Carousel.item4.header"),
-                text: t("About.Page2.Carousel.item4.text"),
-              },
-              {
-                image: AboutPage2CarouselItem3,
-                header: t("About.Page2.Carousel.item3.header"),
-                text: t("About.Page2.Carousel.item3.text"),
-              },
-              {
-                image: AboutPage2CarouselItem2,
-                header: t("About.Page2.Carousel.item2.header"),
-                text: t("About.Page2.Carousel.item2.text"),
-              },
-              {
-                image: AboutPage2CarouselItem1,
-                header: t("About.Page2.Carousel.item1.header"),
-                text: t("About.Page2.Carousel.item1.text"),
-              },
-            ]}
-          />
-        </Box>
+        <TypographyWithTheme color={currentTheme.colors.textOnDark}>
+          <motion.h1
+            style={{
+              fontSize: matches ? currentTheme.fontSizes.h1 : currentTheme.fontSizesPhone.h1,
+            }}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 1 }}>
+            {t("About.Page2.Title1")}
+          </motion.h1>
+        </TypographyWithTheme>
       </Box>
-    </>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: matches ? "15vh" : "5vh",
+          textAlign: "center",
+          backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
+          height: matches ? "60vh" : "75vh",
+        }}>
+        <DetailsCarousel
+          items={[
+            {
+              image: AboutPage2CarouselItem6,
+              header: t("About.Page2.Carousel.item6.header"),
+              text: t("About.Page2.Carousel.item6.text"),
+            },
+            {
+              image: AboutPage2CarouselItem5,
+              header: t("About.Page2.Carousel.item5.header"),
+              text: t("About.Page2.Carousel.item5.text"),
+            },
+            {
+              image: AboutPage2CarouselItem4,
+              header: t("About.Page2.Carousel.item4.header"),
+              text: t("About.Page2.Carousel.item4.text"),
+            },
+            {
+              image: AboutPage2CarouselItem3,
+              header: t("About.Page2.Carousel.item3.header"),
+              text: t("About.Page2.Carousel.item3.text"),
+            },
+            {
+              image: AboutPage2CarouselItem2,
+              header: t("About.Page2.Carousel.item2.header"),
+              text: t("About.Page2.Carousel.item2.text"),
+            },
+            {
+              image: AboutPage2CarouselItem1,
+              header: t("About.Page2.Carousel.item1.header"),
+              text: t("About.Page2.Carousel.item1.text"),
+            },
+          ]}
+        />
+      </Box>
+      <Box
+        style={{
+          width: "20%",
+          display: "grid",
+          position: "relative",
+          alignItems: "center",
+          textAlign: "center",
+          left: "80%",
+          top: "1%",
+        }}>
+        <Typography
+          variant="h2"
+          gutterBottom
+          fontWeight={"fontWeightBold"}
+          style={{
+            color: currentTheme.colors.textOnLight,
+            fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
+          }}>
+          {t("ScrollFor").concat(" ", t("Nav.Pages.Contact"))}
+        </Typography>
+        <IconButton style={{ color: currentTheme.colors.textOnDark }}>
+          <ArrowDownward
+            style={{
+              fontSize: currentTheme.fontSizesPhone.h1,
+            }}
+          />
+        </IconButton>
+      </Box>
+    </Box>
   )
 }
 
