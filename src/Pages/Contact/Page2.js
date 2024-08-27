@@ -155,7 +155,7 @@ function Page2() {
             color: currentTheme.colors.textOnLight,
             fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
           }}>
-          {t("ScrollFor").concat(" ", t("Nav.Pages.Contact"))}
+          {t("ScrollFor").concat(" ", t("Nav.Pages.Resume"))}
         </Typography>
         <IconButton style={{ color: currentTheme.colors.textOnDark }}>
           <ArrowDownward

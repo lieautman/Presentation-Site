@@ -51,10 +51,12 @@ function Resume() {
   }
 
   return (
-    <Box className={scrollSnap ? "scrollSnapSection" : ""} backgroundColor={currentTheme.colors.secondaryColor}>
+    <Box
+      className={scrollSnap ? "scrollSnapSection" : ""}
+      backgroundColor={currentTheme.colors.secondaryColor}
+      sx={{ height: "100vh" }}>
       <Box
         sx={{
-          height: "100vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -127,7 +129,7 @@ function Resume() {
             color: currentTheme.colors.textOnLight,
             fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
           }}>
-          {t("ScrollFor").concat(" ", t("Nav.Pages.Contact"))}
+          {t("ScrollFor").concat(" ", t("Nav.Pages.Home"))}
         </Typography>
         <IconButton style={{ color: currentTheme.colors.textOnDark }}>
           <ArrowDownward
