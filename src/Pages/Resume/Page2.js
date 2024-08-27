@@ -4,8 +4,9 @@ import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Box, Button, IconButton, Typography } from "@mui/material"
-import { ArrowDownward, Download } from "@mui/icons-material"
+import { Download } from "@mui/icons-material"
 import { motion, useAnimate } from "framer-motion"
+import { NextPageButton } from "../Components/NextPage"
 
 function Resume() {
   const { t, i18n } = useTranslation()
@@ -111,34 +112,7 @@ function Resume() {
           </Typography>
         </Button>
       </Box>
-      <Box
-        style={{
-          width: "20%",
-          display: "grid",
-          position: "relative",
-          alignItems: "center",
-          textAlign: "center",
-          left: "80%",
-          top: "1%",
-        }}>
-        <Typography
-          variant="h2"
-          gutterBottom
-          fontWeight={"fontWeightBold"}
-          style={{
-            color: currentTheme.colors.textOnLight,
-            fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
-          }}>
-          {t("ScrollFor").concat(" ", t("Nav.Pages.Home"))}
-        </Typography>
-        <IconButton style={{ color: currentTheme.colors.textOnDark }}>
-          <ArrowDownward
-            style={{
-              fontSize: currentTheme.fontSizesPhone.h1,
-            }}
-          />
-        </IconButton>
-      </Box>
+      <NextPageButton text={t("ScrollFor").concat(" ", t("Nav.Pages.Home"))} />
     </Box>
   )
 }

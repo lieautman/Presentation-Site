@@ -8,8 +8,7 @@ import Box from "@mui/material/Box"
 import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
 import HomePage2CarouselItem1 from "../../Resources/Images/HomePage2CarouselItem1.jpg"
-import { IconButton, Typography } from "@mui/material"
-import { ArrowDownward } from "@mui/icons-material"
+import { NextPageButton } from "../Components/NextPage"
 
 function Page2() {
   const { t } = useTranslation()
@@ -72,34 +71,7 @@ function Page2() {
           ]}
         />
       </Box>
-      <Box
-        style={{
-          width: "20%",
-          display: "grid",
-          position: "relative",
-          alignItems: "center",
-          textAlign: "center",
-          left: "80%",
-          top: "1%",
-        }}>
-        <Typography
-          variant="h2"
-          gutterBottom
-          fontWeight={"fontWeightBold"}
-          style={{
-            color: currentTheme.colors.textOnLight,
-            fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
-          }}>
-          {t("ScrollFor").concat(" ", t("Nav.Pages.About"))}
-        </Typography>
-        <IconButton style={{ color: currentTheme.colors.textOnDark }}>
-          <ArrowDownward
-            style={{
-              fontSize: currentTheme.fontSizesPhone.h1,
-            }}
-          />
-        </IconButton>
-      </Box>
+      <NextPageButton text={t("ScrollFor").concat(" ", t("Nav.Pages.About"))} />
     </Box>
   )
 }

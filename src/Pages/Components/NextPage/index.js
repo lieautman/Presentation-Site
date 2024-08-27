@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import { scrollSnapContext } from "../../../Contexts/scrollSnapContext"
-import { Box, Typography } from "@mui/material"
+import { Box, Typography, IconButton } from "@mui/material"
 import { themeContext } from "../../../Contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
+import { ArrowDownward } from "@mui/icons-material"
 
 export const NextPage = ({ route, text }) => {
   const divRef = useRef(null)
@@ -53,6 +54,42 @@ export const NextPage = ({ route, text }) => {
         }}>
         {text}
       </Typography>
+    </Box>
+  )
+}
+
+export const NextPageButton = ({ text }) => {
+  const { currentTheme } = useContext(themeContext)
+  const matches = useMediaQuery("(min-width:600px)")
+
+  return (
+    <Box
+      style={{
+        width: "20%",
+        display: "grid",
+        position: "relative",
+        alignItems: "center",
+        textAlign: "center",
+        left: "80%",
+        top: "1%",
+      }}>
+      <Typography
+        variant="h2"
+        gutterBottom
+        fontWeight={"fontWeightBold"}
+        style={{
+          color: currentTheme.colors.textOnLight,
+          fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
+        }}>
+        {text}
+      </Typography>
+      <IconButton style={{ color: currentTheme.colors.textOnDark }}>
+        <ArrowDownward
+          style={{
+            fontSize: currentTheme.fontSizesPhone.h1,
+          }}
+        />
+      </IconButton>
     </Box>
   )
 }
