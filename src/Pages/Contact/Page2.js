@@ -99,7 +99,7 @@ function Page2() {
           marginTop: "20vh",
           textAlign: "center",
           backgroundColor: `${currentTheme.colors.primaryAccentsColor}`,
-          height: "50vh",
+          height: "55vh",
         }}>
         <Input
           type="text"
