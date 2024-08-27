@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import { scrollSnapContext } from "../../../Contexts/scrollSnapContext"
-import { Box, Typography, IconButton } from "@mui/material"
+import { Box, Typography, Icon } from "@mui/material"
 import { themeContext } from "../../../Contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { ArrowDownward } from "@mui/icons-material"
@@ -83,13 +83,13 @@ export const NextPageButton = ({ text }) => {
         }}>
         {text}
       </Typography>
-      <IconButton style={{ color: currentTheme.colors.textOnDark }}>
+      <Icon style={{ color: currentTheme.colors.textOnDark, width: "auto", height: "auto" }}>
         <ArrowDownward
           style={{
             fontSize: currentTheme.fontSizesPhone.h1,
           }}
         />
-      </IconButton>
+      </Icon>
     </Box>
   )
 }
