@@ -5,6 +5,7 @@ import { Box, Typography, Icon } from "@mui/material"
 import { themeContext } from "../../../Contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { ArrowDownward } from "@mui/icons-material"
+import { motion } from "framer-motion"
 
 export const NextPage = ({ route, text }) => {
   const divRef = useRef(null)
@@ -70,15 +71,24 @@ export const NextPageButton = ({ text }) => {
         position: "relative",
         alignItems: "center",
         textAlign: "center",
-        left: "80%",
-        top: "1%",
-      }}>
+        left: "79%",
+        bottom: "1%",
+        backgroundColor: currentTheme.colors.primaryColor,
+        borderRadius: matches ? "5%" : "20%",
+        boxShadow:
+          "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+      }}
+      component={motion.div}
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 20 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 1 }}>
       <Typography
         variant="h2"
         gutterBottom
         fontWeight={"fontWeightBold"}
         style={{
-          color: currentTheme.colors.textOnLight,
+          color: currentTheme.colors.textOnDark,
           fontSize: matches ? currentTheme.fontSizes.h2 : currentTheme.fontSizesPhone.h2,
         }}>
         {text}
