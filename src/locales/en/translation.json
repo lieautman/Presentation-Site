@@ -35,13 +35,21 @@
         "item1":{
           "header":"My GitHub",
           "text":"My <1>GitHub</1>. I have used this as an educational and professional hub for all my projects since the start of my Bactchelor's degree. It is an archive of my most beloved projects and my history as a programmer can be found there."
+        },
+        "item2":{
+          "header":"TotalSoft's leasing software",
+          "text":"When starting to work at TotalSoft, I joined the financial software team. This team was tasked with maintaining and improving the <1>leasing software<1/>. This ment patching and improving the microservice infrastructure they had set up."
+        },
+        "item3":{
+          "header":"TotalSoft's Rocket-ui",
+          "text":"The <1>Rocket-ui<1/> is an open-source project maintained by the R&D team at Totalsoft. While working there, I had the pleasure of helping with some small improvements here and there."
         }
       }
     }
   },
   "About": {
     "Page1": {
-      "Title1": "Below you can find details about my projects, education and career!"
+      "Title1": "Below you can find details about my education and career!"
     },
     "Page2": {
       "Title1": "This is my professional and educational background!",

@@ -8,6 +8,8 @@ import Box from "@mui/material/Box"
 import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
 import HomePage2CarouselItem1 from "../../Resources/Images/HomePage2CarouselItem1.jpg"
+import HomePage2CarouselItem2 from "../../Resources/Images/HomePage2CarouselItem2.jpg"
+import HomePage2CarouselItem3 from "../../Resources/Images/HomePage2CarouselItem3.jpg"
 import { NextPageButton } from "../Components/NextPage"
 
 function Page2() {
@@ -64,7 +66,34 @@ function Page2() {
               header: t("Home.Page2.Carousel.item1.header"),
               text: (
                 <Trans i18nKey="Home.Page2.Carousel.item1.text">
-                  This should be a <a href="https://github.com/lieautman">some link</a>
+                  a
+                  <a href="https://github.com/lieautman" target="blank">
+                    {" "}
+                  </a>
+                </Trans>
+              ),
+            },
+            {
+              image: HomePage2CarouselItem2,
+              header: t("Home.Page2.Carousel.item2.header"),
+              text: (
+                <Trans i18nKey="Home.Page2.Carousel.item2.text">
+                  a
+                  <a href="https://www.totalsoft.ro/en/solutions/industries/leasing" target="blank">
+                    {" "}
+                  </a>
+                </Trans>
+              ),
+            },
+            {
+              image: HomePage2CarouselItem3,
+              header: t("Home.Page2.Carousel.item3.header"),
+              text: (
+                <Trans i18nKey="Home.Page2.Carousel.item3.text">
+                  a
+                  <a href="https://github.com/osstotalsoft/rocket-ui-ts" target="blank">
+                    {" "}
+                  </a>
                 </Trans>
               ),
             },

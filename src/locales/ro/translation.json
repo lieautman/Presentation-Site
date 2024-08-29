@@ -35,13 +35,21 @@
         "item1":{
           "header":"GitHub-ul meu",
           "text":"<1>GitHub-ul</1> meu. Acesta este tool-ul folosit de mine pentru a pastra proiectele mele educationale si profesionale de la inceputul licentei. Acesta poate fi vazut ca o arhiva a proiectelor mele si un istoric al meu ca programator."
+        },
+        "item2":{
+          "header":"Software de leasing la TotalSoft",
+          "text":"Cu inceperea muncii la TotalSoft, m-am alturat echipei de software financiar. Aceasta echipa trebuie sa mentina si sa imbunatateasca <1>software-ul de leasing</1>. Acest lucru a insemnat mentenanta si imbunatatire a tuturor microserviciilor acestuia."
+        },
+        "item3":{
+          "header":"Rocket-ui la TotalSoft",
+          "text":"Proiectul open-source <1>Rocket-ui<1/> este mentinut de echipa R&D din TotalSoft. Cat am lucrat acolo, am avut onoarea de a ajuta cu mici imprementari unde era nevoie pe acest proiect."
         }
       }
     }
   },
   "About": {
     "Page1": {
-      "Title1": "Mai jos poti gasi detalii despre proiectele, educatia si cariera mea!"
+      "Title1": "Mai jos poti gasi detalii despre educatia si cariera mea!"
     },
     "Page2": {
       "Title1": "Acesta este parcursul meu profesional si educational!",
