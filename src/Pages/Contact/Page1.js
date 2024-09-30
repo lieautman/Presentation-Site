@@ -5,7 +5,7 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 
-function Page1() {
+function Page1({ divRef, scrollSnap }) {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const matches = useMediaQuery("(min-width:600px)")
@@ -13,6 +13,8 @@ function Page1() {
   return (
     <>
       <Box
+        ref={divRef}
+        className={scrollSnap ? "scrollSnapSection" : ""}
         sx={{
           backgroundImage: `url(${currentTheme.images.contactFirstImage})`,
           backgroundSize: matches ? "100% 100%" : "150% 100%",

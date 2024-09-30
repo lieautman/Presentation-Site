@@ -4,13 +4,15 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Box, Typography } from "@mui/material"
 
-function Page1() {
+function Page1({ divRef, scrollSnap }) {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   return (
     <Box
+      ref={divRef}
+      className={scrollSnap ? "scrollSnapSection" : ""}
       sx={{
         backgroundImage: `url(${currentTheme.images.homeFirstImage})`,
         backgroundSize: matches ? "100% 100%" : "150% 100%",
