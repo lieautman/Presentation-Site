@@ -12,16 +12,15 @@ import HomePage2CarouselItem2 from "../../Resources/Images/HomePage2CarouselItem
 import HomePage2CarouselItem3 from "../../Resources/Images/HomePage2CarouselItem3.jpg"
 import {} from "../Components/NextPage"
 
-function Page2({ divRef, scrollSnap }) {
+function Page2() {
   const { t } = useTranslation()
   const { currentTheme } = useContext(themeContext)
-  const { scrollSnap1 } = useContext(scrollSnapContext)
+  const { scrollSnap } = useContext(scrollSnapContext)
   const matches = useMediaQuery("(min-width:600px)")
 
   return (
     <Box
-      ref={divRef}
-      className={scrollSnap1 || scrollSnap ? "scrollSnapSection" : ""}
+      className={scrollSnap ? "scrollSnapSection" : ""}
       sx={{
         backgroundColor: `${currentTheme.colors.secondaryColor}`,
         height: "100vh",
