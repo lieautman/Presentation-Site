@@ -41,35 +41,3 @@ export const NextPage = ({ route }) => {
 
   if (route === "resume") return <ResumePage1 divRef={divRef} scrollSnap={scrollSnap} />
 }
-
-export const PrevPage = ({ route }) => {
-  const divRef = useRef(null)
-  const navigate = useNavigate()
-  const { scrollSnap } = useContext(scrollSnapContext)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              navigate(`/${route}`)
-            }, 500)
-          }
-        })
-      },
-      { threshold: 0.99 }
-    )
-    if (divRef.current) {
-      observer.observe(divRef.current)
-    }
-  }, [navigate, route])
-
-  if (route === "home") return <HomePage2 divRef={divRef} scrollSnap={scrollSnap} />
-
-  if (route === "about") return <AboutPage2 divRef={divRef} scrollSnap={scrollSnap} />
-
-  if (route === "contact") return <ContactPage2 divRef={divRef} scrollSnap={scrollSnap} />
-
-  if (route === "resume") return <ResumePage2 divRef={divRef} scrollSnap={scrollSnap} />
-}
