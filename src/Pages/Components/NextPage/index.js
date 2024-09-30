@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import { scrollSnapContext } from "../../../Contexts/scrollSnapContext"
-import { Box, Typography, Icon } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 import { themeContext } from "../../../Contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
-import { ArrowDownward } from "@mui/icons-material"
-import { motion } from "framer-motion"
 
 export const NextPage = ({ route, text }) => {
   const divRef = useRef(null)
