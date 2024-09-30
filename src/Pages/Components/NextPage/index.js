@@ -5,10 +5,6 @@ import HomePage1 from "../../Home/Page1"
 import AboutPage1 from "../../About/Page1"
 import ContactPage1 from "../../Contact/Page1"
 import ResumePage1 from "../../Resume/Page1"
-import HomePage2 from "../../Home/Page2"
-import AboutPage2 from "../../About/Page2"
-import ContactPage2 from "../../Contact/Page2"
-import ResumePage2 from "../../Resume/Page2"
 
 export const NextPage = ({ route }) => {
   const divRef = useRef(null)
