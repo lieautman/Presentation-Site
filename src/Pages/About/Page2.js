@@ -13,7 +13,6 @@ import AboutPage2CarouselItem3 from "../../Resources/Images/AboutPage2CarouselIt
 import AboutPage2CarouselItem2 from "../../Resources/Images/AboutPage2CarouselItem2.jpg"
 import AboutPage2CarouselItem1 from "../../Resources/Images/AboutPage2CarouselItem1.jpg"
 import { motion } from "framer-motion"
-import { NextPageButton } from "../Components/NextPage"
 
 function Page2() {
   const { t } = useTranslation()
@@ -97,7 +96,6 @@ function Page2() {
           ]}
         />
       </Box>
-      <NextPageButton text={t("ScrollFor").concat(" ", t("Nav.Pages.Contact"))} />
     </Box>
   )
 }

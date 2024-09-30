@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next"
 import { Box, Button, IconButton, Typography } from "@mui/material"
 import { Download } from "@mui/icons-material"
 import { motion, useAnimate } from "framer-motion"
-import { NextPageButton } from "../Components/NextPage"
 
 function Resume() {
   const { t, i18n } = useTranslation()
@@ -112,7 +111,6 @@ function Resume() {
           </Typography>
         </Button>
       </Box>
-      <NextPageButton text={t("ScrollFor").concat(" ", t("Nav.Pages.Home"))} />
     </Box>
   )
 }

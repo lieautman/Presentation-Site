@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 import HomePage2CarouselItem1 from "../../Resources/Images/HomePage2CarouselItem1.jpg"
 import HomePage2CarouselItem2 from "../../Resources/Images/HomePage2CarouselItem2.jpg"
 import HomePage2CarouselItem3 from "../../Resources/Images/HomePage2CarouselItem3.jpg"
-import { NextPageButton } from "../Components/NextPage"
+import {} from "../Components/NextPage"
 
 function Page2() {
   const { t } = useTranslation()
@@ -100,7 +100,6 @@ function Page2() {
           ]}
         />
       </Box>
-      <NextPageButton text={t("ScrollFor").concat(" ", t("Nav.Pages.About"))} />
     </Box>
   )
 }

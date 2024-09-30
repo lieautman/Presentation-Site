@@ -10,7 +10,6 @@ import Box from "@mui/material/Box"
 import { motion } from "framer-motion"
 import ReCAPTCHA from "react-google-recaptcha"
 import { toast } from "react-toastify"
-import { NextPageButton } from "../Components/NextPage"
 
 function Page2() {
   const { t } = useTranslation()
@@ -137,7 +136,6 @@ function Page2() {
           Send email
         </Button>
       </Box>
-      <NextPageButton text={t("ScrollFor").concat(" ", t("Nav.Pages.Resume"))} />
     </Box>
   )
 }
