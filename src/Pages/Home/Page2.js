@@ -11,6 +11,7 @@ import GameSimImage from "../../Resources/Images/Home/GameSimImage.jpg"
 import GHImage from "../../Resources/Images/Home/GHImage.jpg"
 import RUIImage from "../../Resources/Images/Home/RUIImage.jpg"
 import TSImage from "../../Resources/Images/Home/TSImage.jpg"
+import BVBImage from "../../Resources/Images/Home/BVBImage.jpg"
 import {} from "../Components/NextPage"
 
 function Page2() {
@@ -75,6 +76,18 @@ function Page2() {
                     {" "}
                   </a>
                   <a href="https://lieautman.github.io/WarhammerSim/" target="blank">
+                    {" "}
+                  </a>
+                </Trans>
+              ),
+            },
+            {
+              image: BVBImage,
+              header: t("Home.Page2.Carousel.item5.header"),
+              text: (
+                <Trans i18nKey="Home.Page2.Carousel.item5.text">
+                  a
+                  <a href="https://lieautman.github.io/PDFtoXLS/" target="blank">
                     {" "}
                   </a>
                 </Trans>

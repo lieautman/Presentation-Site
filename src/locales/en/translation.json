@@ -47,6 +47,10 @@
         "item4": {
           "header": "Tabletop game sim",
           "text": "My hobbies involve an army strategy table top game called <1>Warhammer 40k</1>. <2>This project</2> is a dice sim for the game, I have made to be used while playing the actual game or <3>this game sim</3> I have also made for it."
+        },
+        "item5": {
+          "header": "PDF to Excel for Pension pylon 2 providers",
+          "text": "<1>This</1> project has been made to help process data from pension pylon 2 providers in Excel format from the PDF formats provided by them."
         }
       }
     }

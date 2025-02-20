@@ -47,6 +47,10 @@
         "item4": {
           "header": "Simulate joc de masa",
           "text": "Printre Hobbie-urile mele se numara si jocul de masa <1>Warhammer 40k</1>. <2>Acest</2> simulator de dat cu zarul este folosit de mine, atat in timpul jocului fizic, cat si cand folosesc <3>acest</3> simulator de joc, de asemenea creat de mine."
+        },
+        "item5": {
+          "header": "PDF la Excel pentru furnizorii de pensii pilon 2",
+          "text": "<1>Acest</1> proiect a fost creat pentru a ajuta la procesarea datelor de la firmele ce gestioneaza pilonul 2 in format Excel din format PDF."
         }
       }
     }
