@@ -31,18 +31,22 @@
     },
     "Page2": {
       "Title1": "Acestea sunt proiectele mele!",
-      "Carousel":{
-        "item1":{
-          "header":"GitHub-ul meu",
-          "text":"<1>GitHub-ul</1> meu. Acesta este tool-ul folosit de mine pentru a pastra proiectele mele educationale si profesionale de la inceputul licentei. Acesta poate fi vazut ca o arhiva a proiectelor mele si un istoric al meu ca programator."
+      "Carousel": {
+        "item1": {
+          "header": "GitHub-ul meu",
+          "text": "<1>GitHub-ul</1> meu. Acesta este tool-ul folosit de mine pentru a pastra proiectele mele educationale si profesionale de la inceputul licentei. Acesta poate fi vazut ca o arhiva a proiectelor mele si un istoric al meu ca programator."
         },
-        "item2":{
-          "header":"Software de leasing la TotalSoft",
-          "text":"Cu inceperea muncii la TotalSoft, m-am alturat echipei de software financiar. Aceasta echipa trebuie sa mentina si sa imbunatateasca <1>software-ul de leasing</1>. Acest lucru a insemnat mentenanta si imbunatatire a tuturor microserviciilor acestuia."
+        "item2": {
+          "header": "Software de leasing la TotalSoft",
+          "text": "Cu inceperea muncii la TotalSoft, m-am alturat echipei de software financiar. Aceasta echipa trebuie sa mentina si sa imbunatateasca <1>software-ul de leasing</1>. Acest lucru a insemnat mentenanta si imbunatatire a tuturor microserviciilor acestuia."
         },
-        "item3":{
-          "header":"Rocket-ui la TotalSoft",
-          "text":"Proiectul open-source <1>Rocket-ui</1> este mentinut de echipa R&D din TotalSoft. Cat am lucrat acolo, am avut onoarea de a ajuta cu mici imprementari unde era nevoie pe acest proiect."
+        "item3": {
+          "header": "Rocket-ui la TotalSoft",
+          "text": "Proiectul open-source <1>Rocket-ui</1> este mentinut de echipa R&D din TotalSoft. Cat am lucrat acolo, am avut onoarea de a ajuta cu mici imprementari unde era nevoie pe acest proiect."
+        },
+        "item4": {
+          "header": "Simulate joc de masa",
+          "text": "Printre Hobbie-urile mele se numara si jocul de masa <1>Warhammer 40k</1>. <2>Acest</2> simulator de dat cu zarul este folosit de mine, atat in timpul jocului fizic, cat si cand folosesc <3>acest</3> simulator de joc, de asemenea creat de mine."
         }
       }
     }
@@ -53,30 +57,30 @@
     },
     "Page2": {
       "Title1": "Acesta este parcursul meu profesional si educational!",
-      "Carousel":{
-        "item1":{
-          "header":"Terminare liceu Mate-info Bilingv",
-          "text":"Am absolvit Lieul teoretic Mihai-Viteazul, in Caracal, la clasa de mate-info bilingv in anul 2019, incepand in anul 2015. Aici am pus bazele cunostintelor mele teoretice, atat in programare, cat si in matematica si limbi straine. Am fost certificat atat de catre Cambridge ca avansat, cat si in SQL."
+      "Carousel": {
+        "item1": {
+          "header": "Terminare liceu Mate-info Bilingv",
+          "text": "Am absolvit Lieul teoretic Mihai-Viteazul, in Caracal, la clasa de mate-info bilingv in anul 2019, incepand in anul 2015. Aici am pus bazele cunostintelor mele teoretice, atat in programare, cat si in matematica si limbi straine. Am fost certificat atat de catre Cambridge ca avansat, cat si in SQL."
         },
-        "item2":{
-          "header":"Terminare licenta Dezvoltare Software",
-          "text":"Dupa absolvirea liceului, in 2019, m-am inscris la Academia de Stiinte Economice din Bucuresti, una dintre cele mai recunoscure universitati din Romania, la profilul de Cibernetica Economica, urmand ca mai apoi sa ma mut la cel de Informatica Economica. La terminarea facultatii, in 2022, aveam inca o certificare pentru PL/SQL, alaturi de multe cunostinte legate de programarea software si ma pregateam sa intru in campul muncii."
+        "item2": {
+          "header": "Terminare licenta Dezvoltare Software",
+          "text": "Dupa absolvirea liceului, in 2019, m-am inscris la Academia de Stiinte Economice din Bucuresti, una dintre cele mai recunoscure universitati din Romania, la profilul de Cibernetica Economica, urmand ca mai apoi sa ma mut la cel de Informatica Economica. La terminarea facultatii, in 2022, aveam inca o certificare pentru PL/SQL, alaturi de multe cunostinte legate de programarea software si ma pregateam sa intru in campul muncii."
         },
-        "item3":{
-          "header":"Terminare master Securitate Cibernetica",
-          "text":"In 2022, am inceput masterul in engleza se securitate informatica la Academia de Stiinte Economice din Bucuresti. Pe parcursul acestui master am invatat atat tooling cat si multe practici bune pentru a duce la crearea unui produs software sigur, eficient si usor de imbunatatit. In anul 2024, am absolvit acest master."
+        "item3": {
+          "header": "Terminare master Securitate Cibernetica",
+          "text": "In 2022, am inceput masterul in engleza se securitate informatica la Academia de Stiinte Economice din Bucuresti. Pe parcursul acestui master am invatat atat tooling cat si multe practici bune pentru a duce la crearea unui produs software sigur, eficient si usor de imbunatatit. In anul 2024, am absolvit acest master."
         },
-        "item4":{
-          "header":"Practica Ernst&Young",
-          "text":"In 2020, al doilea an de licenta, am fost admis la practica la firma Ernst&Young, o mare firma de contabilitate si audit. Aici am invatat si creat roboti software ce automatizau nevoi interne in acea firma. Acest stadiu de practica a fost unul scurt, avand sansa doar de a intelege tehnologia folosita si a crea un mic proiect demo."
+        "item4": {
+          "header": "Practica Ernst&Young",
+          "text": "In 2020, al doilea an de licenta, am fost admis la practica la firma Ernst&Young, o mare firma de contabilitate si audit. Aici am invatat si creat roboti software ce automatizau nevoi interne in acea firma. Acest stadiu de practica a fost unul scurt, avand sansa doar de a intelege tehnologia folosita si a crea un mic proiect demo."
         },
-        "item5":{
-          "header":"Internship Banca Transilvania",
-          "text":"In 2021, al treilea an de licenta, m-am angajat ca intern la Banca Transilvania, in zona de Audit IT, timp de 6 luni. Aici am invatat atat modul de functionare, cat si conduita de securitate a unei firme mari. Pe langa soft skills, mi-au fost explicate si prezentate atat modul de lucru al unui auditor, cat si tehnic ce presupune un audit. Aceasta experienta mi-a indus o dorinta de a studia mai mult zona de securitate, atat pe partea software, cat si pe partea de dev-ops si network."
+        "item5": {
+          "header": "Internship Banca Transilvania",
+          "text": "In 2021, al treilea an de licenta, m-am angajat ca intern la Banca Transilvania, in zona de Audit IT, timp de 6 luni. Aici am invatat atat modul de functionare, cat si conduita de securitate a unei firme mari. Pe langa soft skills, mi-au fost explicate si prezentate atat modul de lucru al unui auditor, cat si tehnic ce presupune un audit. Aceasta experienta mi-a indus o dorinta de a studia mai mult zona de securitate, atat pe partea software, cat si pe partea de dev-ops si network."
         },
-        "item6":{
-          "header":"Angajare TotalSoft",
-          "text":"La inceputul masterului, in anul 2022, m-am angajat, mai intai ca intern si apoi pe perioada nedeterminata la firma TotalSoft. Aici mi-am definitivat abilitatile de programator full-stack, lucrand cu mai multe tipologi de servere back-end si fronte-end-uri, alaturi de baze de date SQL-Server. Pot spune ca abilitatile invatate in timpul facultatii mi-au dat un sprijin la inceput, iar colegii de aici m-au ajutat sa trec peste saltul spre intelegerea proiectelor cu o amplitudine mai mare."
+        "item6": {
+          "header": "Angajare TotalSoft",
+          "text": "La inceputul masterului, in anul 2022, m-am angajat, mai intai ca intern si apoi pe perioada nedeterminata la firma TotalSoft. Aici mi-am definitivat abilitatile de programator full-stack, lucrand cu mai multe tipologi de servere back-end si fronte-end-uri, alaturi de baze de date SQL-Server. Pot spune ca abilitatile invatate in timpul facultatii mi-au dat un sprijin la inceput, iar colegii de aici m-au ajutat sa trec peste saltul spre intelegerea proiectelor cu o amplitudine mai mare."
         }
       }
     }
@@ -87,9 +91,9 @@
     },
     "Page2": {
       "Title1": "Contacteaza-ma aici!",
-      "Robot":"Esti robot?",
-      "Success":"Email trimis cu succes!",
-      "Error":"Eroare!"
+      "Robot": "Esti robot?",
+      "Success": "Email trimis cu succes!",
+      "Error": "Eroare!"
     }
   },
   "Resume": {

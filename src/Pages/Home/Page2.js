@@ -97,6 +97,24 @@ function Page2() {
                 </Trans>
               ),
             },
+            {
+              image: HomePage2CarouselItem3,
+              header: t("Home.Page2.Carousel.item4.header"),
+              text: (
+                <Trans i18nKey="Home.Page2.Carousel.item4.text">
+                  a
+                  <a href="https://en.wikipedia.org/wiki/Warhammer_40,000" target="blank">
+                    {" "}
+                  </a>
+                  <a href="https://lieautman.github.io/DiceSim/" target="blank">
+                    {" "}
+                  </a>
+                  <a href="https://lieautman.github.io/WarhammerSim/" target="blank">
+                    {" "}
+                  </a>
+                </Trans>
+              ),
+            },
           ]}
         />
       </Box>
