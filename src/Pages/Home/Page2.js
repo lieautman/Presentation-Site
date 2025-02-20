@@ -10,6 +10,7 @@ import { motion } from "framer-motion"
 import HomePage2CarouselItem1 from "../../Resources/Images/HomePage2CarouselItem1.jpg"
 import HomePage2CarouselItem2 from "../../Resources/Images/HomePage2CarouselItem2.jpg"
 import HomePage2CarouselItem3 from "../../Resources/Images/HomePage2CarouselItem3.jpg"
+import HomePage2CarouselItem4 from "../../Resources/Images/HomePage2CarouselItem4.jpg"
 import {} from "../Components/NextPage"
 
 function Page2() {
@@ -62,24 +63,30 @@ function Page2() {
         <DetailsCarousel
           items={[
             {
-              image: HomePage2CarouselItem1,
-              header: t("Home.Page2.Carousel.item1.header"),
+              image: HomePage2CarouselItem4,
+              header: t("Home.Page2.Carousel.item4.header"),
               text: (
-                <Trans i18nKey="Home.Page2.Carousel.item1.text">
+                <Trans i18nKey="Home.Page2.Carousel.item4.text">
                   a
-                  <a href="https://github.com/lieautman" target="blank">
+                  <a href="https://en.wikipedia.org/wiki/Warhammer_40,000" target="blank">
+                    {" "}
+                  </a>
+                  <a href="https://lieautman.github.io/DiceSim/" target="blank">
+                    {" "}
+                  </a>
+                  <a href="https://lieautman.github.io/WarhammerSim/" target="blank">
                     {" "}
                   </a>
                 </Trans>
               ),
             },
             {
-              image: HomePage2CarouselItem2,
-              header: t("Home.Page2.Carousel.item2.header"),
+              image: HomePage2CarouselItem1,
+              header: t("Home.Page2.Carousel.item1.header"),
               text: (
-                <Trans i18nKey="Home.Page2.Carousel.item2.text">
+                <Trans i18nKey="Home.Page2.Carousel.item1.text">
                   a
-                  <a href="https://www.totalsoft.ro/en/solutions/industries/leasing" target="blank">
+                  <a href="https://github.com/lieautman" target="blank">
                     {" "}
                   </a>
                 </Trans>
@@ -98,18 +105,12 @@ function Page2() {
               ),
             },
             {
-              image: HomePage2CarouselItem3,
-              header: t("Home.Page2.Carousel.item4.header"),
+              image: HomePage2CarouselItem2,
+              header: t("Home.Page2.Carousel.item2.header"),
               text: (
-                <Trans i18nKey="Home.Page2.Carousel.item4.text">
+                <Trans i18nKey="Home.Page2.Carousel.item2.text">
                   a
-                  <a href="https://en.wikipedia.org/wiki/Warhammer_40,000" target="blank">
-                    {" "}
-                  </a>
-                  <a href="https://lieautman.github.io/DiceSim/" target="blank">
-                    {" "}
-                  </a>
-                  <a href="https://lieautman.github.io/WarhammerSim/" target="blank">
+                  <a href="https://www.totalsoft.ro/en/solutions/industries/leasing" target="blank">
                     {" "}
                   </a>
                 </Trans>
