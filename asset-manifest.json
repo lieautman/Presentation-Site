@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Presentation-Site/static/css/main.bada3b76.css",
-    "main.js": "/Presentation-Site/static/js/main.d531ebcc.js",
+    "main.js": "/Presentation-Site/static/js/main.f2f525eb.js",
     "static/media/AboutPage2CarouselItem3.jpg": "/Presentation-Site/static/media/AboutPage2CarouselItem3.81e56cad3c6d33594a48.jpg",
+    "static/media/HomePage2CarouselItem4.jpg": "/Presentation-Site/static/media/HomePage2CarouselItem4.4318e5f9240a95b50479.jpg",
     "static/media/AboutPage2CarouselItem4.jpg": "/Presentation-Site/static/media/AboutPage2CarouselItem4.226af53f9013f47c9d0c.jpg",
     "static/media/AboutPage2CarouselItem6.jpg": "/Presentation-Site/static/media/AboutPage2CarouselItem6.e8f1a599103c85984550.jpg",
     "static/media/HomePage2CarouselItem2.jpg": "/Presentation-Site/static/media/HomePage2CarouselItem2.e8f1a599103c85984550.jpg",
@@ -13,10 +14,10 @@
     "static/media/logo1.png": "/Presentation-Site/static/media/logo1.a2093a031bb6e2e6d6d8.png",
     "index.html": "/Presentation-Site/index.html",
     "main.bada3b76.css.map": "/Presentation-Site/static/css/main.bada3b76.css.map",
-    "main.d531ebcc.js.map": "/Presentation-Site/static/js/main.d531ebcc.js.map"
+    "main.f2f525eb.js.map": "/Presentation-Site/static/js/main.f2f525eb.js.map"
   },
   "entrypoints": [
     "static/css/main.bada3b76.css",
-    "static/js/main.d531ebcc.js"
+    "static/js/main.f2f525eb.js"
   ]
 }
