@@ -7,10 +7,10 @@ import { Trans, useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
-import HomePage2CarouselItem1 from "../../Resources/Images/HomePage2CarouselItem1.jpg"
-import HomePage2CarouselItem2 from "../../Resources/Images/HomePage2CarouselItem2.jpg"
-import HomePage2CarouselItem3 from "../../Resources/Images/HomePage2CarouselItem3.jpg"
-import HomePage2CarouselItem4 from "../../Resources/Images/HomePage2CarouselItem4.jpg"
+import GameSimImage from "../../Resources/Images/Home/GameSimImage.jpg"
+import GHImage from "../../Resources/Images/Home/GHImage.jpg"
+import RUIImage from "../../Resources/Images/Home/RUIImage.jpg"
+import TSImage from "../../Resources/Images/Home/TSImage.jpg"
 import {} from "../Components/NextPage"
 
 function Page2() {
@@ -63,7 +63,7 @@ function Page2() {
         <DetailsCarousel
           items={[
             {
-              image: HomePage2CarouselItem4,
+              image: GameSimImage,
               header: t("Home.Page2.Carousel.item4.header"),
               text: (
                 <Trans i18nKey="Home.Page2.Carousel.item4.text">
@@ -81,7 +81,7 @@ function Page2() {
               ),
             },
             {
-              image: HomePage2CarouselItem1,
+              image: GHImage,
               header: t("Home.Page2.Carousel.item1.header"),
               text: (
                 <Trans i18nKey="Home.Page2.Carousel.item1.text">
@@ -93,7 +93,7 @@ function Page2() {
               ),
             },
             {
-              image: HomePage2CarouselItem3,
+              image: RUIImage,
               header: t("Home.Page2.Carousel.item3.header"),
               text: (
                 <Trans i18nKey="Home.Page2.Carousel.item3.text">
@@ -105,7 +105,7 @@ function Page2() {
               ),
             },
             {
-              image: HomePage2CarouselItem2,
+              image: TSImage,
               header: t("Home.Page2.Carousel.item2.header"),
               text: (
                 <Trans i18nKey="Home.Page2.Carousel.item2.text">
