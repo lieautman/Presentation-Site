@@ -82,18 +82,6 @@ function Page2() {
               ),
             },
             {
-              image: BVBImage,
-              header: t("Home.Page2.Carousel.item5.header"),
-              text: (
-                <Trans i18nKey="Home.Page2.Carousel.item5.text">
-                  a
-                  <a href="https://lieautman.github.io/PDFtoXLS/" target="blank">
-                    {" "}
-                  </a>
-                </Trans>
-              ),
-            },
-            {
               image: GHImage,
               header: t("Home.Page2.Carousel.item1.header"),
               text: (
@@ -124,6 +112,18 @@ function Page2() {
                 <Trans i18nKey="Home.Page2.Carousel.item2.text">
                   a
                   <a href="https://www.totalsoft.ro/en/solutions/industries/leasing" target="blank">
+                    {" "}
+                  </a>
+                </Trans>
+              ),
+            },
+            {
+              image: BVBImage,
+              header: t("Home.Page2.Carousel.item5.header"),
+              text: (
+                <Trans i18nKey="Home.Page2.Carousel.item5.text">
+                  a
+                  <a href="https://lieautman.github.io/PDFtoXLS/" target="blank">
                     {" "}
                   </a>
                 </Trans>
