@@ -7,11 +7,9 @@ import { Trans, useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
-import GameSimImage from "../../Resources/Images/Home/GameSimImage.jpg"
 import GHImage from "../../Resources/Images/Home/GHImage.jpg"
 import RUIImage from "../../Resources/Images/Home/RUIImage.jpg"
 import TSImage from "../../Resources/Images/Home/TSImage.jpg"
-import BVBImage from "../../Resources/Images/Home/BVBImage.jpg"
 import {} from "../Components/NextPage"
 
 function Page2() {
@@ -64,24 +62,6 @@ function Page2() {
         <DetailsCarousel
           items={[
             {
-              image: GameSimImage,
-              header: t("Home.Page2.Carousel.item4.header"),
-              text: (
-                <Trans i18nKey="Home.Page2.Carousel.item4.text">
-                  a
-                  <a href="https://en.wikipedia.org/wiki/Warhammer_40,000" target="blank">
-                    {" "}
-                  </a>
-                  <a href="https://lieautman.github.io/DiceSim/" target="blank">
-                    {" "}
-                  </a>
-                  <a href="https://lieautman.github.io/WarhammerSim/" target="blank">
-                    {" "}
-                  </a>
-                </Trans>
-              ),
-            },
-            {
               image: GHImage,
               header: t("Home.Page2.Carousel.item1.header"),
               text: (
@@ -116,19 +96,7 @@ function Page2() {
                   </a>
                 </Trans>
               ),
-            },
-            {
-              image: BVBImage,
-              header: t("Home.Page2.Carousel.item5.header"),
-              text: (
-                <Trans i18nKey="Home.Page2.Carousel.item5.text">
-                  a
-                  <a href="https://lieautman.github.io/PDFtoXLS/" target="blank">
-                    {" "}
-                  </a>
-                </Trans>
-              ),
-            },
+            }
           ]}
         />
       </Box>
