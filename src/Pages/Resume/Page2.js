@@ -41,7 +41,7 @@ function Resume() {
   }, [myAnimation])
 
   const onButtonClick = () => {
-    const pdfUrl = i18n.language === "en" ? "CV_EN.pdf" : "CV_RO.pdf"
+    const pdfUrl = i18n.language === "en" ? "resume.pdf" : "resume.pdf"
     const link = document.createElement("a")
     link.href = pdfUrl
     link.download = i18n.language === "en" ? "resume.pdf" : "curriculum-vitae.pdf"
