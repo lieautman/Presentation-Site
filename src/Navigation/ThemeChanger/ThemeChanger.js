@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { themeContext } from "../../Contexts/themeContext"
+import { themeContext } from "../../contexts/themeContext"
 import { darkTheme, purpleTheme } from "../../Resources/Theme/theme"
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useTranslation } from "react-i18next"

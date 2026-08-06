@@ -1,6 +1,6 @@
 import { useContext } from "react"
-import { themeContext } from "../../Contexts/themeContext"
-import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
+import { themeContext } from "../../contexts/themeContext"
+import { scrollSnapContext } from "../../contexts/scrollSnapContext"
 import GridItemAligned from "../../Resources/StyledComponents/GridItemAligned"
 import { Grid, IconButton, Button } from "@mui/material"
 import { Menu } from "@mui/icons-material"

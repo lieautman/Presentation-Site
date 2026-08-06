@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { Select, MenuItem } from "@mui/material"
 import { useContext } from "react"
-import { themeContext } from "../../Contexts/themeContext"
+import { themeContext } from "../../contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
 const LanguageChanger = () => {

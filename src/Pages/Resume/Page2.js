@@ -1,6 +1,6 @@
 import { useCallback, useContext, useEffect } from "react"
-import { themeContext } from "../../Contexts/themeContext"
-import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
+import { themeContext } from "../../contexts/themeContext"
+import { scrollSnapContext } from "../../contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Box, Button, IconButton, Typography } from "@mui/material"

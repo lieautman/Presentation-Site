@@ -1,7 +1,7 @@
 import TypographyWithTheme from "../../Resources/StyledComponents/TypographyWithTheme"
 import { useContext } from "react"
-import { themeContext } from "../../Contexts/themeContext"
-import { scrollSnapContext } from "../../Contexts/scrollSnapContext"
+import { themeContext } from "../../contexts/themeContext"
+import { scrollSnapContext } from "../../contexts/scrollSnapContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { Trans, useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
@@ -10,7 +10,9 @@ import { motion } from "framer-motion"
 import GHImage from "../../Resources/Images/Home/GHImage.jpg"
 import RUIImage from "../../Resources/Images/Home/RUIImage.jpg"
 import TSImage from "../../Resources/Images/Home/TSImage.jpg"
-import {} from "../Components/NextPage"
+import BRDImage from "../../Resources/Images/Home/BRDImage.jpg"
+import DLImage from "../../Resources/Images/Home/DLImage.png"
+import { } from "../Components/NextPage"
 
 function Page2() {
   const { t } = useTranslation()
@@ -74,6 +76,18 @@ function Page2() {
               ),
             },
             {
+              image: TSImage,
+              header: t("Home.Page2.Carousel.item2.header"),
+              text: (
+                <Trans i18nKey="Home.Page2.Carousel.item2.text">
+                  a
+                  <a href="https://www.totalsoft.ro/en/solutions/industries/leasing" target="blank">
+                    {" "}
+                  </a>
+                </Trans>
+              ),
+            },
+            {
               image: RUIImage,
               header: t("Home.Page2.Carousel.item3.header"),
               text: (
@@ -86,12 +100,24 @@ function Page2() {
               ),
             },
             {
-              image: TSImage,
-              header: t("Home.Page2.Carousel.item2.header"),
+              image: BRDImage,
+              header: t("Home.Page2.Carousel.item4.header"),
               text: (
-                <Trans i18nKey="Home.Page2.Carousel.item2.text">
+                <Trans i18nKey="Home.Page2.Carousel.item4.text">
                   a
-                  <a href="https://www.totalsoft.ro/en/solutions/industries/leasing" target="blank">
+                  <a href="https://www.asigurari.brd.ro/" target="blank">
+                    {" "}
+                  </a>
+                </Trans>
+              ),
+            },
+            {
+              image: DLImage,
+              header: t("Home.Page2.Carousel.item5.header"),
+              text: (
+                <Trans i18nKey="Home.Page2.Carousel.item5.text">
+                  a
+                  <a href="https://www.cec.ro/" target="blank">
                     {" "}
                   </a>
                 </Trans>
@@ -105,3 +131,4 @@ function Page2() {
 }
 
 export default Page2
+

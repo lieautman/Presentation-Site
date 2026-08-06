@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { themeContext } from "../../Contexts/themeContext"
+import { themeContext } from "../../contexts/themeContext"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import { Box, Typography } from "@mui/material"

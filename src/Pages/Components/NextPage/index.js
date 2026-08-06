@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useContext } from "react"
 import { useNavigate } from "react-router-dom"
-import { scrollSnapContext } from "../../../Contexts/scrollSnapContext"
+import { scrollSnapContext } from "../../../contexts/scrollSnapContext"
 import NavigationContainer from "../../..//Navigation/NavigationContainer"
 import HomePage1 from "../../Home/Page1"
 import AboutPage1 from "../../About/Page1"

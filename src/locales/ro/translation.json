@@ -43,6 +43,14 @@
         "item3": {
           "header": "Rocket-ui la TotalSoft",
           "text": "Proiectul open-source <1>Rocket-ui</1> este mentinut de echipa R&D din TotalSoft. Cat am lucrat acolo, am avut onoarea de a ajuta cu mici imprementari unde era nevoie pe acest proiect."
+        },
+        "item4": {
+          "header": "BRD asigurari generale",
+          "text": "Proiectul pentru <1>BRD asigurari generale</1> permite lucratorilor din front offce si back office sa colaboreze."
+        },
+        "item5": {
+          "header": "Proiect Deloitte pentru CEC",
+          "text": "<1>Proiectul</1> permite echiper CEC sa dea publicului general credite de nevoi personale, carduri de credit si deschideri de cont."
         }
       }
     }

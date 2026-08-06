@@ -43,6 +43,14 @@
         "item3": {
           "header": "TotalSoft's Rocket-ui",
           "text": "The <1>Rocket-ui</1> is an open-source project maintained by the R&D team at Totalsoft. While working there, I had the pleasure of helping with some small improvements here and there."
+        },
+        "item4": {
+          "header": "BRD's general insurance",
+          "text": "The <1>BRD's general insurance</1> in bank application allows front and back office workers to work effectively."
+        },
+        "item5": {
+          "header": "Deloitte's project for CEC",
+          "text": "<1>This project</1> allows bank personel to give personal loans, credit cards and overdrafts to the general public."
         }
       }
     }

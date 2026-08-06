@@ -1,7 +1,7 @@
 import { Box, IconButton, Typography } from "@mui/material"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { useContext } from "react"
-import { themeContext } from "../../../Contexts/themeContext"
+import { themeContext } from "../../../contexts/themeContext"
 import { Carousel } from "react-responsive-carousel"
 import { ArrowBack, ArrowForward } from "@mui/icons-material"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
