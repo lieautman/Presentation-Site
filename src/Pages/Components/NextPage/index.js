@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import { scrollSnapContext } from "../../../contexts/scrollSnapContext"
 import NavigationContainer from "../../..//Navigation/NavigationContainer"
-import HomePage1 from "../../Home/Page1"
-import AboutPage1 from "../../About/Page1"
-import ContactPage1 from "../../Contact/Page1"
-import ResumePage1 from "../../Resume/Page1"
+import HomePage1 from "../../1.Home/Page1"
+import AboutPage1 from "../../2.About/Page1"
+import ContactPage1 from "../../3.Contact/Page1"
+import ResumePage1 from "../../4.Resume/Page1"
 
 export const NextPage = ({ route }) => {
   const divRef = useRef(null)

@@ -6,12 +6,14 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 import { useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
-import AboutPage2CarouselItem6 from "../../Resources/Images/AboutPage2CarouselItem6.jpg"
-import AboutPage2CarouselItem5 from "../../Resources/Images/AboutPage2CarouselItem5.jpg"
-import AboutPage2CarouselItem4 from "../../Resources/Images/AboutPage2CarouselItem4.jpg"
-import AboutPage2CarouselItem3 from "../../Resources/Images/AboutPage2CarouselItem3.jpg"
-import AboutPage2CarouselItem2 from "../../Resources/Images/AboutPage2CarouselItem2.jpg"
-import AboutPage2CarouselItem1 from "../../Resources/Images/AboutPage2CarouselItem1.jpg"
+import DLImage from "../../Resources/Images/2.About/DLImage.png"
+import BNSImage from "../../Resources/Images/2.About/BNSImage.jpg"
+import AboutPage2CarouselItem6 from "../../Resources/Images/2.About/AboutPage2CarouselItem6.jpg"
+import AboutPage2CarouselItem5 from "../../Resources/Images/2.About/AboutPage2CarouselItem5.jpg"
+import AboutPage2CarouselItem4 from "../../Resources/Images/2.About/AboutPage2CarouselItem4.jpg"
+import AboutPage2CarouselItem3 from "../../Resources/Images/2.About/AboutPage2CarouselItem3.jpg"
+import AboutPage2CarouselItem2 from "../../Resources/Images/2.About/AboutPage2CarouselItem2.jpg"
+import AboutPage2CarouselItem1 from "../../Resources/Images/2.About/AboutPage2CarouselItem1.jpg"
 import { motion } from "framer-motion"
 
 function Page2() {
@@ -63,6 +65,16 @@ function Page2() {
         }}>
         <DetailsCarousel
           items={[
+            {
+              image: DLImage,
+              header: t("About.Page2.Carousel.item8.header"),
+              text: t("About.Page2.Carousel.item8.text"),
+            },
+            {
+              image: BNSImage,
+              header: t("About.Page2.Carousel.item7.header"),
+              text: t("About.Page2.Carousel.item7.text"),
+            },
             {
               image: AboutPage2CarouselItem6,
               header: t("About.Page2.Carousel.item6.header"),

@@ -7,11 +7,11 @@ import { Trans, useTranslation } from "react-i18next"
 import Box from "@mui/material/Box"
 import DetailsCarousel from "../Components/DetailsCarousel/DetailsCarousel"
 import { motion } from "framer-motion"
-import GHImage from "../../Resources/Images/Home/GHImage.jpg"
-import RUIImage from "../../Resources/Images/Home/RUIImage.jpg"
-import TSImage from "../../Resources/Images/Home/TSImage.jpg"
-import BRDImage from "../../Resources/Images/Home/BRDImage.jpg"
-import DLImage from "../../Resources/Images/Home/DLImage.png"
+import GHImage from "../../Resources/Images/1.Home/GHImage.jpg"
+import RUIImage from "../../Resources/Images/1.Home/RUIImage.jpg"
+import TSImage from "../../Resources/Images/1.Home/TSImage.jpg"
+import BNSImage from "../../Resources/Images/1.Home/BNSImage.jpg"
+import DLImage from "../../Resources/Images/1.Home/DLImage.png"
 import { } from "../Components/NextPage"
 
 function Page2() {
@@ -100,7 +100,7 @@ function Page2() {
               ),
             },
             {
-              image: BRDImage,
+              image: BNSImage,
               header: t("Home.Page2.Carousel.item4.header"),
               text: (
                 <Trans i18nKey="Home.Page2.Carousel.item4.text">

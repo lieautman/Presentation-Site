@@ -1,7 +1,7 @@
-import Home from "./Home"
-import About from "./About"
-import Contact from "./Contact"
-import Resume from "./Resume"
+import Home from "./1.Home"
+import About from "./2.About"
+import Contact from "./3.Contact"
+import Resume from "./4.Resume"
 import NoPageFound from "./NoPageFound"
 import { Routes, Route, HashRouter } from "react-router-dom"
 

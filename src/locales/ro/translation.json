@@ -85,6 +85,14 @@
         "item6": {
           "header": "Angajare TotalSoft",
           "text": "La inceputul masterului, in anul 2022, m-am angajat, mai intai ca intern si apoi pe perioada nedeterminata la firma TotalSoft. Aici mi-am definitivat abilitatile de programator full-stack, lucrand cu mai multe tipologi de servere back-end si fronte-end-uri, alaturi de baze de date SQL-Server. Pot spune ca abilitatile invatate in timpul facultatii mi-au dat un sprijin la inceput, iar colegii de aici m-au ajutat sa trec peste saltul spre intelegerea proiectelor cu o amplitudine mai mare."
+        },
+        "item7": {
+          "header": "Angajare Bitnovel Solutions",
+          "text": "În anul 2024, m-am mutat la Bitnovel Solutions, o companie mică de software specializată în crearea de soluții pentru industria asigurărilor de locuințe bancare (mai ales pentru banca BRD). Aici, pentru prima dată, am lucrat cu JavaScript și FintechOS și am învățat cum să creez software eficient și ușor de întreținut."
+        },
+        "item8": {
+          "header": "Angajare Deloitte",
+          "text": "În anul 2025, Deloitte m-a angajat, o firmă mare de consultanță și audit. Aici am devenit consultant senior, ocupându-mă de crearea pachetelor OCR, semnătură digitală și rapoarte pentru o aplicație bancară enterprise. Am învățat cum să creez și să întrețin un proiect software mare, în timp ce am învățat și partea de business a proiectului."
         }
       }
     }
